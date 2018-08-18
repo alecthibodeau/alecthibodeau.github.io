@@ -35,16 +35,15 @@ $cloud-white: #f7f0e3;
 $lines-brown: #3a2328;
 $stem-green: #358d65;
 
-@mixin size($width, $height: $width) {
-  height: $height;
-  position: relative;
-  width: $width;
-}
+// @mixin size($width, $height: $width) {
+//   height: $height;
+//   position: relative;
+//   width: $width;
+// }
 
 body,
 html {
-  @include size(100%);
-
+  // @include size(100%);
   font-family: 'M PLUS Rounded 1c', sans-serif;
   margin: 0 auto;
   text-align: center;
@@ -96,8 +95,10 @@ main {
   // @include size(auto);
   border: 1px solid $black;
   border-radius: 10px;
-  height: auto;
+  height: 400px;
+  margin: 4vw;
   max-width: 100%;
+  width: 240px;
 }
 
 @media only screen and (max-width: 500px) {
