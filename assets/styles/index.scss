@@ -1,2 +1,107 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Aldrich|Fredoka+One|Monoton|Varela+Round|Roboto|Audiowide');
+
+$five-percent-gray: #f2f2f2;
+$six-percent-gray: #f0f0f0;
+$thirty-percent-gray: #b3b3b3;
+$fifty-percent-gray: #7f7f7f;
+$black: #000;
+$white: #fff;
+$red: #f00;
+$green: #0f0;
+$blue: #00f;
+$red-muted: rgba(246, 65, 84, 1);
+$green-muted: rgba(119, 210, 131, 1);
+$blue-muted: rgba(112, 115, 255, 1);
+$yellow-muted: rgba(255, 230, 100, 1);
+$orange-muted: rgba(255, 150, 0, 1);
+$cyan: #0ff;
+$magenta: #f0f;
+$yellow: #ff0;
+$rainbow-red: #f27089;
+$rainbow-orange: #fca778;
+$rainbow-yellow: #fbde84;
+$rainbow-yellow-light: rgba(249, 216, 113, 0.15);
+$rainbow-green: #9ac479;
+$rainbow-blue: #74a6cf;
+$grass-green: #b8d77d;
+$grass-green-light: rgba(171, 209, 106, 0.1);
+$panda-purple: #9f86b0;
+$dolphin-pink: #f9a2b6;
+$sky-blue: #a7c5df;
+$cloud-white: #f7f0e3;
+$lines-brown: #3a2328;
+$stem-green: #358d65;
+
+@mixin size($width, $height: $width) {
+  height: $height;
+  position: relative;
+  width: $width;
+}
+
+body,
+html {
+  @include size(100%);
+
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  background-image: url('../../images/thibodeau_pattern.jpg');
+  letter-spacing: 2vw;
+  // text-shadow: -3px 3px 5px $stem-green;
+  text-shadow: -3px 3px $stem-green;
+  text-transform: uppercase;
+}
+
+.alec-thibodeau {
+  color: $white;
+  font-size: 5em;
+  padding: 50px 0 0;
+}
+
+.web-developer {
+  color: $white;
+  font-size: 3em;
+  padding: 0 0 50px;
+}
+
+main {
+  margin: 0 auto;
+}
+
+.greeting {
+  color: $lines-brown;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 24px;
+  margin: 2% auto;
+  text-align: center;
+  width: 80%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.radtabs-img,
+.tic-tac-toe-img {
+  // @include size(auto);
+  border: 1px solid $black;
+  border-radius: 10px;
+  height: auto;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  .greeting {
+    font-size: 16px;
+  }
+}
