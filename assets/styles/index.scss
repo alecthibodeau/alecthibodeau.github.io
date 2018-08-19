@@ -1,7 +1,7 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|M+PLUS+Rounded+1c|Aldrich|Fredoka+One|Monoton|Varela+Round|Roboto|Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Varela+Round');
 
 $five-percent-gray: #f2f2f2;
 $six-percent-gray: #f0f0f0;
@@ -10,27 +10,17 @@ $fifty-percent-gray: #7f7f7f;
 $seventy-five-percent-gray: #636466;
 $black: #000;
 $white: #fff;
-$red: #f00;
-$green: #0f0;
-$blue: #00f;
 $red-muted: rgba(246, 65, 84, 1);
 $green-muted: rgba(119, 210, 131, 1);
 $blue-muted: rgba(112, 115, 255, 1);
 $yellow-muted: rgba(255, 230, 100, 1);
 $orange-muted: rgba(255, 150, 0, 1);
-$cyan: #0ff;
-$magenta: #f0f;
-$yellow: #ff0;
 $rainbow-red: #f27089;
 $rainbow-orange: #fca778;
 $rainbow-yellow: #fbde84;
-$rainbow-yellow-light: rgba(249, 216, 113, 0.15);
 $rainbow-green: #9ac479;
 $rainbow-blue: #74a6cf;
 $grass-green: #b8d77d;
-$grass-green-light: rgba(171, 209, 106, 0.1);
-$panda-purple: #9f86b0;
-$dolphin-pink: #f9a2b6;
 $sky-blue: #a7c5df;
 $cloud-white: #f7f0e3;
 $lines-brown: #3a2328;
@@ -120,6 +110,7 @@ nav {
   letter-spacing: 2vw;
   line-height: 1.3em;
   padding: 30px 0 0;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -128,6 +119,7 @@ nav {
   font-size: 3em;
   letter-spacing: 2vw;
   padding: 0 0 30px;
+  text-align: center;
   text-transform: uppercase;
 }
 
