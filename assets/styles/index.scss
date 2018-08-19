@@ -108,8 +108,8 @@ nav {
 }
 
 .title {
-  margin: -20px auto 0;
-  padding-top: 40px;
+  margin: 5px auto;
+  padding-top: 10px;
   pointer-events: none;
 }
 
@@ -305,6 +305,10 @@ footer {
 @media only screen and (max-width: 620px) {
   .projects {
     flex-direction: column;
+  }
+
+  .link-button {
+    width: 45%;
   }
 }
 
