@@ -227,12 +227,54 @@ footer {
   text-align: center;
 }
 
+.closing-accent {
+  height: 15px;
+}
+
 .credit {
   font-size: 0.8em;
   letter-spacing: 0.3vw;
-  line-height: 100px;
+  line-height: 50px;
   text-transform: uppercase;
+  top: 100px;
 }
+
+.highlight-line-01,
+.highlight-line-02,
+.highlight-line-03,
+.highlight-line-04,
+.highlight-line-05,
+.highlight-line-06,
+.highlight-line-07, {
+  background-color: $orange-muted;
+  height: 3px;
+  width: 100%;
+
+  &.highlight-line-02 {
+    background-color: $rainbow-blue;
+  }
+
+  &.highlight-line-03 {
+    background-color: $rainbow-green;
+  }
+
+  &.highlight-line-04 {
+    background-color: $rainbow-yellow;
+  }
+
+  &.highlight-line-05 {
+    background-color: $rainbow-green;
+  }
+
+  &.highlight-line-06 {
+    background-color: $rainbow-blue;
+  }
+
+  &.highlight-line-07 {
+    background-color: $orange-muted;
+  }
+}
+
 
 @media only screen and (max-width: 500px) {
 
