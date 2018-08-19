@@ -14,9 +14,9 @@
     <body>
       <header>
         <nav>
-          <a href="#alec-thibodeau"><button>about</button></a>
-          <a href="#projects"><button>projects</button></a>
-          <a href="#contact"><button>contact</button></a>
+          <a href="#alec-thibodeau"><button class="nav-button">about</button></a>
+          <a href="#projects"><button class="nav-button">projects</button></a>
+          <a href="#contact"><button class="nav-button">contact</button></a>
         </nav>
         <div class="banner-01"><img class="tree" src="images/thibodeau_tree_circle.svg" alt="tree">
         </div>
@@ -33,28 +33,40 @@
             I’m a builder. I’ve built art projects: from pencil drawings to a large sculpture in New York City’s permanent collection of public artwork.
             And I've built websites to share these projects.
             Now I’ve just ramped up my builder's skills in General Assembly's Web Development Immersive:
-            a full-time, 13-week training program in which I've learned the latest programming languages, technologies and techniques.</p>
+            a full-time, 13-week training program in which I've learned the latest skills through lecture, studies, challenges and projects.</p>
         </div>
         <div class="banner-02"></div>
         <div class="skills">
           <p class="p-start">LANGUAGES, TECHNOLOGIES & TECHNIQUES</p>
           <p>Git/GitHub, JavaScript, HTML5, CSS3, jQuery, AJAX, PostgreSQL, Node.js, Express, MongoDB, Mongoose, Ruby, Ruby on Rails, Sass, Bootstrap, Handlebars, Heroku, Slack, wireframe diagrams, entity-relationship diagrams</p>
         </div>
-        <div class="banner-03"></div>
-          <p class="p-start" id="projects">projects</p>
-        <div class="projects">
-          <a class="project-anchor" href="https://github.com/alecthibodeau/full-stack-project-front-end" target="blank">
-            <img src='images/radtabs.jpg' class="radtabs-img" alt="RadTabs">
-          </a>
-          <a class="project-anchor" href="https://github.com/alecthibodeau/tic-tac-toe-game" target="blank">
-            <img src='images/tic_tac_toe.jpg' class="tic-tac-toe-img"  alt="Alec T.'s Tic-Tac-Toe">
-          </a>
-        </div><div class="banner-04">
+        <div class="banner-03" id="projects"></div>
+          <p class="p-start">projects</p>
+        <div>
+          <div class="projects">
+            <span>
+              <img src='images/radtabs.jpg' class="radtabs-img" alt="RadTabs">
+              <a class="link-button" href="https://github.com/alecthibodeau/full-stack-project-back-end" target="blank">api repo</a>
+              <a class="link-button" href="https://github.com/alecthibodeau/full-stack-project-front-end" target="blank">client repo</a>
+              <a class="link-button" href="https://alecthibodeau.github.io/full-stack-project-front-end" target="blank">website</a>
+            </span>
+            <span>
+              <img src='images/tic_tac_toe.jpg' class="tic-tac-toe-img"  alt="Alec T.'s Tic-Tac-Toe">
+              <a class="link-button" href="https://github.com/alecthibodeau/tic-tac-toe-game" target="blank">client repo</a>
+              <a class="link-button" href="https://alecthibodeau.github.io/tic-tac-toe-game" target="blank">website</a>
+            </span>
+          </div>
         </div>
+        <div class="banner-04" id="contact"></div>
         <div class="contact">
-          <p class="p-start" id="contact">contact</p>
-          <p>email, github, linkedin</p>
+          <p class="p-start">contact</p>
+          <p class="contact-box">
+            <img src='images/icon_email.svg' alt="Email">
+            <img src='images/icon_github.svg' alt="GitHub">
+            <img src='images/icon_linkedin.svg' alt="LinkedIn">
+          </p>
         </div>
       </main>
+      <footer></footer>
     </body>
 </html>
