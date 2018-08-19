@@ -26,12 +26,6 @@ $cloud-white: #f7f0e3;
 $lines-brown: #3a2328;
 $stem-green: #358d65;
 
-@mixin size($width, $height: $width) {
-  height: $height;
-  position: relative;
-  width: $width;
-}
-
 body,
 html {
   background-color: $blue-muted;
@@ -217,11 +211,11 @@ p {
   border-radius: 1em;
   display: flex;
   flex-direction: row;
-  min-height: 120px;
   justify-content: space-around;
   margin: 1.5em auto 0;
-  padding: 1em;
   max-width: 60%;
+  min-height: 120px;
+  padding: 1em;
 }
 
 .contact-icon {
@@ -324,7 +318,8 @@ footer {
 
 @media only screen and (max-width: 500px) {
   .tree {
-    @include size(75%);
+    height: 75%;
+    width: 75%;
   }
 
   nav {
