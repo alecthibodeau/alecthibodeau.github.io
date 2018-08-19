@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Alec Thibodeau</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags-->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <head>
+    <title>Alec Thibodeau</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `script` tags-->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body>
-      <header>
-        <nav>
-          <a href="#alec-thibodeau"><button class="nav-button">about</button></a>
-          <a href="#projects"><button class="nav-button">projects</button></a>
-          <a href="#contact"><button class="nav-button">contact</button></a>
-        </nav>
-        <div class="banner-01"><img class="tree" src="images/thibodeau_tree_circle.svg" alt="tree">
+    <!-- Do not add `link` tags-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Do not add `script` tags-->
+    <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+    <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <a href="#alec-thibodeau"><button class="nav-button">about</button></a>
+        <a href="#projects"><button class="nav-button">projects</button></a>
+        <a href="#contact"><button class="nav-button">contact</button></a>
+      </nav>
+      <div class="banner-01">
+        <img class="tree" src="images/thibodeau_tree_circle.svg" alt="tree">
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ABOUT START -->
+      <div class="title">
+        <div id="alec-thibodeau" class="alec-thibodeau">Alec Thibodeau</div>
+        <div class="web-developer">Web Developer</div>
+      </div>
+      <div class="greeting">
+        <img src='images/alec_thibodeau_headshot_150px.jpg' class="headshot-img" alt="headshot">
+        <p class="p-heading">about</p>
+        <p>Hello! Welcome to the portfolio for my work in web development.
+          I’m a builder. I’ve built art projects: from pencil drawings to a large sculpture in New York City’s permanent collection of public artwork.
+          And I've built websites to share these projects.
+          Now I’ve just ramped up my builder's skills in General Assembly's Web Development Immersive:
+          a full-time, 13-week training program in which I've learned the latest skills through lecture, studies, challenges and projects.</p>
+      </div>
+      <div class="banner-02"></div>
+      <p class="p-heading">LANGUAGES, TECHNOLOGIES & TECHNIQUES</p>
+      <p>Git/GitHub, JavaScript, HTML5, CSS3, jQuery, AJAX, PostgreSQL, Node.js, Express, MongoDB, Mongoose, Ruby, Ruby on Rails, Sass, Bootstrap, Handlebars, Heroku, Slack, wireframe diagrams, entity-relationship diagrams</p>
+      <!-- ABOUT END -->
+
+      <!-- PROJECTS START -->
+      <div class="banner-03" id="projects"></div>
+      <p class="p-heading">projects</p>
+      <section class="projects">
+        <span>
+          <img src='images/radtabs.jpg' class="radtabs-img" alt="RadTabs">
+          <a class="link-button" href="https://github.com/alecthibodeau/full-stack-project-back-end" target="blank">api repo</a>
+          <a class="link-button" href="https://github.com/alecthibodeau/full-stack-project-front-end" target="blank">client repo</a>
+          <a class="link-button" href="https://alecthibodeau.github.io/full-stack-project-front-end" target="blank">website</a>
+        </span>
+        <span>
+          <img src='images/tic_tac_toe.jpg' class="tic-tac-toe-img"  alt="Alec T.'s Tic-Tac-Toe">
+          <a class="link-button" href="https://github.com/alecthibodeau/tic-tac-toe-game" target="blank">client repo</a>
+          <a class="link-button" href="https://alecthibodeau.github.io/tic-tac-toe-game" target="blank">website</a>
+        </span>
+      </section>
+      <!-- PROJECTS END -->
+
+
+      <!-- CONTACT START -->
+      <div class="banner-04" id="contact"></div>
+      <section class="contact">
+        <p class="p-heading">contact</p>
+        <div class="contact-box">
+          <a href="https://github.com/alecthibodeau" target="blank"><img class="contact-icon" src='images/icon_github.svg' alt="GitHub"></a>
+          <img class="contact-icon" src='images/icon_email.svg' alt="Email"></a>
+          <a href="https://www.linkedin.com/in/alecthibodeau" target="blank"><img class="contact-icon" src='images/icon_linkedin.svg' alt="LinkedIn"></a>
         </div>
-      </header>
-      <main>
-        <div class="title">
-          <div id="alec-thibodeau" class="alec-thibodeau">Alec Thibodeau</div>
-          <div class="web-developer">Web Developer</div>
-        </div>
-        <div class="greeting">
-          <img src='images/alec_thibodeau_headshot_150px.jpg' class="headshot-img" alt="headshot">
-          <p class="p-start">about</p>
-          <p>Hello! Welcome to the portfolio for my work in web development.
-            I’m a builder. I’ve built art projects: from pencil drawings to a large sculpture in New York City’s permanent collection of public artwork.
-            And I've built websites to share these projects.
-            Now I’ve just ramped up my builder's skills in General Assembly's Web Development Immersive:
-            a full-time, 13-week training program in which I've learned the latest skills through lecture, studies, challenges and projects.</p>
-        </div>
-        <div class="banner-02"></div>
-        <div class="skills">
-          <p class="p-start">LANGUAGES, TECHNOLOGIES & TECHNIQUES</p>
-          <p>Git/GitHub, JavaScript, HTML5, CSS3, jQuery, AJAX, PostgreSQL, Node.js, Express, MongoDB, Mongoose, Ruby, Ruby on Rails, Sass, Bootstrap, Handlebars, Heroku, Slack, wireframe diagrams, entity-relationship diagrams</p>
-        </div>
-        <div class="banner-03" id="projects"></div>
-          <p class="p-start">projects</p>
-        <div>
-          <div class="projects">
-            <span>
-              <img src='images/radtabs.jpg' class="radtabs-img" alt="RadTabs">
-              <a class="link-button" href="https://github.com/alecthibodeau/full-stack-project-back-end" target="blank">api repo</a>
-              <a class="link-button" href="https://github.com/alecthibodeau/full-stack-project-front-end" target="blank">client repo</a>
-              <a class="link-button" href="https://alecthibodeau.github.io/full-stack-project-front-end" target="blank">website</a>
-            </span>
-            <span>
-              <img src='images/tic_tac_toe.jpg' class="tic-tac-toe-img"  alt="Alec T.'s Tic-Tac-Toe">
-              <a class="link-button" href="https://github.com/alecthibodeau/tic-tac-toe-game" target="blank">client repo</a>
-              <a class="link-button" href="https://alecthibodeau.github.io/tic-tac-toe-game" target="blank">website</a>
-            </span>
-          </div>
-        </div>
-        <div class="banner-04" id="contact"></div>
-        <div class="contact">
-          <p class="p-start">contact</p>
-          <p class="contact-box">
-            <a href="https://github.com/alecthibodeau" target="blank"><img class="contact-icon" src='images/icon_github.svg' alt="GitHub"></a>
-            <img class="contact-icon" src='images/icon_email.svg' alt="Email"></a>
-            <a href="https://www.linkedin.com/in/alecthibodeau" target="blank"><img class="contact-icon" src='images/icon_linkedin.svg' alt="LinkedIn"></a>
-          </p>
-        </div>
-      </main>
-      <footer></footer>
-    </body>
+      </section>
+      <!-- CONTACT END -->
+
+    </main>
+
+    <footer>
+      <div class ="credit">Developed by Alec Thibodeau in 2018.</div>
+    </footer>
+
+  </body>
 </html>
