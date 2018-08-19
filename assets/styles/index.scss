@@ -54,17 +54,25 @@ html {
   width: 100%;
 }
 
-.banner-01,
-.banner-02 {
+.banner-01 {
   background-image: url('../../images/thibodeau_pattern.jpg');
-  top: 35px;
-  position: relative;
   height: 200px;
+  position: relative;
+  top: 35px;
   z-index: 0;
+}
+
+.banner-02,
+.banner-03,
+.banner-04 {
+  background-image: url('../../images/thibodeau_pattern.jpg');
+  height: 200px;
+  margin: 50px auto;
+  top: 0;
+}
   // text-shadow: -3px 3px 5px $stem-green;
   // text-shadow: -3px 3px $stem-green;
   // text-transform: uppercase;
-}
 
 .tree {
   margin: 15px;
@@ -122,11 +130,20 @@ main {
 p {
   color: $white;
   // font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
   margin: 0 auto;
   // padding: 100px;
   text-align: left;
   width: 75%;
+
+  &.p-start {
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 0.5vw;
+    margin: 10px auto;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 .headshot-img {
@@ -153,11 +170,12 @@ p {
   width: 240px;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.3;
   }
 }
 
 @media only screen and (max-width: 500px) {
+
   .greeting {
     font-size: 16px;
   }
