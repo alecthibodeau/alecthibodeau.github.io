@@ -43,10 +43,11 @@ $stem-green: #358d65;
 
 body,
 html {
-  // @include size(100%);
   font-family: 'M PLUS Rounded 1c', sans-serif;
+  height: 100%;
   margin: 0 auto;
   text-align: center;
+  width: 100%;
 }
 
 header {
@@ -73,6 +74,11 @@ main {
   margin: 0 auto;
 }
 
+.headshot-img {
+  border: 1px solid $black;
+  border-radius: 50%;
+}
+
 .greeting {
   color: $lines-brown;
   font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -92,13 +98,16 @@ main {
 
 .radtabs-img,
 .tic-tac-toe-img {
-  // @include size(auto);
   border: 1px solid $black;
   border-radius: 10px;
   height: 400px;
-  margin: 4vw;
+  margin: 2vw;
   max-width: 100%;
   width: 240px;
+
+  &:hover {
+    opacity: 0.2;
+  }
 }
 
 @media only screen and (max-width: 500px) {
