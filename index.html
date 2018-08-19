@@ -17,7 +17,7 @@
 
     <header>
       <nav>
-        <a href="#alec-thibodeau"><button class="nav-button">about</button></a>
+        <a href="#about"><button class="nav-button">about</button></a>
         <a href="#projects"><button class="nav-button">projects</button></a>
         <a href="#contact"><button class="nav-button">contact</button></a>
       </nav>
@@ -29,8 +29,8 @@
     <main>
 
       <!-- ABOUT START -->
-      <div class="title">
-        <div id="alec-thibodeau" class="alec-thibodeau">Alec Thibodeau</div>
+      <div class="title" id="about">
+        <div class="alec-thibodeau">Alec Thibodeau</div>
         <div class="web-developer">Web Developer</div>
       </div>
       <div class="greeting">
@@ -48,30 +48,33 @@
       <!-- ABOUT END -->
 
       <!-- PROJECTS START -->
-      <div class="banner-03" id="projects"></div>
-      <p class="p-heading">projects</p>
-      <section class="projects">
-        <span>
-          <img src='images/radtabs.jpg' class="radtabs-img" alt="RadTabs">
-          <div class="project-link">
-            <a class="link-button" href="https://github.com/alecthibodeau/full-stack-project-back-end" target="blank">api repo</a>
-            <a class="link-button" href="https://github.com/alecthibodeau/full-stack-project-front-end" target="blank">client repo</a>
-            <a class="link-button" href="https://alecthibodeau.github.io/full-stack-project-front-end" target="blank">website</a>
-          </div>
-        </span>
-        <span>
-          <img src='images/tic_tac_toe.jpg' class="tic-tac-toe-img"  alt="Alec T.'s Tic-Tac-Toe">
-          <div class="project-link">
-            <a class="link-button" href="https://github.com/alecthibodeau/tic-tac-toe-game" target="blank">client repo</a>
-            <a class="link-button" href="https://alecthibodeau.github.io/tic-tac-toe-game" target="blank">website</a>
-          </div>
-        </span>
+      <div class="banner-03"></div>
+      <section class="section-area" id="projects">
+        <p class="p-heading">projects</p>
+        <section class="projects">
+          <span class=project-container>
+            <img src='images/radtabs.jpg' class="project-img" alt="RadTabs">
+            <div class="project-link">
+              <a class="link-button" href="https://github.com/alecthibodeau/full-stack-project-back-end" target="blank">api repo</a>
+              <a class="link-button" href="https://github.com/alecthibodeau/full-stack-project-front-end" target="blank">client repo</a>
+              <a class="link-button" href="https://alecthibodeau.github.io/full-stack-project-front-end" target="blank">website</a>
+            </div>
+          </span>
+          <span class=project-container>
+            <img src='images/tic_tac_toe.jpg' class="project-img"  alt="Alec T.'s Tic-Tac-Toe">
+            <div class="project-link">
+              <a class="link-button" href="https://github.com/alecthibodeau/tic-tac-toe-game" target="blank">client repo</a>
+              <a class="link-button" href="https://alecthibodeau.github.io/tic-tac-toe-game" target="blank">website</a>
+            </div>
+          </span>
+        </section>
       </section>
+
       <!-- PROJECTS END -->
 
       <!-- CONTACT START -->
-      <div class="banner-04" id="contact"></div>
-      <section class="contact">
+      <div class="banner-04"></div>
+      <section class="section-area" id="contact">
         <p class="p-heading">contact</p>
         <div class="contact-box">
           <a href="https://github.com/alecthibodeau" target="blank"><img class="contact-icon" src='images/icon_github.svg' alt="GitHub"></a>
@@ -84,6 +87,7 @@
     </main>
 
     <footer>
+      <div class="end-space-01"></div>
       <div class ="credit">Developed by Alec Thibodeau in 2018.</div>
       <div class="closing-accent">
         <div class="highlight-line-01"></div>
@@ -94,6 +98,7 @@
         <div class="highlight-line-06"></div>
         <div class="highlight-line-07"></div>
       </div>
+      <div class="end-space-02"></div>
     </footer>
 
   </body>

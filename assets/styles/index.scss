@@ -1,6 +1,6 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
-@import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|M+PLUS+Rounded+1c|Aldrich|Fredoka+One|Monoton|Varela+Round|Roboto|Audiowide');
 
 $five-percent-gray: #f2f2f2;
@@ -35,11 +35,11 @@ $cloud-white: #f7f0e3;
 $lines-brown: #3a2328;
 $stem-green: #358d65;
 
-// @mixin size($width, $height: $width) {
-//   height: $height;
-//   position: relative;
-//   width: $width;
-// }
+@mixin size($width, $height: $width) {
+  height: $height;
+  position: relative;
+  width: $width;
+}
 
 body,
 html {
@@ -67,7 +67,7 @@ html {
 .banner-04 {
   background-image: url('../../images/thibodeau_cool_tile.jpg');
   height: 200px;
-  margin: 50px auto;
+  margin: 4em auto;
   top: 0;
 
   &.banner-03 {
@@ -108,7 +108,8 @@ nav {
 }
 
 .title {
-  margin: 15px auto 0;
+  margin: -20px auto 0;
+  padding-top: 40px;
   pointer-events: none;
 }
 
@@ -133,6 +134,11 @@ main {
   margin: 0 auto;
 }
 
+.section-area {
+  margin: -40px auto 0;
+  padding-top: 50px;
+}
+
 p {
   color: $white;
   font-size: 1.5em;
@@ -146,7 +152,7 @@ p {
     font-size: 2em;
     font-weight: 400;
     letter-spacing: 0.5vw;
-    margin: 10px auto;
+    margin: 10px auto 10px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -155,7 +161,12 @@ p {
 .headshot-img {
   border: 4px solid $blue-muted;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 0.5em;
+}
+
+.projects-start-point {
+  height: 30px;
+  top: 30px;
 }
 
 .projects {
@@ -166,8 +177,7 @@ p {
   width: 80%;
 }
 
-.radtabs-img,
-.tic-tac-toe-img {
+.project-img {
   border: 1px solid $black;
   border-radius: 1em;
   height: 400px;
@@ -191,7 +201,7 @@ p {
   margin: 0.75em auto;
   padding: 0.3em 0.75em;
   text-transform: uppercase;
-  width: 15vw;
+  width: 70%;
 
   &:link,
   &:hover,
@@ -202,6 +212,12 @@ p {
   }
 }
 
+// .section-start-point {
+//   display: none;
+//   height: 20px;
+//   top: 20px;
+// }
+
 .contact-box {
   background-color: $cloud-white;
   border-radius: 0.8em;
@@ -211,7 +227,7 @@ p {
   justify-content: center;
   margin: 1.5em auto 0;
   vertical-align: bottom;
-  width: 40%;
+  width: 50%;
 }
 
 .contact-icon {
@@ -232,6 +248,7 @@ footer {
 }
 
 .credit {
+  background-color: $black;
   font-size: 0.8em;
   letter-spacing: 0.3vw;
   line-height: 50px;
@@ -275,10 +292,56 @@ footer {
   }
 }
 
+.end-space-01 {
+  background-color: $black;
+  height: 200px;
+}
+
+.end-space-02 {
+  background-color: $black;
+  height: 150px;
+}
+
+@media only screen and (max-width: 620px) {
+  .projects {
+    flex-direction: column;
+  }
+}
 
 @media only screen and (max-width: 500px) {
+  .tree {
+    @include size(75%);
+  }
 
-  .greeting {
-    font-size: 16px;
+  .nav-button {
+    margin: 0 0.2em;
+  }
+
+  .alec-thibodeau {
+    font-size: 3em;
+    line-height: 1.3em;
+  }
+
+  .web-developer {
+    font-size: 2em;
+  }
+
+  .banner-01 {
+    height: 150px;
+  }
+
+  .banner-02,
+  .banner-03,
+  .banner-04 {
+    height: 100px;
+    margin: 1em auto;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  nav {
+    justify-content: center;
   }
 }
