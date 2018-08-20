@@ -43,7 +43,7 @@ html {
   background-image: url('../../public/images/thibodeau_green_tile.jpg');
   height: 200px;
   position: relative;
-  top: 34px;
+  top: 33px;
   z-index: 0;
 }
 
@@ -103,6 +103,7 @@ nav {
   font-size: 5em;
   letter-spacing: 2vw;
   line-height: 1.3em;
+  margin-right: -2vw;
   padding: 30px 0 0;
   text-align: center;
   text-transform: uppercase;
@@ -112,6 +113,7 @@ nav {
   color: $rainbow-yellow;
   font-size: 3em;
   letter-spacing: 2vw;
+  margin-right: -2vw;
   padding: 0 0 30px;
   text-align: center;
   text-transform: uppercase;
@@ -291,16 +293,16 @@ footer {
 }
 
 @media only screen and (max-width: 620px) {
-  .projects {
-    flex-direction: column;
-  }
-
-  // .title {
-  //   padding: 10px 20px 0;
-  // }
-
   .alec-thibodeau {
     margin: 0 20px;
+  }
+
+  .greeting {
+    width: 90%;
+  }
+
+  .projects {
+    flex-direction: column;
   }
 
   .project-link {
@@ -351,6 +353,7 @@ footer {
 
   p {
     font-size: 1em;
+    font-weight: 300;
   }
 
   .contact-box {
