@@ -16,15 +16,15 @@ module.exports = {
     command: 'test -z "$(git status --porcelain)"  || (git status && false)'
   },
   'git-push-master': {
-    command: 'git push origin master'
+    command: 'git push origin master-local'
   },
   'git-checkout-master': {
-    command: 'git checkout master'
+    command: 'git checkout master-local'
   },
   'deploy-prepare': {
     command: [
-      'git branch -D gh-pages || echo "so not removed"',
-      'git checkout --orphan gh-pages',
+      'git branch -D master || echo "so not removed"',
+      'git checkout --orphan master',
       'git rm --cached \'*\''
     ].join(' && ')
   },
@@ -33,9 +33,9 @@ module.exports = {
       'touch .nojekyll',
       `git add --force .nojekyll ${ghPagesList}`,
       'git commit -m "deploy task"',
-      'git push origin gh-pages --force',
+      'git push origin master --force',
       'git clean -x -d --force --exclude=node_modules',
-      'git checkout master'
+      'git checkout master-local'
     ].join(' && ')
   }
 }
