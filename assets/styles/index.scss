@@ -40,7 +40,7 @@ html {
 }
 
 .banner-01 {
-  background-image: url('../../images/thibodeau_green_tile.jpg');
+  background-image: url('../../public/images/thibodeau_green_tile.jpg');
   height: 200px;
   position: relative;
   top: 34px;
@@ -50,17 +50,17 @@ html {
 .banner-02,
 .banner-03,
 .banner-04 {
-  background-image: url('../../images/thibodeau_cool_tile.jpg');
+  background-image: url('../../public/images/thibodeau_cool_tile.jpg');
   height: 200px;
   margin: 4em auto;
   top: 0;
 
   &.banner-03 {
-    background-image: url('../../images/thibodeau_sunny_tile.jpg');
+    background-image: url('../../public/images/thibodeau_sunny_tile.jpg');
   }
 
   &.banner-04 {
-    background-image: url('../../images/thibodeau_green_tile.jpg');
+    background-image: url('../../public/images/thibodeau_green_tile.jpg');
   }
 }
 
