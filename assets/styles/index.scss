@@ -1,7 +1,7 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round|Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 $five-percent-gray: #f2f2f2;
 $six-percent-gray: #f0f0f0;
@@ -149,8 +149,13 @@ ABOUT
 }
 
 /******************
-PARAGRAPH
+SECTION AREA & PARAGRAPH
 ******************/
+
+.section-area {
+  margin: -40px auto 0;
+  padding-top: 50px;
+}
 
 p {
   color: $white;
@@ -174,11 +179,6 @@ p {
 /******************
 PROJECTS
 ******************/
-
-.project-area {
-  margin: -40px auto 0;
-  padding-top: 50px;
-}
 
 .projects {
   display: flex;
@@ -316,6 +316,10 @@ BREAKPOINT 620px
     width: 90%;
   }
 
+  p {
+    letter-spacing: 0;
+  }
+
   .projects {
     flex-direction: column;
   }
@@ -373,6 +377,7 @@ BREAKPOINT 500px
   p {
     font-size: 1rem;
     font-weight: 300;
+    letter-spacing: 0;
   }
 
   .contact-box {
