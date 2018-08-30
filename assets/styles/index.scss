@@ -265,16 +265,22 @@ CONTACT
   padding: 1em;
 }
 
-// .contact-icon {
-// margin: 0 1em;
-// }
+.contact-index {
+  margin: 0;
+}
+
+.contact-icon {
+  display: block;
+  margin: 0 1em;
+}
 
 .contact-text {
   background-color: transparent;
   color: $seventy-five-percent-gray;
+  display: block;
   font-size: 1em;
   font-weight: 500;
-  justify-content: space-around;
+  justify-content: center;
   letter-spacing: 0.5vw;
   margin: 0 auto;
   // max-width: 60%;
@@ -366,6 +372,10 @@ BREAKPOINT 620px
 
   .link-button {
     width: 45%;
+  }
+
+  .contact-box {
+    width: 85%;
   }
 
   // .contact-icon {
