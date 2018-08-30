@@ -50,7 +50,7 @@ nav {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
-  margin-bottom: -0.2rem;
+  // margin-bottom: 2rem;
   max-height: 50px;
   padding: 5px 1vw;
   position: fixed;
@@ -412,13 +412,21 @@ BREAKPOINT 620px
   // .projects {
   //   flex-direction: column;
   // }
+  .project-container {
+    margin: 10px auto;
+  }
+
+  .project-img,
+  .project-info {
+    margin: 10px auto;
+  }
 
   .project-link {
     margin: 0 0 1em;
   }
 
   .link-button {
-    width: 45%;
+    width: 55%;
   }
 
   .contact-box {
