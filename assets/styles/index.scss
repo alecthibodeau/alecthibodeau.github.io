@@ -108,6 +108,15 @@ main {
   margin: 0 auto;
 }
 
+a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
 /******************
 ABOUT
 ******************/
@@ -244,8 +253,23 @@ CONTACT
   padding: 1em;
 }
 
-.contact-icon {
-  margin: 1em;
+// .contact-icon {
+// margin: 0 1em;
+// }
+
+.contact-text {
+  background-color: transparent;
+  color: $seventy-five-percent-gray;
+  font-size: 1em;
+  font-weight: 600;
+  justify-content: space-around;
+  letter-spacing: 0.5vw;
+  margin: 0 auto;
+  // max-width: 60%;
+  // min-height: 120px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 footer {
@@ -332,9 +356,9 @@ BREAKPOINT 620px
     width: 45%;
   }
 
-  .contact-icon {
-    margin: 1em auto;
-  }
+  // .contact-icon {
+  //   // margin: 1em auto;
+  // }
 }
 
 /******************
