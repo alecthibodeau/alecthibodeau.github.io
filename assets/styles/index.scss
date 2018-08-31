@@ -1,10 +1,11 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
-@import url('https://fonts.googleapis.com/css?family=Varela+Round|Noto+Sans:400,400i,700,700i|Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Noto+Sans:400,400i,700,700i|Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 $five-percent-gray: #f2f2f2;
 $six-percent-gray: #f0f0f0;
+$ten-percent-gray: #e5e5e5;
 $thirty-percent-gray: #b3b3b3;
 $fifty-percent-gray: #7f7f7f;
 $seventy-five-percent-gray: #636466;
@@ -43,6 +44,11 @@ html {
 /******************
 HEADER & BANNERS
 ******************/
+
+header {
+  margin: 0 auto;
+  padding: 0;
+}
 
 nav {
   background-color: $rainbow-yellow;
@@ -180,6 +186,7 @@ SECTION AREA & PARAGRAPH
 
 p {
   color: $white;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
   // letter-spacing: 0.2vw;
   margin: 0 auto;
@@ -188,6 +195,7 @@ p {
   width: 75%;
 
   &.p-heading {
+    font-family: 'Alegreya Sans', sans-serif;
     font-size: 2em;
     font-weight: 400;
     letter-spacing: 0.5vw;
@@ -212,6 +220,7 @@ PROJECTS
 
 .project-container {
   display: inline;
+  margin: 10px auto;
 }
 
 .project-info {
@@ -238,7 +247,7 @@ PROJECTS
       color: $rainbow-blue;
       // font-family: 'Noto Sans', sans-serif;
       font-size: 1.3125em;
-      font-weight: 400;
+      font-weight: 500;
       letter-spacing: 0.5vw;
       margin: 10px auto;
       text-align: center;
@@ -246,9 +255,11 @@ PROJECTS
     }
 
     & .project-info-text {
-      // font-family: 'Noto Sans', sans-serif;
-      font-size: 1.25rem;
+      color: $ten-percent-gray;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
       font-weight: 400;
+      line-height: 2rem;
       margin: 8px auto;
       text-align: left;
     }
@@ -328,6 +339,7 @@ CONTACT
   background-color: transparent;
   color: $seventy-five-percent-gray;
   display: block;
+  // font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: 500;
   // letter-spacing: 0.5vw;
@@ -343,10 +355,11 @@ footer {
 
 .credit {
   color: $five-percent-gray;
-  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7rem;
   height: 80px;
-  letter-spacing: 0.3vw;
-  line-height: 50px;
+  letter-spacing: 0.25vw;
+  line-height: 1.25rem;
   padding: 80px 0 50px;
   text-transform: uppercase;
 }
@@ -412,9 +425,6 @@ BREAKPOINT 620px
   // .projects {
   //   flex-direction: column;
   // }
-  .project-container {
-    margin: 10px auto;
-  }
 
   .project-img,
   .project-info {
