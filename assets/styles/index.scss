@@ -56,7 +56,6 @@ nav {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
-  // margin-bottom: 2rem;
   max-height: 50px;
   padding: 5px 1vw;
   position: fixed;
@@ -188,9 +187,7 @@ p {
   color: $white;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
-  // letter-spacing: 0.2vw;
   margin: 0 auto;
-  // pointer-events: none;
   text-align: left;
   width: 75%;
 
@@ -238,14 +235,13 @@ PROJECTS
   z-index: 3;
 
   &:hover {
-    color: $white;
     background-color: $black-screen;
     border: 1px solid $thirty-percent-gray;
+    color: $white;
     display: block;
 
     & .project-info-heading {
       color: $rainbow-blue;
-      // font-family: 'Noto Sans', sans-serif;
       font-size: 1.3125em;
       font-weight: 500;
       letter-spacing: 0.5vw;
@@ -278,7 +274,7 @@ PROJECTS
   border: 1px solid;
   border-radius: 1em;
   height: 400px;
-  margin: 10px 20px; // 0.5em 2vw 0;
+  margin: 10px 20px;
   max-width: 100%;
   width: 240px;
 }
@@ -314,7 +310,6 @@ CONTACT
 ******************/
 
 .contact-box {
-  // align-items: flex-end;
   background-color: $cloud-white;
   border-radius: 1em;
   display: flex;
@@ -339,10 +334,8 @@ CONTACT
   background-color: transparent;
   color: $seventy-five-percent-gray;
   display: block;
-  // font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: 500;
-  // letter-spacing: 0.5vw;
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
@@ -422,10 +415,6 @@ BREAKPOINT 620px
     letter-spacing: 0;
   }
 
-  // .projects {
-  //   flex-direction: column;
-  // }
-
   .project-img,
   .project-info {
     margin: 10px auto;
@@ -435,17 +424,9 @@ BREAKPOINT 620px
     margin: 0 0 1em;
   }
 
-  .link-button {
-    width: 55%;
-  }
-
   .contact-box {
     justify-content: center;
   }
-
-  // .contact-icon {
-  //   // margin: 1em auto;
-  // }
 }
 
 /******************
