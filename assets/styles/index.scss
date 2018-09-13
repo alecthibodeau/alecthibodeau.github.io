@@ -132,7 +132,7 @@ a {
 }
 
 /************************************
-SECTION AREA & PARAGRAPH
+SECTION AREAS & PARAGRAPHS
 ************************************/
 
 .section-area {
@@ -146,7 +146,11 @@ p {
   font-size: 1.5em;
   margin: 0 auto;
   text-align: left;
-  width: 75%;
+  width: 60%;
+
+  &.projects-intro-text {
+    margin: 0 auto 1rem;
+  }
 }
 
 .p-heading,
@@ -170,6 +174,7 @@ p {
 ABOUT
 ************************************/
 
+// TITLE…
 .title {
   margin: 10px auto 30px;
   padding-top: 10px;
@@ -198,12 +203,17 @@ ABOUT
   text-transform: uppercase;
 }
 
-.greeting {
-  margin: 0 auto;
-  width: 60%;
+.headshot-img {
+  border: 4px solid $thirty-percent-gray;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
 }
 
-.p-link {
+/************************************
+TEXT LINKS
+************************************/
+
+.text-link {
   color: $rainbow-yellow;
 
   &:link,
@@ -214,29 +224,15 @@ ABOUT
   }
 }
 
-.headshot-img {
-  border: 4px solid $thirty-percent-gray;
-  border-radius: 50%;
-  margin-bottom: 0.5em;
-}
-
 /************************************
 LANGUAGES, TECHNOLOGIES & TECHNIQUES
 ************************************/
 
-.languages-technologies-techniques {
-  margin: 0 auto;
-  width: 60%;
-}
+// No specific styling as of now.
 
 /************************************
 PROJECTS
 ************************************/
-
-.projects-intro-text {
-  margin: 0 auto 1rem;
-  width: 60%;
-}
 
 .projects {
   display: flex;
@@ -391,7 +387,6 @@ footer {
   max-width: 60%;
   padding: 40px 0 0;
   text-align: left;
-  // text-transform: uppercase;
 
   & .ital {
     font-style: italic;
@@ -467,16 +462,9 @@ BREAKPOINT 620px
     display: none;
   }
 
-  .greeting {
-    width: 90%;
-  }
-
   p {
     letter-spacing: 0;
-  }
-
-  .languages-technologies-techniques {
-    width: 90%;
+    width: 75%;
   }
 
   .project-img,
@@ -540,7 +528,7 @@ BREAKPOINT 500px
   p {
     font-size: 1rem;
     font-weight: 300;
-    letter-spacing: 0;
+    width: 85%;
   }
 
   .contact-box {
