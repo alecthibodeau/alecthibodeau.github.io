@@ -153,7 +153,9 @@ ABOUT
 
 .web-developer {
   color: $rainbow-yellow;
+  display: flex;
   font-size: 2em;
+  justify-content: center;
   letter-spacing: 2vw;
   padding: 0 0 30px;
   text-align: center;
@@ -224,8 +226,8 @@ PROJECTS
 ************************************/
 
 .projects-intro-text {
-  text-align: center;
   margin: 0 auto 1rem;
+  width: 60%;
 }
 
 .projects {
@@ -443,16 +445,26 @@ BREAKPOINT 620px
     margin: 0 20px;
   }
 
+  .web-developer {
+    flex-direction: column;
+    margin: 0 2rem;
+    padding: 0 0 10px;
+  }
+
+  .title-span {
+    display: block;
+  }
+
+  .pipe {
+    display: none;
+  }
+
   .greeting {
     width: 90%;
   }
 
   p {
     letter-spacing: 0;
-  }
-
-  .web-developer {
-    padding: 0 1rem;
   }
 
   .languages-technologies-techniques {
@@ -528,7 +540,7 @@ BREAKPOINT 500px
 
   .websites,
   .credit {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     line-height: 1.25rem;
   }
 }
