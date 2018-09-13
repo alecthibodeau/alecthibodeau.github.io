@@ -97,7 +97,7 @@ nav {
   background-color: $black;
   background-image: url('../../public/images/thibodeau_cool_tile.jpg');
   height: 200px;
-  margin: 4em auto;
+  margin: 3em auto 0;
   top: 0;
 
   &.banner-03 {
@@ -132,13 +132,49 @@ a {
 }
 
 /************************************
+SECTION AREA & PARAGRAPH
+************************************/
+
+.section-area {
+  margin: -40px auto 0;
+  padding-top: 50px;
+}
+
+p {
+  color: $white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  margin: 0 auto;
+  text-align: left;
+  width: 75%;
+}
+
+.p-heading,
+.about-heading {
+  color: $white;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 0.5vw;
+  margin: 2rem auto 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 75%;
+
+  &.about-heading {
+    margin: 0.75rem auto;
+  }
+}
+
+/************************************
 ABOUT
 ************************************/
 
 .title {
-  margin: 5px auto;
+  margin: 10px auto 30px;
   padding-top: 10px;
   pointer-events: none;
+  width: 95%;
 }
 
 .alec-thibodeau {
@@ -157,7 +193,7 @@ ABOUT
   font-size: 2em;
   justify-content: center;
   letter-spacing: 2vw;
-  padding: 0 0 30px;
+  // padding: 0 0 30px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -191,34 +227,6 @@ LANGUAGES, TECHNOLOGIES & TECHNIQUES
 .languages-technologies-techniques {
   margin: 0 auto;
   width: 60%;
-}
-
-/************************************
-SECTION AREA & PARAGRAPH
-************************************/
-
-.section-area {
-  margin: -40px auto 0;
-  padding-top: 50px;
-}
-
-p {
-  color: $white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
-  margin: 0 auto;
-  text-align: left;
-  width: 75%;
-
-  &.p-heading {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 2em;
-    font-weight: 400;
-    letter-spacing: 0.5vw;
-    margin: 10px auto 10px;
-    text-align: center;
-    text-transform: uppercase;
-  }
 }
 
 /************************************
@@ -511,16 +519,22 @@ BREAKPOINT 500px
   .banner-03,
   .banner-04 {
     height: 100px;
-    margin: 2em auto;
+    margin: 2em auto 0;
+  }
+
+  .title {
+    margin: 0 auto;
   }
 
   .alec-thibodeau {
     font-size: 3em;
+    font-weight: 200;
     line-height: 1.25em;
   }
 
   .web-developer {
     font-size: 1.5em;
+    font-weight: 200;
   }
 
   p {
