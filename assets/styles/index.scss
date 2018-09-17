@@ -494,6 +494,10 @@ BREAKPOINT 500px
 ************************************/
 
 @media only screen and (max-width: 500px) {
+  main {
+    top: -17px;
+  }
+
   .tree {
     height: 57%;
     width: 57%;
@@ -525,13 +529,13 @@ BREAKPOINT 500px
 
   .alec-thibodeau {
     font-size: 3em;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1em;
   }
 
   .web-developer {
     font-size: 1.5em;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1.25em;
     padding: 0 0 20px;
   }
