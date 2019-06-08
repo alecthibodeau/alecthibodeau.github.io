@@ -40,8 +40,8 @@ html,
 body {
   background-color: $blue-muted;
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 300;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -69,18 +69,19 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 10;
+
+  a {
+    background-color: transparent;
+    border: 0;
+    color: $blue-muted;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.3vw;
+    margin: 0 0.7em;
+    text-transform: uppercase;
+  }
 }
 
-.nav-button {
-  background-color: transparent;
-  border: 0;
-  color: $blue-muted;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 1em;
-  letter-spacing: 0.3vw;
-  margin: 0 0.7em;
-  text-transform: uppercase;
-}
 
 /************************************
 MAIN
@@ -148,28 +149,26 @@ TITLE & HEADSHOT
   padding: 15px 0 0;
   pointer-events: none;
   width: 95%;
-}
 
-.alec-thibodeau {
-  color: $white;
-  font-size: 5em;
-  letter-spacing: 2vw;
-  line-height: 1.1em;
-  // padding: 30px 0 0;
-  margin: 0 0 0.1em;
-  text-align: center;
-  text-transform: uppercase;
-}
+  .alec-thibodeau {
+    color: $white;
+    font-size: 4em;
+    letter-spacing: 2vw;
+    line-height: 1.1em;
+    margin: 0 0 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-.web-developer {
-  color: $rainbow-yellow;
-  display: flex;
-  font-size: 2em;
-  justify-content: center;
-  letter-spacing: 2vw;
-  // padding: 0 0 30px;
-  text-align: center;
-  text-transform: uppercase;
+  .web-developer {
+    color: $rainbow-yellow;
+    display: flex;
+    font-size: 1.75em;
+    justify-content: center;
+    letter-spacing: 1.75vw;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 .headshot-img {
@@ -272,11 +271,11 @@ PROJECTS
 
   &:hover {
     background-color: $black-screen;
-    border: 1px solid $thirty-percent-gray;
+    border: 1px solid $white;
     color: $white;
     display: block;
 
-    & .project-info-heading {
+    .project-info-heading {
       color: $rainbow-blue;
       font-size: 1.25rem;
       font-weight: 500;
@@ -287,8 +286,8 @@ PROJECTS
       text-transform: uppercase;
     }
 
-    & .project-info-text {
-      color: $ten-percent-gray;
+    .project-info-text {
+      color: $white;
       font-family: 'Roboto', sans-serif;
       font-size: 1rem;
       font-weight: 400;
@@ -297,11 +296,11 @@ PROJECTS
       text-align: left;
     }
 
-    & .front-end {
+    .front-end {
       color: $rainbow-orange;
     }
 
-    & .back-end {
+    .back-end {
       color: $rainbow-green;
     }
   }
@@ -318,36 +317,42 @@ PROJECTS
 
 .project-link {
   margin: 1em 0 0;
-}
 
-.link-button {
-  background-color: transparent;
-  border: 1px solid $thirty-percent-gray;
-  border-radius: 0.5em;
-  display: block;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 0.8em;
-  letter-spacing: 0.3vw;
-  margin: 0.75em auto;
-  padding: 0.3em 0.75em;
-  text-transform: uppercase;
-  width: 70%;
+  a {
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 0.5em;
+    display: block;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 0.3vw;
+    margin: 0.75em auto;
+    padding: 0.3em 0.75em;
+    text-transform: uppercase;
+    width: 70%;
 
-  &:link,
-  &:hover,
-  &:visited,
-  &:active {
-    color: $thirty-percent-gray;
-    text-decoration: none;
+    &:link,
+    &:visited,
+    &:active {
+      color: $white;
+      text-decoration: none;
+    }
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+      text-decoration: none;
+    }
   }
 }
+
 
 /************************************
 CONTACT
 ************************************/
 
 .contact-box {
-  background-color: $cloud-white;
+  background-color: $white;
   border-radius: 1em;
   display: flex;
   flex-direction: row;
@@ -385,7 +390,7 @@ footer {
 
 .websites,
 .credit {
-  color: $thirty-percent-gray;
+  color: $white;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -396,7 +401,7 @@ footer {
   padding: 40px 0 0;
   text-align: left;
 
-  & .ital {
+  .ital {
     font-style: italic;
   }
 
@@ -409,41 +414,35 @@ footer {
 .closing-accent {
   background-color: $black;
   height: 50px;
-}
 
-.highlight-line-01,
-.highlight-line-02,
-.highlight-line-03,
-.highlight-line-04,
-.highlight-line-05,
-.highlight-line-06,
-.highlight-line-07 {
-  background-color: $orange-muted;
-  height: 3px;
-  width: 100%;
-
-  &.highlight-line-02 {
-    background-color: $rainbow-blue;
-  }
-
-  &.highlight-line-03 {
-    background-color: $rainbow-green;
-  }
-
-  &.highlight-line-04 {
-    background-color: $rainbow-yellow;
-  }
-
-  &.highlight-line-05 {
-    background-color: $rainbow-green;
-  }
-
-  &.highlight-line-06 {
-    background-color: $rainbow-blue;
-  }
-
-  &.highlight-line-07 {
+  div {
     background-color: $orange-muted;
+    height: 3px;
+    width: 100%;
+
+    &:nth-child(2) {
+      background-color: $rainbow-blue;
+    }
+
+    &:nth-child(3) {
+      background-color: $rainbow-green;
+    }
+
+    &:nth-child(4) {
+      background-color: $rainbow-yellow;
+    }
+
+    &:nth-child(5) {
+      background-color: $rainbow-green;
+    }
+
+    &:nth-child(6) {
+      background-color: $rainbow-blue;
+    }
+
+    &:nth-child(7) {
+      background-color: $orange-muted;
+    }
   }
 }
 
@@ -525,20 +524,19 @@ BREAKPOINT 500px
   .title {
     margin: 0 auto;
     padding: 12px 0 0;
+
+    .alec-thibodeau {
+      font-size: 3em;
+      line-height: 1em;
+    }
+
+    .web-developer {
+      font-size: 1.5em;
+      line-height: 1.25em;
+      padding: 0 0 20px;
+    }
   }
 
-  .alec-thibodeau {
-    font-size: 3em;
-    font-weight: 300;
-    line-height: 1em;
-  }
-
-  .web-developer {
-    font-size: 1.5em;
-    font-weight: 300;
-    line-height: 1.25em;
-    padding: 0 0 20px;
-  }
 
   p {
     font-size: 1rem;
