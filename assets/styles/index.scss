@@ -258,6 +258,7 @@ PROJECTS
         color: transparent;
         display: hidden;
         height: 429px;
+        margin: 0 auto;
         max-width: 100%;
         padding: 1rem 2rem 3rem 2.75rem;
         position: absolute;
@@ -371,7 +372,7 @@ CONTACT & ENDNOTES
 
   a {
     display: inline-block;
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 100%;
 
     .contact-icon {
@@ -480,11 +481,14 @@ BREAKPOINT 620px
   }
 
   .contact-box {
+    align-content: center;
     flex-direction: column;
-    width: 40%;
+    max-width: 240px;
+    padding: 2rem 0;
+    width: 240px;
 
     a {
-      margin: 10px auto;
+      margin: 1rem auto;
     }
   }
 }
