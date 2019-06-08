@@ -246,7 +246,7 @@ PROJECTS
 
   .project-container {
     display: inline;
-    margin: 10px 20px;
+    margin: 10px 20px 20px;
 
     a {
       display: inline-block;
@@ -267,7 +267,7 @@ PROJECTS
 
         &:hover {
           background-color: $black-screen;
-          border: 1px solid $white;
+          border: 1px solid $rainbow-yellow;
           color: $white;
           display: block;
 
@@ -316,7 +316,6 @@ PROJECTS
 
       a {
         background-color: transparent;
-        border: 1px solid $white;
         border-radius: 0.5em;
         display: block;
         font-family: 'Varela Round', sans-serif;
@@ -326,7 +325,19 @@ PROJECTS
         padding: 0.3em 0.75em;
         text-transform: uppercase;
         width: 70%;
-    
+
+        &:nth-child(1) {
+          border: 1px solid $rainbow-blue;
+        }
+  
+        &:nth-child(2) {
+          border: 1px solid $rainbow-orange;
+        }
+  
+        &:nth-child(3) {
+          border: 1px solid $rainbow-green;
+        }
+
         &:link,
         &:visited,
         &:active {
@@ -366,23 +377,16 @@ CONTACT & ENDNOTES
     .contact-icon {
       display: block;
       margin: 0 auto;
-      
-      &:hover {
-        // background: url(https://alect.me/public/images/icon_solid_github.svg) no-repeat;
-        // background: url(../../public/images/icon_solid_github.svg) no-repeat;
-        // box-sizing: border-box;
-        // height: 81px;
-        // padding-left: 81px;
-        // width: 81px;
-      }
     }
 
     .contact-text {
       background-color: transparent;
       color: $rainbow-yellow;
       display: block;
-      font-size: 1.25em;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1em;
       font-weight: 500;
+      letter-spacing: 0.125em;
       margin: 0 auto;
       text-align: center;
       text-decoration: none;
@@ -474,15 +478,6 @@ BREAKPOINT 620px
     letter-spacing: 0;
     width: 75%;
   }
-
-  .projects {
-    .project-container {
-
-      .project-link {
-        margin: 0 0 1em;
-      }
-    }
-  }
 }
 
 /************************************
@@ -544,7 +539,7 @@ BREAKPOINT 500px
     width: 60%;
 
     a {
-      margin: 5px auto;
+      margin: 10px auto;
     }
   }
 
