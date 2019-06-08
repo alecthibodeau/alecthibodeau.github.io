@@ -40,8 +40,8 @@ html,
 body {
   background-color: $blue-muted;
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 300;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -50,43 +50,48 @@ body {
 }
 
 /************************************
-HEADER & BANNERS
+HEADER
 ************************************/
 
 header {
   margin: 0 auto;
   padding: 0;
-}
 
-nav {
-  background-color: $rainbow-yellow;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  max-height: 50px;
-  padding: 5px 1vw;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-}
+  nav {
+    background-color: $rainbow-yellow;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    max-height: 50px;
+    padding: 5px 1vw;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 
-.nav-button {
-  background-color: transparent;
-  border: 0;
-  color: $blue-muted;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 1em;
-  letter-spacing: 0.3vw;
-  margin: 0 0.7em;
-  text-transform: uppercase;
+    a {
+      background-color: transparent;
+      border: 0;
+      color: $blue-muted;
+      font-family: 'Varela Round', sans-serif;
+      font-size: 1em;
+      letter-spacing: 0.3vw;
+      margin: 0 0.7em;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $rainbow-red;
+      }
+    }
+  }
 }
 
 /************************************
-MAIN
+MAIN, FOOTER
 ************************************/
 
-main {
+main,
+footer {
   background-color: $black;
   margin: 0 auto;
   position: relative;
@@ -111,8 +116,13 @@ BANNERS
   background-image: url('../../public/images/thibodeau_green_tile.jpg');
   height: 250px;
   position: relative;
-  // top: 33px;
   z-index: 0;
+
+  .tree {
+    margin: 15px;
+    position: relative;
+    top: 50px;
+  }
 }
 
 .banner-02,
@@ -121,7 +131,7 @@ BANNERS
   background-color: $black;
   background-image: url('../../public/images/thibodeau_cool_tile.jpg');
   height: 200px;
-  margin: 3em auto 0;
+  margin: 0 auto;
   top: 0;
 
   &.banner-03 {
@@ -133,43 +143,35 @@ BANNERS
   }
 }
 
-.tree {
-  margin: 15px;
-  position: relative;
-  top: 50px;
-}
-
 /************************************
 TITLE & HEADSHOT
 ************************************/
 
-.title {
+.name-and-title {
   margin: 10px auto 30px;
   padding: 15px 0 0;
   pointer-events: none;
   width: 95%;
-}
 
-.alec-thibodeau {
-  color: $white;
-  font-size: 5em;
-  letter-spacing: 2vw;
-  line-height: 1.1em;
-  // padding: 30px 0 0;
-  margin: 0 0 0.1em;
-  text-align: center;
-  text-transform: uppercase;
-}
+  .alec-thibodeau {
+    color: $white;
+    font-size: 4em;
+    letter-spacing: 2vw;
+    line-height: 1.1em;
+    margin: 0 0 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-.web-developer {
-  color: $rainbow-yellow;
-  display: flex;
-  font-size: 2em;
-  justify-content: center;
-  letter-spacing: 2vw;
-  // padding: 0 0 30px;
-  text-align: center;
-  text-transform: uppercase;
+  .title-parts {
+    color: $rainbow-yellow;
+    display: flex;
+    font-size: 1.75em;
+    justify-content: center;
+    letter-spacing: 1.75vw;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 .headshot-img {
@@ -182,21 +184,14 @@ TITLE & HEADSHOT
 SECTION AREAS & PARAGRAPHS
 ************************************/
 
-.section-area {
-  margin: -30px auto 0;
-  padding-top: 50px;
-}
+.text-link {
+  color: $rainbow-yellow;
 
-p {
-  color: $white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
-  margin: 0 auto;
-  text-align: left;
-  width: 60%;
-
-  &.projects-intro-text {
-    margin: 0 auto 1rem;
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $rainbow-yellow;
   }
 }
 
@@ -207,7 +202,7 @@ p {
   font-size: 2em;
   font-weight: 300;
   letter-spacing: 0.5vw;
-  margin: 2rem auto 1rem;
+  margin: 3rem auto 1rem;
   text-align: center;
   text-transform: uppercase;
   width: 75%;
@@ -217,18 +212,16 @@ p {
   }
 }
 
-/************************************
-TEXT LINKS
-************************************/
+p {
+  color: $white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  margin: 0 auto 2.5rem;
+  text-align: left;
+  width: 60%;
 
-.text-link {
-  color: $rainbow-yellow;
-
-  &:link,
-  &:visited,
-  &:hover,
-  &:active {
-    color: $rainbow-yellow;
+  &.projects-intro-text {
+    margin: 0 auto 1rem;
   }
 }
 
@@ -246,146 +239,163 @@ PROJECTS
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0 auto;
+  padding: 0 0 2rem 0;
   width: 80%;
-}
 
-.project-container {
-  display: inline;
-  margin: 10px auto;
-}
+  .project-container {
+    display: inline;
+    margin: 10px 20px 20px;
 
-.project-info {
-  border: 0;
-  border-radius: 1em;
-  color: transparent;
-  display: hidden;
-  height: 429px;
-  margin: 10px 20px;
-  max-width: 100%;
-  padding: 1rem 2rem 3rem 2.75rem;
-  position: absolute;
-  user-select: none;
-  width: 240px;
-  z-index: 3;
+    a {
+      display: inline-block;
+      max-height: 100%;
 
-  &:hover {
-    background-color: $black-screen;
-    border: 1px solid $thirty-percent-gray;
-    color: $white;
-    display: block;
+      .project-info {
+        border: 0;
+        border-radius: 1em;
+        color: transparent;
+        display: hidden;
+        height: 429px;
+        max-width: 100%;
+        padding: 1rem 2rem 3rem 2.75rem;
+        position: absolute;
+        user-select: none;
+        width: 240px;
+        z-index: 3;
 
-    & .project-info-heading {
-      color: $rainbow-blue;
-      font-size: 1.25rem;
-      font-weight: 500;
-      letter-spacing: 0.5vw;
-      margin: 0 auto;
-      padding: 0;
-      text-align: center;
-      text-transform: uppercase;
+        &:hover {
+          background-color: $black-screen;
+          border: 1px solid $rainbow-yellow;
+          color: $white;
+          display: block;
+
+          .project-info-heading {
+            color: $rainbow-blue;
+            font-size: 1.125rem;
+            font-weight: 500;
+            letter-spacing: 0.5vw;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+            text-transform: uppercase;
+          }
+
+          .project-info-text {
+            color: $white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.75rem;
+            margin: 8px auto;
+            text-align: left;
+
+            .front-end {
+              color: $rainbow-orange;
+            }
+
+            .back-end {
+              color: $rainbow-green;
+            }
+          }
+        }
+      }
+
+      .project-img {
+        border: 1px solid $black;
+        border-radius: 1em;
+        height: 429px;
+        max-width: 100%;
+        width: 240px;
+      }
     }
 
-    & .project-info-text {
-      color: $ten-percent-gray;
-      font-family: 'Roboto', sans-serif;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.75rem;
-      margin: 8px auto;
-      text-align: left;
+    .project-link {
+      margin: 1em 0 0;
+
+      a {
+        background-color: transparent;
+        border-radius: 0.5em;
+        display: block;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 0.8em;
+        letter-spacing: 0.3vw;
+        margin: 0.75em auto;
+        padding: 0.3em 0.75em;
+        text-transform: uppercase;
+        width: 70%;
+
+        &:nth-child(1) {
+          border: 1px solid $rainbow-blue;
+        }
+  
+        &:nth-child(2) {
+          border: 1px solid $rainbow-orange;
+        }
+  
+        &:nth-child(3) {
+          border: 1px solid $rainbow-green;
+        }
+
+        &:link,
+        &:visited,
+        &:active {
+          color: $white;
+        }
+    
+        &:hover {
+          background-color: $white;
+          color: $black;
+        }
+      }
     }
-
-    & .front-end {
-      color: $rainbow-orange;
-    }
-
-    & .back-end {
-      color: $rainbow-green;
-    }
-  }
-}
-
-.project-img {
-  border: 1px solid;
-  border-radius: 1em;
-  height: 429px;
-  margin: 10px 20px;
-  max-width: 100%;
-  width: 240px;
-}
-
-.project-link {
-  margin: 1em 0 0;
-}
-
-.link-button {
-  background-color: transparent;
-  border: 1px solid $thirty-percent-gray;
-  border-radius: 0.5em;
-  display: block;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 0.8em;
-  letter-spacing: 0.3vw;
-  margin: 0.75em auto;
-  padding: 0.3em 0.75em;
-  text-transform: uppercase;
-  width: 70%;
-
-  &:link,
-  &:hover,
-  &:visited,
-  &:active {
-    color: $thirty-percent-gray;
-    text-decoration: none;
   }
 }
 
 /************************************
-CONTACT
+CONTACT & ENDNOTES
 ************************************/
 
 .contact-box {
-  background-color: $cloud-white;
+  background-color: $black;
+  border: 1px solid $rainbow-red;
   border-radius: 1em;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 1.5em auto 0;
   min-height: 120px;
   padding: 1rem 2rem;
   width: 85%;
+
+  a {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+
+    .contact-icon {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .contact-text {
+      background-color: transparent;
+      color: $rainbow-yellow;
+      display: block;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1em;
+      font-weight: 500;
+      letter-spacing: 0.125em;
+      margin: 0 auto;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
 }
 
-.contact-index {
-  margin: 0 auto;
-}
-
-.contact-icon {
-  display: block;
-  margin: 0 auto;
-}
-
-.contact-text {
-  background-color: transparent;
-  color: $seventy-five-percent-gray;
-  display: block;
-  font-size: 1em;
-  font-weight: 500;
-  margin: 0 auto;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-footer {
-  background-color: $black;
-}
-
-.websites,
-.credit {
-  color: $thirty-percent-gray;
+.endnotes {
+  color: $white;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -396,11 +406,11 @@ footer {
   padding: 40px 0 0;
   text-align: left;
 
-  & .ital {
+  .ital {
     font-style: italic;
   }
 
-  &.credit {
+  .credit {
     padding: 20px 0;
     text-align: center;
   }
@@ -409,41 +419,35 @@ footer {
 .closing-accent {
   background-color: $black;
   height: 50px;
-}
 
-.highlight-line-01,
-.highlight-line-02,
-.highlight-line-03,
-.highlight-line-04,
-.highlight-line-05,
-.highlight-line-06,
-.highlight-line-07 {
-  background-color: $orange-muted;
-  height: 3px;
-  width: 100%;
-
-  &.highlight-line-02 {
-    background-color: $rainbow-blue;
-  }
-
-  &.highlight-line-03 {
-    background-color: $rainbow-green;
-  }
-
-  &.highlight-line-04 {
-    background-color: $rainbow-yellow;
-  }
-
-  &.highlight-line-05 {
-    background-color: $rainbow-green;
-  }
-
-  &.highlight-line-06 {
-    background-color: $rainbow-blue;
-  }
-
-  &.highlight-line-07 {
+  div {
     background-color: $orange-muted;
+    height: 3px;
+    width: 100%;
+
+    &:nth-child(2) {
+      background-color: $rainbow-blue;
+    }
+
+    &:nth-child(3) {
+      background-color: $rainbow-green;
+    }
+
+    &:nth-child(4) {
+      background-color: $rainbow-yellow;
+    }
+
+    &:nth-child(5) {
+      background-color: $rainbow-green;
+    }
+
+    &:nth-child(6) {
+      background-color: $rainbow-blue;
+    }
+
+    &:nth-child(7) {
+      background-color: $orange-muted;
+    }
   }
 }
 
@@ -456,36 +460,23 @@ BREAKPOINT 620px
     margin: 0 20px;
   }
 
-  .web-developer {
+  .title-parts {
     flex-direction: column;
     margin: 0 2rem;
     padding: 0;
-  }
 
-  .title-span {
-    display: block;
-  }
+    .web-developer {
+      display: block;
+    }
 
-  .pipe {
-    display: none;
+    .pipe {
+      display: none;
+    }
   }
 
   p {
     letter-spacing: 0;
     width: 75%;
-  }
-
-  .project-img,
-  .project-info {
-    margin: 10px auto;
-  }
-
-  .project-link {
-    margin: 0 0 1em;
-  }
-
-  .contact-box {
-    justify-content: center;
   }
 }
 
@@ -494,69 +485,65 @@ BREAKPOINT 500px
 ************************************/
 
 @media only screen and (max-width: 500px) {
-  main {
+  main,
+  footer {
     top: -17px;
-  }
-
-  .tree {
-    height: 57%;
-    width: 57%;
   }
 
   nav {
     justify-content: center;
-  }
 
-  .nav-button {
-    margin: 0 0.2em;
+    a {
+      margin: 0 0.2em;
+    }
   }
 
   .banner-01 {
     height: 200px;
+
+    .tree {
+      height: 57%;
+      width: 57%;
+    }
   }
 
   .banner-02,
   .banner-03,
   .banner-04 {
     height: 100px;
-    margin: 2em auto 0;
   }
 
-  .title {
+  .name-and-title {
     margin: 0 auto;
     padding: 12px 0 0;
-  }
 
-  .alec-thibodeau {
-    font-size: 3em;
-    font-weight: 300;
-    line-height: 1em;
-  }
+    .alec-thibodeau {
+      font-size: 3em;
+      line-height: 1em;
+    }
 
-  .web-developer {
-    font-size: 1.5em;
-    font-weight: 300;
-    line-height: 1.25em;
-    padding: 0 0 20px;
+    .title-parts {
+      font-size: 1.5em;
+      line-height: 1.25em;
+      padding: 0 0 20px;
+    }
   }
 
   p {
     font-size: 1rem;
-    font-weight: 300;
     width: 85%;
   }
 
   .contact-box {
     flex-direction: column;
     width: 60%;
+
+    a {
+      margin: 10px auto;
+    }
   }
 
-  .contact-index {
-    margin: 5px auto;
-  }
-
-  .websites,
-  .credit {
+  .endnotes {
     font-size: 0.75rem;
     line-height: 1.25rem;
   }
