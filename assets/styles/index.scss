@@ -147,7 +147,7 @@ BANNERS
 TITLE & HEADSHOT
 ************************************/
 
-.title {
+.name-and-title {
   margin: 10px auto 30px;
   padding: 15px 0 0;
   pointer-events: none;
@@ -273,7 +273,7 @@ PROJECTS
 
           .project-info-heading {
             color: $rainbow-blue;
-            font-size: 1.25rem;
+            font-size: 1.125rem;
             font-weight: 500;
             letter-spacing: 0.5vw;
             margin: 0 auto;
@@ -347,38 +347,45 @@ CONTACT & ENDNOTES
 ************************************/
 
 .contact-box {
-  background-color: $white;
+  background-color: $black;
+  border: 1px solid $rainbow-red;
   border-radius: 1em;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 1.5em auto 0;
   min-height: 120px;
   padding: 1rem 2rem;
   width: 85%;
 
-  .contact-index {
+  a {
+    display: inline-block;
     margin: 0 auto;
+    max-width: 100%;
 
     .contact-icon {
       display: block;
       margin: 0 auto;
+      
+      &:hover {
+        // background: url(https://alect.me/public/images/icon_solid_github.svg) no-repeat;
+        // background: url(../../public/images/icon_solid_github.svg) no-repeat;
+        // box-sizing: border-box;
+        // height: 81px;
+        // padding-left: 81px;
+        // width: 81px;
+      }
     }
 
     .contact-text {
       background-color: transparent;
-      color: $seventy-five-percent-gray;
+      color: $rainbow-yellow;
       display: block;
-      font-size: 1em;
+      font-size: 1.25em;
       font-weight: 500;
       margin: 0 auto;
       text-align: center;
       text-decoration: none;
-      text-transform: uppercase;
-
-      &:hover {
-        color: $black;
-      }
     }
   }
 }
@@ -457,7 +464,7 @@ BREAKPOINT 620px
     .web-developer {
       display: block;
     }
-  
+
     .pipe {
       display: none;
     }
@@ -476,10 +483,6 @@ BREAKPOINT 620px
       }
     }
   }
-
-  .contact-box {
-    justify-content: center;
-  }
 }
 
 /************************************
@@ -494,12 +497,12 @@ BREAKPOINT 500px
 
   nav {
     justify-content: center;
-    
+
     a {
       margin: 0 0.2em;
     }
   }
-  
+
   .banner-01 {
     height: 200px;
 
@@ -515,7 +518,7 @@ BREAKPOINT 500px
     height: 100px;
   }
 
-  .title {
+  .name-and-title {
     margin: 0 auto;
     padding: 12px 0 0;
 
@@ -533,7 +536,6 @@ BREAKPOINT 500px
 
   p {
     font-size: 1rem;
-    font-weight: 300;
     width: 85%;
   }
 
@@ -541,7 +543,7 @@ BREAKPOINT 500px
     flex-direction: column;
     width: 60%;
 
-    .contact-index {
+    a {
       margin: 5px auto;
     }
   }
