@@ -117,6 +117,12 @@ BANNERS
   height: 250px;
   position: relative;
   z-index: 0;
+
+  .tree {
+    margin: 15px;
+    position: relative;
+    top: 50px;
+  }
 }
 
 .banner-02,
@@ -135,12 +141,6 @@ BANNERS
   &.banner-04 {
     background-image: url('../../public/images/thibodeau_green_tile.jpg');
   }
-}
-
-.tree {
-  margin: 15px;
-  position: relative;
-  top: 50px;
 }
 
 /************************************
@@ -163,7 +163,7 @@ TITLE & HEADSHOT
     text-transform: uppercase;
   }
 
-  .web-developer {
+  .title-parts {
     color: $rainbow-yellow;
     display: flex;
     font-size: 1.75em;
@@ -239,16 +239,18 @@ PROJECTS
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0 auto;
   padding: 0 0 2rem 0;
   width: 80%;
 
   .project-container {
     display: inline;
-    margin: 10px auto;
+    margin: 10px 20px;
 
     a {
+      display: inline-block;
+      max-height: 100%;
 
       .project-info {
         border: 0;
@@ -256,7 +258,6 @@ PROJECTS
         color: transparent;
         display: hidden;
         height: 429px;
-        margin: 10px 20px;
         max-width: 100%;
         padding: 1rem 2rem 3rem 2.75rem;
         position: absolute;
@@ -300,15 +301,14 @@ PROJECTS
           }
         }
       }
-    }
 
-    .project-img {
-      // border: 1px solid;
-      border-radius: 1em;
-      height: 429px;
-      margin: 10px 20px;
-      max-width: 100%;
-      width: 240px;
+      .project-img {
+        border: 1px solid $black;
+        border-radius: 1em;
+        height: 429px;
+        max-width: 100%;
+        width: 240px;
+      }
     }
 
     .project-link {
@@ -331,13 +331,11 @@ PROJECTS
         &:visited,
         &:active {
           color: $white;
-          // text-decoration: none;
         }
     
         &:hover {
           background-color: $white;
           color: $black;
-          // text-decoration: none;
         }
       }
     }
@@ -451,18 +449,18 @@ BREAKPOINT 620px
     margin: 0 20px;
   }
 
-  .web-developer {
+  .title-parts {
     flex-direction: column;
     margin: 0 2rem;
     padding: 0;
-  }
 
-  .title-span {
-    display: block;
-  }
-
-  .pipe {
-    display: none;
+    .web-developer {
+      display: block;
+    }
+  
+    .pipe {
+      display: none;
+    }
   }
 
   p {
@@ -472,16 +470,6 @@ BREAKPOINT 620px
 
   .projects {
     .project-container {
-      a {
-
-        .project-info {
-          margin: 10px auto;
-        }
-      }
-
-      .project-img {
-        margin: 10px auto;
-      }
 
       .project-link {
         margin: 0 0 1em;
@@ -504,21 +492,21 @@ BREAKPOINT 500px
     top: -17px;
   }
 
-  .tree {
-    height: 57%;
-    width: 57%;
-  }
-
   nav {
     justify-content: center;
-
+    
     a {
       margin: 0 0.2em;
     }
   }
-
+  
   .banner-01 {
     height: 200px;
+
+    .tree {
+      height: 57%;
+      width: 57%;
+    }
   }
 
   .banner-02,
@@ -536,7 +524,7 @@ BREAKPOINT 500px
       line-height: 1em;
     }
 
-    .web-developer {
+    .title-parts {
       font-size: 1.5em;
       line-height: 1.25em;
       padding: 0 0 20px;
