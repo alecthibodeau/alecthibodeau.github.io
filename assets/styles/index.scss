@@ -78,11 +78,13 @@ header {
       letter-spacing: 0.3vw;
       margin: 0 0.7em;
       text-transform: uppercase;
+
+      &:hover {
+        color: $rainbow-red;
+      }
     }
   }
 }
-
-
 
 /************************************
 MAIN, FOOTER
@@ -114,7 +116,6 @@ BANNERS
   background-image: url('../../public/images/thibodeau_green_tile.jpg');
   height: 250px;
   position: relative;
-  // top: 33px;
   z-index: 0;
 }
 
@@ -183,6 +184,17 @@ TITLE & HEADSHOT
 SECTION AREAS & PARAGRAPHS
 ************************************/
 
+.text-link {
+  color: $rainbow-yellow;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $rainbow-yellow;
+  }
+}
+
 .p-heading,
 .about-heading {
   color: $white;
@@ -210,21 +222,6 @@ p {
 
   &.projects-intro-text {
     margin: 0 auto 1rem;
-  }
-}
-
-/************************************
-TEXT LINKS
-************************************/
-
-.text-link {
-  color: $rainbow-yellow;
-
-  &:link,
-  &:visited,
-  &:hover,
-  &:active {
-    color: $rainbow-yellow;
   }
 }
 
@@ -296,7 +293,7 @@ PROJECTS
             .front-end {
               color: $rainbow-orange;
             }
-  
+
             .back-end {
               color: $rainbow-green;
             }
@@ -306,7 +303,7 @@ PROJECTS
     }
 
     .project-img {
-      border: 1px solid;
+      // border: 1px solid;
       border-radius: 1em;
       height: 429px;
       margin: 10px 20px;
@@ -334,16 +331,16 @@ PROJECTS
         &:visited,
         &:active {
           color: $white;
-          text-decoration: none;
+          // text-decoration: none;
         }
     
         &:hover {
           background-color: $white;
           color: $black;
-          text-decoration: none;
+          // text-decoration: none;
         }
       }
-    }    
+    }
   }
 }
 
@@ -380,6 +377,10 @@ CONTACT & ENDNOTES
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
+
+      &:hover {
+        color: $black;
+      }
     }
   }
 }
