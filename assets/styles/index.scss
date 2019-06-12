@@ -267,7 +267,7 @@ PROJECTS
 
         &:hover {
           background-color: $black-screen;
-          border: 1px solid $rainbow-yellow;
+          border: 1px solid $rainbow-blue;
           color: $white;
           display: block;
 
@@ -547,9 +547,16 @@ BREAKPOINT 500px
   }
 
   .projects {
-    
+
     .project-container {
       margin: 10px auto 20px;
+
+      .project-link {
+
+        a {
+          width: 95%;
+        }
+      }
     }
   }
 
