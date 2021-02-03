@@ -155,7 +155,7 @@ TITLE & HEADSHOT
 
   .alec-thibodeau {
     color: $white;
-    font-size: 4em;
+    font-size: 3.75em;
     letter-spacing: 2vw;
     line-height: 1.1em;
     margin: 0 0 0.1em;
@@ -166,7 +166,7 @@ TITLE & HEADSHOT
   .title-parts {
     color: $rainbow-yellow;
     display: flex;
-    font-size: 1.75em;
+    font-size: 1.625em;
     justify-content: center;
     letter-spacing: 1.75vw;
     text-align: center;
@@ -452,25 +452,32 @@ CONTACT & ENDNOTES
 }
 
 /************************************
-BREAKPOINT 620px
+BREAKPOINTS
 ************************************/
 
-@media only screen and (max-width: 620px) {
-  .alec-thibodeau {
-    margin: 0 20px;
-  }
+/* Breakpoint 768px */
 
-  .title-parts {
-    flex-direction: column;
-    margin: 0 2rem;
-    padding: 0;
+@media only screen and (max-width: 768px) {
 
-    .web-developer {
-      display: block;
+  .name-and-title {
+
+    .alec-thibodeau {
+      margin: 5px;
+      font-size: 3.25em;
     }
 
-    .pipe {
-      display: none;
+    .title-parts {
+      flex-direction: column;
+      margin: 0 2rem;
+      padding: 0;
+
+      .developer-title {
+        display: block;
+      }
+
+      .pipe {
+        display: none;
+      }
     }
   }
 
@@ -492,11 +499,10 @@ BREAKPOINT 620px
   }
 }
 
-/************************************
-BREAKPOINT 500px
-************************************/
+/* Breakpoint 576px */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
+
   main,
   footer {
     top: -17px;
@@ -530,14 +536,25 @@ BREAKPOINT 500px
     padding: 12px 0 0;
 
     .alec-thibodeau {
-      font-size: 3em;
+      font-size: 1.75em;
       line-height: 1em;
     }
 
     .title-parts {
-      font-size: 1.5em;
+      margin: 0;
+      padding: 0 0 15px;
+      font-size: 1.25em;
       line-height: 1.25em;
-      padding: 0 0 20px;
+    }
+  }
+
+  .p-heading,
+  .about-heading {
+    margin: 0.5rem, auto;
+    font-size: 1.5em;
+
+    &.about-heading {
+      margin: 0.5rem auto;
     }
   }
 
