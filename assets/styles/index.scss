@@ -329,11 +329,11 @@ PROJECTS
         &:nth-child(1) {
           border: 1px solid $rainbow-blue;
         }
-  
+
         &:nth-child(2) {
           border: 1px solid $rainbow-orange;
         }
-  
+
         &:nth-child(3) {
           border: 1px solid $rainbow-green;
         }
@@ -343,7 +343,7 @@ PROJECTS
         &:active {
           color: $white;
         }
-    
+
         &:hover {
           background-color: $white;
           color: $black;
