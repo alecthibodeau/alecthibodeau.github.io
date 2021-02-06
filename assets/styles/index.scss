@@ -3,9 +3,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Varela+Round|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Noto+Sans:400,400i,700,700i|Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
-/************************************
-COLOR MIXES
-************************************/
+/* Color Mixes */
 
 $five-percent-gray: #f2f2f2;
 $six-percent-gray: #f0f0f0;
@@ -32,157 +30,95 @@ $lines-brown: #3a2328;
 $stem-green: #358d65;
 $black-screen: rgba(0, 0, 0, 0.9);
 
-/************************************
-HTML & BODY
-************************************/
+/* Styles */
 
 html,
 body {
+  width: 100%;
+  height: 100%;
   background-color: $blue-muted;
+  text-align: center;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  width: 100%;
 }
 
-/************************************
-HEADER
-************************************/
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 1vw;
+  background-color: $rainbow-yellow;
+}
 
-header {
-  margin: 0 auto;
-  padding: 0;
+nav a {
+  margin: auto 11px;
+  color: $blue-muted;
+  font-family: 'Varela Round', sans-serif;
+  letter-spacing: 0.3vw;
+  text-transform: uppercase;
 
-  nav {
-    background-color: $rainbow-yellow;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    max-height: 50px;
-    padding: 5px 1vw;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-
-    a {
-      background-color: transparent;
-      border: 0;
-      color: $blue-muted;
-      font-family: 'Varela Round', sans-serif;
-      font-size: 1em;
-      letter-spacing: 0.3vw;
-      margin: 0 0.7em;
-      text-transform: uppercase;
-
-      &:hover {
-        color: $rainbow-red;
-      }
-    }
+  &:hover {
+    color: $rainbow-red;
   }
 }
-
-/************************************
-MAIN, FOOTER
-************************************/
 
 main,
 footer {
-  background-color: $black;
-  margin: 0 auto;
   position: relative;
-  top: -16px;
+  bottom: 16px;
+  background-color: $black;
 }
 
-a {
-  &:link,
-  &:visited,
-  &:hover,
-  &:active {
-    text-decoration: none;
-  }
+.tree {
+  margin-top: 65px;
 }
-
-/************************************
-BANNERS
-************************************/
 
 .banner-01 {
-  background-color: $black;
-  background-image: url('../../public/images/thibodeau_green_tile.jpg');
   height: 250px;
-  position: relative;
-  z-index: 0;
-
-  .tree {
-    margin: 15px;
-    position: relative;
-    top: 50px;
-  }
+  background-image: url('../../public/images/thibodeau_green_tile.jpg');
 }
 
-.banner-02,
-.banner-03,
-.banner-04 {
-  background-color: $black;
-  background-image: url('../../public/images/thibodeau_cool_tile.jpg');
+.banner-02 {
   height: 200px;
-  margin: 0 auto;
-  top: 0;
-
-  &.banner-03 {
-    background-image: url('../../public/images/thibodeau_sunny_tile.jpg');
-  }
-
-  &.banner-04 {
-    background-image: url('../../public/images/thibodeau_green_tile.jpg');
-  }
+  background-image: url('../../public/images/thibodeau_cool_tile.jpg');
 }
 
-/************************************
-TITLE & HEADSHOT
-************************************/
+.banner-03 {
+  height: 200px;
+  background-image: url('../../public/images/thibodeau_sunny_tile.jpg');
+}
 
-.name-and-title {
-  margin: 10px auto 30px;
-  padding: 15px 0 0;
-  pointer-events: none;
-  width: 95%;
+.banner-04 {
+  height: 200px;
+  background-image: url('../../public/images/thibodeau_green_tile.jpg');
+}
 
-  .alec-thibodeau {
-    color: $white;
-    font-size: 3.75em;
-    letter-spacing: 2vw;
-    line-height: 1.1em;
-    margin: 0 0 0.1em;
-    text-align: center;
-    text-transform: uppercase;
-  }
+.name-and-occupations {
+  margin: 25px auto;
+  text-transform: uppercase;
+}
 
-  .title-parts {
-    color: $rainbow-yellow;
-    display: flex;
-    font-size: 1.625em;
-    justify-content: center;
-    letter-spacing: 1.75vw;
-    text-align: center;
-    text-transform: uppercase;
-  }
+.name {
+  color: $white;
+  font-size: 3.75rem;
+  letter-spacing: 1.75vw;
+}
+
+.occupations {
+  display: flex;
+  justify-content: center;
+  color: $rainbow-yellow;
+  font-size: 1.625rem;
+  letter-spacing: 1.125vw;
 }
 
 .headshot-img {
   border: 4px solid $thirty-percent-gray;
   border-radius: 50%;
-  margin-bottom: 0.5em;
 }
-
-/************************************
-SECTION AREAS & PARAGRAPHS
-************************************/
 
 .text-link {
   color: $rainbow-yellow;
@@ -195,307 +131,256 @@ SECTION AREAS & PARAGRAPHS
   }
 }
 
-.p-heading,
-.about-heading {
-  color: $white;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 2em;
-  font-weight: 300;
-  letter-spacing: 0.5vw;
-  margin: 2rem auto 1rem;
+.paragraph-title {
+  width: 70%;
+  margin: 24px auto 10px;
   text-align: center;
   text-transform: uppercase;
-  width: 75%;
-
-  &.about-heading {
-    margin: 0.75rem auto;
-  }
+  color: $white;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.5vw;
 }
 
 p {
+  width: 60%;
+  margin: 0 auto 32px;
   color: $white;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
-  margin: 0 auto 2.5rem;
+  font-size: 1.5rem;
   text-align: left;
-  width: 60%;
-
-  &.projects-intro-text {
-    margin: 0 auto 1rem;
-  }
 }
-
-/************************************
-LANGUAGES, TECHNOLOGIES & TECHNIQUES
-************************************/
-
-// No specific styling as of now.
-
-/************************************
-PROJECTS
-************************************/
 
 .projects {
+  width: 80%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 32px;
   margin: 0 auto;
-  padding: 0 0 2rem 0;
-  width: 80%;
+}
 
-  .project-container {
-    display: inline;
-    margin: 10px 20px 20px;
+.project-box {
+  display: inline;
+  margin: 10px 20px 20px;
+}
 
-    a {
-      display: inline-block; // Override anchor element default of inline -- to resize 
+.project-box a {
+  display: inline-block; // Override anchor element default of inline -- to resize
+}
 
-      .project-info {
-        border: 0;
-        border-radius: 1em;
-        color: transparent;
-        display: hidden;
-        height: 429px;
-        margin: 0 auto;
-        max-width: 100%;
-        padding: 1rem 2rem 3rem 2.75rem;
-        position: absolute;
-        user-select: none;
-        width: 240px;
-        z-index: 3;
+.project-info {
+  width: 240px;
+  max-width: 100%;
+  height: 429px;
+  position: absolute;
+  z-index: 3;
+  display: hidden;
+  padding: 32px 32px 48px 44px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  margin: 0 auto;
+  color: transparent;
+  user-select: none;
+}
 
-        &:hover {
-          background-color: $black-screen;
-          border: 1px solid $rainbow-blue;
-          color: $white;
-          display: block;
+.project-info:hover {
+  display: block;
+  border-color: $rainbow-blue;
+  background-color: $black-screen;
+  color: $white;
 
-          .project-info-heading {
-            color: $rainbow-blue;
-            font-size: 1.125rem;
-            font-weight: 500;
-            letter-spacing: 0.5vw;
-            margin: 0 auto;
-            padding: 0;
-            text-align: center;
-            text-transform: uppercase;
-          }
+  .project-info-heading {
+    margin: 0 auto;
+    color: $rainbow-blue;
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 0.5vw;
+    text-transform: uppercase;
+  }
 
-          .project-info-text {
-            color: $white;
-            font-family: 'Roboto', sans-serif;
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.75rem;
-            margin: 8px auto;
-            text-align: left;
+  .project-info-text {
+    margin: 8px auto;
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
+    text-align: left;
 
-            .front-end {
-              color: $rainbow-orange;
-            }
-
-            .back-end {
-              color: $rainbow-green;
-            }
-          }
-        }
-      }
-
-      .project-img {
-        border: 1px solid $black;
-        border-radius: 1em;
-        height: 429px;
-        max-width: 100%;
-        width: 240px;
-      }
+    .front-end {
+      color: $rainbow-orange;
     }
 
-    .project-link {
-      margin: 1em 0 0;
-
-      a {
-        background-color: transparent;
-        border-radius: 0.5em;
-        display: block;
-        font-family: 'Varela Round', sans-serif;
-        font-size: 0.8em;
-        letter-spacing: 0.3vw;
-        margin: 0.75em auto;
-        padding: 0.3em 0.75em;
-        text-transform: uppercase;
-        width: 70%;
-
-        &:nth-child(1) {
-          border: 1px solid $rainbow-blue;
-        }
-
-        &:nth-child(2) {
-          border: 1px solid $rainbow-orange;
-        }
-
-        &:nth-child(3) {
-          border: 1px solid $rainbow-green;
-        }
-
-        &:link,
-        &:visited,
-        &:active {
-          color: $white;
-        }
-
-        &:hover {
-          background-color: $white;
-          color: $black;
-        }
-      }
+    .back-end {
+      color: $rainbow-green;
     }
   }
 }
 
-/************************************
-CONTACT & ENDNOTES
-************************************/
+.project-img {
+  width: 240px;
+  max-width: 100%;
+  height: 429px;
+  border-radius: 16px;
+}
+
+.project-routing-buttons {
+  margin-top: 16px;
+}
+
+.project-routing-buttons a {
+  width: 70%;
+  display: block;
+  padding: 4px 12px;
+  border: 1px solid $white;
+  border-radius: 8px;
+  margin: 12px auto;
+  background-color: transparent;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.3vw;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:nth-child(1) {
+    border-color: $rainbow-blue;
+  }
+
+  &:nth-child(2) {
+    border-color: $rainbow-orange;
+  }
+
+  &:nth-child(3) {
+    border-color: $rainbow-green;
+  }
+
+  &:link,
+  &:visited,
+  &:active {
+    color: $white;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
 
 .contact-box {
-  background-color: $black;
-  border: 1px solid $rainbow-red;
-  border-radius: 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 1.5em auto 0;
-  min-height: 120px;
-  padding: 1rem 2rem;
   width: 85%;
+  min-height: 120px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid $rainbow-red;
+  border-radius: 16px;
+  margin: 24px auto 0;
+  padding: 16px 24px;
+}
 
-  a {
-    display: inline-block;
-    margin: 20px auto;
-    max-width: 100%;
+.contact-box a {
+  display: inline-block;
+  max-width: 100%;
+  margin: 20px auto;
 
-    .contact-icon {
-      display: block;
-      margin: 0 auto;
-    }
-
-    .contact-text {
-      background-color: transparent;
-      color: $rainbow-yellow;
-      display: block;
-      font-family: 'Roboto', sans-serif;
-      font-size: 1em;
-      font-weight: 500;
-      letter-spacing: 0.125em;
-      margin: 0 auto;
-      text-align: center;
-      text-decoration: none;
-    }
+  &:hover .contact-text-link {
+    text-decoration: underline;
   }
+}
+
+.contact-icon {
+  margin: 0 auto;
+}
+
+.contact-text-link {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.125rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .endnotes {
+  max-width: 80%;
+  margin: 40px auto 0;
+  text-align: left;
   color: $white;
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
   letter-spacing: 0.25vw;
-  line-height: 1.5rem;
-  margin: 0 auto;
-  max-width: 80%;
-  padding: 40px 0 0;
-  text-align: left;
-
-  .ital {
-    font-style: italic;
-  }
-
-  .credit {
-    padding: 20px 0;
-    text-align: center;
-  }
 }
 
-.closing-accent {
-  background-color: $black;
+.ital {
+  font-style: italic;
+}
+
+.credit {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.closing-accent-box {
   height: 50px;
-
-  div {
-    background-color: $orange-muted;
-    height: 3px;
-    width: 100%;
-
-    &:nth-child(2) {
-      background-color: $rainbow-blue;
-    }
-
-    &:nth-child(3) {
-      background-color: $rainbow-green;
-    }
-
-    &:nth-child(4) {
-      background-color: $rainbow-yellow;
-    }
-
-    &:nth-child(5) {
-      background-color: $rainbow-green;
-    }
-
-    &:nth-child(6) {
-      background-color: $rainbow-blue;
-    }
-
-    &:nth-child(7) {
-      background-color: $orange-muted;
-    }
-  }
 }
 
-/************************************
-BREAKPOINTS
-************************************/
+.closing-accent-box div {
+  width: 100%;
+  height: 3px;
+  background-color: $orange-muted;
+
+  &:nth-child(2) {
+    background-color: $rainbow-blue;
+  }
+
+  &:nth-child(3) {
+    background-color: $rainbow-green;
+  }
+
+  &:nth-child(4) {
+    background-color: $rainbow-yellow;
+  }
+
+  &:nth-child(5) {
+    background-color: $rainbow-green;
+  }
+
+  &:nth-child(6) {
+    background-color: $rainbow-blue;
+  }
+
+  &:nth-child(7) {
+    background-color: $orange-muted;
+  }
+}
 
 /* Breakpoint 768px */
 
 @media only screen and (max-width: 768px) {
 
-  .name-and-title {
+  .name {
+    font-size: 3.25rem;
+  }
 
-    .alec-thibodeau {
-      margin: 5px;
-      font-size: 3.25em;
-    }
+  .occupations {
+    flex-direction: column;
+  }
 
-    .title-parts {
-      flex-direction: column;
-      margin: 0 2rem;
-      padding: 0;
-
-      .developer-title {
-        display: block;
-      }
-
-      .pipe {
-        display: none;
-      }
-    }
+  .pipe {
+    display: none;
   }
 
   p {
-    letter-spacing: 0;
     width: 75%;
+    letter-spacing: 0;
   }
 
   .contact-box {
-    align-content: center;
-    flex-direction: column;
-    max-width: 240px;
-    padding: 2rem 0;
     width: 240px;
+    max-width: 240px;
+    flex-direction: column;
+    align-content: center;
+    padding: 32px 0;
+  }
 
-    a {
-      margin: 1rem auto;
-    }
+  .contact-box  a {
+    margin: 16px auto;
   }
 }
 
@@ -505,24 +390,20 @@ BREAKPOINTS
 
   main,
   footer {
-    top: -17px;
+    bottom: 17px;
   }
 
   nav {
     justify-content: center;
+  }
 
-    a {
-      margin: 0 0.2em;
-    }
+  .tree {
+    width: 57%;
+    height: 57%;
   }
 
   .banner-01 {
     height: 200px;
-
-    .tree {
-      height: 57%;
-      width: 57%;
-    }
   }
 
   .banner-02,
@@ -531,54 +412,41 @@ BREAKPOINTS
     height: 100px;
   }
 
-  .name-and-title {
-    margin: 0 auto;
-    padding: 12px 0 0;
-
-    .alec-thibodeau {
-      font-size: 1.75em;
-      line-height: 1em;
-    }
-
-    .title-parts {
-      margin: 0;
-      padding: 0 0 15px;
-      font-size: 1.25em;
-      line-height: 1.25em;
-    }
+  .name-and-occupations {
+    margin: 16px auto;
   }
 
-  .p-heading,
-  .about-heading {
-    margin: 0.5rem, auto;
-    font-size: 1.5em;
+  .name {
+    margin-top: 10px;
+    font-size: 1.75rem;
+  }
 
-    &.about-heading {
-      margin: 0.5rem auto;
-    }
+  .occupations {
+    font-size: 1.25rem;
+  }
+
+  .paragraph-title {
+    margin: 16px auto 8px;
+    font-size: 1.25rem;
   }
 
   p {
-    font-size: 1rem;
     width: 85%;
+    margin: 0 auto 16px;
+    font-size: inherit;
   }
 
-  .projects {
+  .project-box {
+    margin: 10px auto 20px;
+  }
 
-    .project-container {
-      margin: 10px auto 20px;
-
-      .project-link {
-
-        a {
-          width: 95%;
-        }
-      }
-    }
+  .project-routing-buttons a {
+    width: 95%;
   }
 
   .endnotes {
+    margin: 30px auto 0;
     font-size: 0.75rem;
-    line-height: 1.25rem;
+    font-weight: 400;
   }
 }
