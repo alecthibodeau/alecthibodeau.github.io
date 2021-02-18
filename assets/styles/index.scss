@@ -126,6 +126,7 @@ footer {
   &:link,
   &:visited,
   &:hover,
+  &:focus,
   &:active {
     color: $rainbow-yellow;
   }
@@ -299,12 +300,7 @@ p {
 }
 
 .endnotes {
-  max-width: 80%;
   margin: 40px auto 0;
-  text-align: left;
-  color: $white;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.25vw;
 }
 
 .ital {
@@ -314,6 +310,9 @@ p {
 .credit {
   margin: 20px 0;
   text-align: center;
+  color: $white;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.25vw;
 }
 
 .closing-accent-box {
@@ -445,8 +444,6 @@ p {
   }
 
   .endnotes {
-    margin: 30px auto 0;
-    font-size: 0.75rem;
-    font-weight: 400;
+    margin: 20px auto 0;
   }
 }
