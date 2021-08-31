@@ -55,13 +55,13 @@ nav {
 
 nav a {
   margin: auto 11px;
-  color: $blue-muted;
+  color: $black;
   font-family: 'Varela Round', sans-serif;
   letter-spacing: 0.25vw;
   text-transform: uppercase;
 
   &:hover {
-    color: $rainbow-red;
+    color: $black;
   }
 }
 
