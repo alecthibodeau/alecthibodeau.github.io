@@ -144,7 +144,6 @@ p {
 }
 
 .projects {
-  // width: 80%;
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
@@ -308,6 +307,21 @@ p {
     &:nth-child(4) {
       background-color: $rainbow-yellow;
     }
+  }
+}
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.not-found-text {
+  background-color: $black;
+  padding: 2rem 2rem 3rem;
+
+  a {
+    font-size: 1.5rem;
   }
 }
 
