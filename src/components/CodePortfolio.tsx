@@ -131,7 +131,7 @@ function CodePortfolio() {
           </div>
           <div>
             <p>
-              I code this informational website with React, TypeScript and Sass. I also handle the design for it, using Adobe Illustrator to make custom SVG images. Scroll up to see more <a className="text-link" href="#projects">projects</a>.
+              I built this code portfolio website with React, TypeScript and Sass. I also designed the UI/UX for it, which included using Adobe Illustrator to make custom SVG images. Scroll up to see more <a className="text-link" href="#projects">projects</a>.
             </p>
             <div className="credit">Alec Thibodeau, 2022</div>
           </div>
