@@ -43,6 +43,8 @@ const contactImages = {
   resume
 };
 
+const navItems = ['about', 'projects', 'contact'];
+
 const projectItems = [
   {
     id: 'cookieTimeTrivia',
@@ -129,6 +131,7 @@ export default {
   siteImages,
   projectImages,
   contactImages,
+  navItems,
   projectItems,
   contactItems
 };
