@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.3fc5a569.css",
-    "main.js": "/static/js/main.a44bfc5c.js",
+    "main.css": "/static/css/main.439fbca2.css",
+    "main.js": "/static/js/main.ca783b08.js",
     "static/js/787.321acf79.chunk.js": "/static/js/787.321acf79.chunk.js",
     "static/media/mobile_screenshot_huetown.jpg": "/static/media/mobile_screenshot_huetown.0d3ae39fd846d1b24df2.jpg",
     "static/media/mobile_screenshot_alecthibodeau.jpg": "/static/media/mobile_screenshot_alecthibodeau.c5393111c1cf5d764a71.jpg",
-    "static/media/alec_thibodeau_resume_web.pdf": "/static/media/alec_thibodeau_resume_web.f625a33152f031667561.pdf",
+    "static/media/alec_thibodeau_resume_web.pdf": "/static/media/alec_thibodeau_resume_web.c17da0cf936a3edf09ea.pdf",
     "static/media/mobile_screenshot_radtabs.jpg": "/static/media/mobile_screenshot_radtabs.8ad1cf702cbfca006776.jpg",
     "static/media/mobile_screenshot_tic_tac_toe.jpg": "/static/media/mobile_screenshot_tic_tac_toe.696e787b87903f279e20.jpg",
     "static/media/mobile_screenshot_patturns.jpg": "/static/media/mobile_screenshot_patturns.8c17c31746cd9010e9f9.jpg",
     "static/media/mobile_screenshot_cookie_time_trivia.jpg": "/static/media/mobile_screenshot_cookie_time_trivia.15d8e5ee68e5c41fcc6a.jpg",
     "static/media/alec_headshot_150px.jpg": "/static/media/alec_headshot_150px.609d7b3862633be81dfc.jpg",
-    "static/media/icon_solid_email.svg": "/static/media/icon_solid_email.159279201f026dafe4b3d42aeae30ed7.svg",
-    "static/media/icon_solid_github.svg": "/static/media/icon_solid_github.81062bf3c93187c786b98e9c2f41ca8c.svg",
-    "static/media/icon_solid_linkedin.svg": "/static/media/icon_solid_linkedin.2999dbb47b3f76b6e859cd6fdb67ec2a.svg",
-    "static/media/icon_solid_resume.svg": "/static/media/icon_solid_resume.f01f0ac172b50f5849f8d2415c844448.svg",
+    "static/media/icon_solid_github.svg": "/static/media/icon_solid_github.b4b602e9c3ff6a70c9990f9d44aaf536.svg",
     "static/media/thibodeau_tree_circle.svg": "/static/media/thibodeau_tree_circle.d4e0c4165df1aaa87f613fbbf01621fd.svg",
+    "static/media/icon_solid_resume.svg": "/static/media/icon_solid_resume.bbfd8aba0423ac871f04277114976a2a.svg",
+    "static/media/icon_solid_linkedin.svg": "/static/media/icon_solid_linkedin.e042ee3a90dc6fc111d6e6b29d9af7e5.svg",
     "index.html": "/index.html",
-    "main.3fc5a569.css.map": "/static/css/main.3fc5a569.css.map",
-    "main.a44bfc5c.js.map": "/static/js/main.a44bfc5c.js.map",
+    "static/media/icon_solid_email.svg": "/static/media/icon_solid_email.b73c7397f8828622ad20bbd26cfe7f40.svg",
+    "main.439fbca2.css.map": "/static/css/main.439fbca2.css.map",
+    "main.ca783b08.js.map": "/static/js/main.ca783b08.js.map",
     "787.321acf79.chunk.js.map": "/static/js/787.321acf79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fc5a569.css",
-    "static/js/main.a44bfc5c.js"
+    "static/css/main.439fbca2.css",
+    "static/js/main.ca783b08.js"
   ]
 }
