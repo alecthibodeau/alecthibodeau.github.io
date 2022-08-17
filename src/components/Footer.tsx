@@ -38,7 +38,7 @@ function Footer() {
         </div>
         <div>
           <p>
-            I built this code portfolio website with React, TypeScript and Sass. I also designed the UI/UX for it, which included using Adobe Illustrator to make custom SVG images. Scroll up to see more <a className="text-link" href="#projects">projects</a>.
+            I built this code portfolio website with React, TypeScript and Sass (<a className="text-link" href="https://github.com/alecthibodeau/alecthibodeau.github.io">see the code</a>). I also designed the UI/UX for it, which included using Adobe Illustrator to make custom SVG images. Scroll up to see more <a className="text-link" href="#projects">projects</a>.
           </p>
           <div className="credit">{`Alec Thibodeau, ${new Date().getFullYear()}`}</div>
         </div>

@@ -60,7 +60,7 @@ function Main() {
         <img src={constants.siteImages.headshot} className="headshot-img" alt="Alec Thibodeau headshot" />
         <div className="paragraph-title">about</div>
         <p>
-          Hello! I'm a software developer and an artist. My specialty is front-end web development with a focus on UI/UX, accessibility and responsive web design.
+          Hello. I'm a software developer and an artist. My specialty is front-end web development with a focus on UI/UX, accessibility and responsive web design.
         </p>
       </div>
       <div className="banner-02" style={{backgroundImage: `url(${constants.siteImages.coolTile})`}}></div>
