@@ -67,7 +67,7 @@ function Main() {
       <section>
         <div className="paragraph-title">languages &&nbsp;technologies</div>
         <p>
-          I've worked regularly with React, React Native, JavaScript, TypeScript, Expo Go, React Native Debugger, Angular, Angular testing (Jasmine), Angular Material,
+          I've worked regularly with React, React Native, Angular, JavaScript, TypeScript, Expo Go, React Native Debugger, Angular testing (Jasmine), Angular Material,
           Google Material Design, Bootstrap, CSS3/Sass, HTML5, JSON, Chrome DevTools, Slack, Git/GitHub, Atlassian (Bitbucket,
           Jira, Confluence), SVG, Adobe Creative Cloud (XD, Illustrator and Photoshop). I also have some experience with InVision, MySQL, Python,
           Node.js, MongoDB, Ruby on Rails, Express and Mongoose.
@@ -81,12 +81,6 @@ function Main() {
         </p>
         <div className="projects">
           {constants.projectItems.slice(0, 3).map(renderProjectItem)}
-        </div>
-        <p>
-          I made these projects in 2018 while completing General Assembly's Web Development Immersive program (subsequently renamed <a className="text-link" href="https://generalassemb.ly/education/software-engineering-immersive">Software Engineering Immersive</a>)&hellip;
-        </p>
-        <div className="projects">
-          {constants.projectItems.slice(3).map(renderProjectItem)}
         </div>
       </section>
     </main>
