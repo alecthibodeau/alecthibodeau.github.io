@@ -67,7 +67,7 @@ function Main() {
       <section>
         <div className="paragraph-title">languages &&nbsp;technologies</div>
         <p>
-          I've worked regularly with React, React Native, Angular, JavaScript, TypeScript, Expo Go, React Native Debugger, Angular testing (Jasmine), Angular Material,
+          I've worked regularly with React, React Native, Angular, JavaScript, TypeScript, Emotion, Expo Go, React Native Debugger, Angular testing (Jasmine), Angular Material,
           Google Material Design, Bootstrap, CSS3/Sass, HTML5, JSON, Chrome DevTools, Slack, Git/GitHub, Atlassian (Bitbucket,
           Jira, Confluence), SVG, Adobe Creative Cloud (XD, Illustrator and Photoshop). I also have some experience with InVision, MySQL, Python,
           Node.js, MongoDB, Ruby on Rails, Express and Mongoose.
