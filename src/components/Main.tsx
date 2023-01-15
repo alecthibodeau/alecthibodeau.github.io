@@ -1,11 +1,11 @@
 /* Constants */
 import constants from '../constants';
 
-/* Helpers */
-import { getImage } from '../helpers/get-image';
-
 /* Interfaces */
 import ProjectItem from '../interfaces/ProjectItem';
+
+/* Documents */
+import pdfResume from '../assets/documents/alec_thibodeau_resume_web.pdf';
 
 function Main() {
   function renderProjectItem(item: ProjectItem, index: number) {
@@ -30,7 +30,7 @@ function Main() {
           </div>
           <img
             className="project-img"
-            src={getImage(item.id, constants.projectImages)}
+            src={item.image}
             alt={item.altText} />
         </a>
         <div className="project-routing-links">
@@ -45,8 +45,8 @@ function Main() {
 
   return (
     <main>
-      <div className="banner-01" style={{backgroundImage: `url(${constants.siteImages.greenTile})`}}>
-        <img className="tree" src={constants.siteImages.tree} alt="AT tree logo" />
+      <div className="banner-01" style={{backgroundImage: `url(${constants.greenTile})`}}>
+        <img className="tree" src={constants.tree} alt="AT tree logo" />
       </div>
       <div id="about" className="name-and-occupations">
         <div className="name">alec thibodeau</div>
@@ -57,27 +57,34 @@ function Main() {
         </div>
       </div>
       <div>
-        <img src={constants.siteImages.headshot} className="headshot-img" alt="Alec Thibodeau headshot" />
+        <img src={constants.headshot} className="headshot-img" alt="Alec Thibodeau headshot" />
         <div className="paragraph-title">about</div>
         <p>
-          Hello. I'm a software developer and an artist. My specialty is front-end web development with a focus on UI/UX, accessibility and responsive web design.
+          Hello. I'm a software developer and an artist. My specialty is front-end
+          web development with a focus on UI/UX, accessibility and responsive web
+          design. <a href={pdfResume} target="_blank" className="text-link">See my resume.</a>
         </p>
       </div>
-      <div className="banner-02" style={{backgroundImage: `url(${constants.siteImages.coolTile})`}}></div>
+      <div className="banner-02" style={{backgroundImage: `url(${constants.coolTile})`}}></div>
       <section>
         <div className="paragraph-title">languages &&nbsp;technologies</div>
         <p>
-          I've worked regularly with React, React Native, Angular, JavaScript, TypeScript, Emotion, Expo Go, React Native Debugger, Angular testing (Jasmine), Angular Material,
-          Google Material Design, Bootstrap, CSS3/Sass, HTML5, JSON, Chrome DevTools, Slack, Git/GitHub, Atlassian (Bitbucket,
-          Jira, Confluence), SVG, Adobe Creative Cloud (XD, Illustrator and Photoshop). I also have some experience with InVision, MySQL, Python,
-          Node.js, MongoDB, Ruby on Rails, Express and Mongoose.
+          I've worked regularly with React, React Native, Angular, JavaScript,
+          TypeScript, Emotion, Expo Go, React Native Debugger, Angular testing
+          (Jasmine), Angular Material, Google Material Design, Bootstrap, CSS3/Sass,
+          HTML5, JSON, Chrome DevTools, Slack, Git/GitHub, Atlassian (Bitbucket,
+          Jira, Confluence), SVG, Adobe Creative Cloud (XD, Illustrator and
+          Photoshop). I also have some experience with InVision, MySQL, Python,
+          Node.js, MongoDB and Express.
         </p>
       </section>
-      <div id="projects" className="banner-03" style={{backgroundImage: `url(${constants.siteImages.sunnyTile})`}}></div>
+      <div id="projects" className="banner-03" style={{backgroundImage: `url(${constants.sunnyTile})`}}></div>
       <section>
         <div className="paragraph-title">projects</div>
         <p>
-          My personal projects include a trivia game that uses localStorage to save high scores, an art portfolio site (both of these made with React and TypeScript) and a web shop made with vanilla JavaScript&hellip;
+          My personal projects include a trivia game that uses localStorage to
+          save high scores, an art portfolio site (both of these made with React
+          and TypeScript) and a web shop made with vanilla JavaScript&hellip;
         </p>
         <div className="projects">
           {constants.projectItems.slice(0, 3).map(renderProjectItem)}
