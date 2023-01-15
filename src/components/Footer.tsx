@@ -1,12 +1,6 @@
 /* Constants */
 import constants from '../constants';
 
-/* Documents */
-import pdfResume from '../assets/documents/alec_thibodeau_resume_web.pdf';
-
-/* Helpers */
-import { getImage } from '../helpers/get-image';
-
 /* Interfaces */
 import ContactItem from '../interfaces/ContactItem';
 
@@ -15,10 +9,10 @@ function renderContactItem(item: ContactItem, index: number) {
     <a
       key={`${item.name}${index}`}
       className="text-link"
-      href={item.name === 'resume' ? pdfResume : item.href}
+      href={item.href}
       target={item.name === 'resume' ? '_blank' : '_top'}>
       <img
-        src={getImage(item.name, constants.contactImages)}
+        src={item.image}
         alt={`${item.name} SVG icon`} />
       <div className="contact-text">
         {item.linkText ? item.linkText : item.name}
@@ -30,7 +24,7 @@ function renderContactItem(item: ContactItem, index: number) {
 function Footer() {
   return (
     <footer>
-      <div className="banner-04" style={{backgroundImage: `url(${constants.siteImages.greenTile})`}}></div>
+      <div className="banner-04" style={{backgroundImage: `url(${constants.greenTile})`}}></div>
       <section id="contact">
         <div className="paragraph-title">contact</div>
         <div className="contact-box">
@@ -38,7 +32,10 @@ function Footer() {
         </div>
         <div>
           <p>
-            I maintain this code portfolio website with React, TypeScript and Sass (<a className="text-link" href="https://github.com/alecthibodeau/alecthibodeau.github.io">see the code</a>). Any custom SVG images are of my own design. Scroll up to see more <a className="text-link" href="#projects">projects</a>.
+            I design and maintain this code portfolio website with React, TypeScript
+            and Sass (<a className="text-link" href="https://github.com/alecthibodeau/alecthibodeau.github.io">
+              see the code
+            </a>). Scroll up to see <a className="text-link" href="#projects">projects</a>.
           </p>
           <div className="credit">{`Alec Thibodeau, ${new Date().getFullYear()}`}</div>
         </div>

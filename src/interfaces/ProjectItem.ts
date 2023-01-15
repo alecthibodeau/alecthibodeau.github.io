@@ -8,6 +8,7 @@ interface ProjectItem {
   website: string;
   clientRepo: string;
   apiRepo?: string;
+  image: string;
 }
 
 export default ProjectItem;
