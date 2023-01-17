@@ -35,9 +35,9 @@ function Main() {
         </a>
         <div className="project-routing-links">
           <div className="project-title">{item.name}</div>
-          <a href={item.website}>website</a>
-          <a href={item.clientRepo}>client repo</a>
-          {item.apiRepo && <a href={item.apiRepo}>api repo</a>}
+          <a href={item.website}>Website</a>
+          <a href={item.clientRepo}>Client Repository</a>
+          {item.apiRepo && <a href={item.apiRepo}>API Repository</a>}
         </div>
       </div>
     );
@@ -49,11 +49,11 @@ function Main() {
         <img className="tree" src={constants.tree} alt="AT tree logo" />
       </div>
       <div id="about" className="name-and-occupations">
-        <div className="name">alec thibodeau</div>
+        <div className="name">Alec Thibodeau</div>
         <div className="occupations">
-          <span>software developer</span>
+          <span>Software Developer</span>
           <span className="pipe">&nbsp;|&nbsp;</span>
-          <span>artist</span>
+          <span>Artist</span>
         </div>
       </div>
       <div>
