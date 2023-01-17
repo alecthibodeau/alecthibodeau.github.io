@@ -10,7 +10,7 @@ function renderContactItem(item: ContactItem, index: number) {
       key={`${item.name}${index}`}
       className="text-link"
       href={item.href}
-      target={item.name === 'resume' ? '_blank' : '_top'}>
+      target={item.name.toLowerCase() === 'resume' ? '_blank' : '_top'}>
       <img
         src={item.image}
         alt={`${item.name} SVG icon`} />

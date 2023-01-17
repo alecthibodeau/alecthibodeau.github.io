@@ -50,7 +50,7 @@ const projectItems = [
     name: 'Huetown',
     infoText: 'The web shop for Huetown, my personal project for art sales',
     frontEndTechnology: 'JavaScript, CSS3/Sass, HTML5, SVG',
-    backEndTechnology: 'PayPal API',
+    backEndTechnology: 'PayPal API, Mailchimp API',
     altText: 'Mobile screenshot of the web shop for Huetown, my personal project for art sales',
     website: 'https://huetown.com',
     clientRepo: 'https://github.com/alecthibodeau/huetown-client',
@@ -101,17 +101,17 @@ const contactItems = [
     image: email
   },
   {
-    name: 'linkedin',
+    name: 'LinkedIn',
     href: 'https://www.linkedin.com/in/alecthibodeau',
     image: linkedIn
   },
   {
-    name: 'github',
+    name: 'GitHub',
     href: 'https://github.com/alecthibodeau',
     image: gitHub
   },
   {
-    name: 'resume',
+    name: 'Resume',
     href: pdfResume,
     image: resume
   }
