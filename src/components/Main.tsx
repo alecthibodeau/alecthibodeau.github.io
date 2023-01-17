@@ -36,8 +36,8 @@ function Main() {
         <div className="project-routing-links">
           <div className="project-title">{item.name}</div>
           <a href={item.website}>Website</a>
-          <a href={item.clientRepo}>Client Repository</a>
-          {item.apiRepo && <a href={item.apiRepo}>API Repository</a>}
+          <a href={item.clientRepo}>Client Repo</a>
+          {item.apiRepo && <a href={item.apiRepo}>API Repo</a>}
         </div>
       </div>
     );
