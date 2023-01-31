@@ -4,41 +4,22 @@ import constants from '../constants';
 /* Interfaces */
 import ProjectItem from '../interfaces/ProjectItem';
 
+/* Components */
+import Project from './Project';
+
 /* Documents */
 import pdfResume from '../assets/documents/alec_thibodeau_resume_web.pdf';
 
 function Main() {
+  /**
+   * Spread attributes can be useful but they also make it easy to pass unnecessary props
+   * to components that don’t care about them or to pass invalid HTML attributes to the DOM.
+   * We recommend using this syntax sparingly. - React Docs
+   */
   function renderProjectItem(item: ProjectItem, index: number) {
     return (
       <div key={`${item.name}${index}`} className="project-container">
-        <a href={item.website}>
-          <div className="project-info-outer">
-            <div className="project-info-inner">
-              <div className="project-info-title">{item.name}</div>
-              <div className="project-info-text">
-                <div>{item.infoText}</div>
-                <div>
-                  <div className="front-end">Front End:</div>
-                  <div>{item.frontEndTechnology}</div>
-                </div>
-                {item.backEndTechnology && <div>
-                  <div className="back-end">Back End:</div>
-                  <div>{item.backEndTechnology}</div>
-                </div>}
-              </div>
-            </div>
-          </div>
-          <img
-            className="project-img"
-            src={item.image}
-            alt={item.altText} />
-        </a>
-        <div className="project-routing-links">
-          <div className="project-title">{item.name}</div>
-          <a href={item.website}>Website</a>
-          <a href={item.clientRepo}>Client Repo</a>
-          {item.apiRepo && <a href={item.apiRepo}>API Repo</a>}
-        </div>
+        <Project {...item} />
       </div>
     );
   }
@@ -69,22 +50,19 @@ function Main() {
       <section>
         <div className="paragraph-title">languages &&nbsp;technologies</div>
         <p>
-          I've worked regularly with React, React Native, Angular, JavaScript,
-          TypeScript, Emotion, Expo Go, React Native Debugger, Angular testing
+          I've worked regularly with React, React Native, TypeScript, JavaScript,
+          Angular, Emotion, Expo Go, React Native Debugger, Angular testing
           (Jasmine), Angular Material, Google Material Design, Bootstrap, CSS3/Sass,
-          HTML5, JSON, Chrome DevTools, Slack, Git/GitHub, Atlassian (Bitbucket,
-          Jira, Confluence), SVG, Adobe Creative Cloud (XD, Illustrator and
-          Photoshop). I also have some experience with InVision, MySQL, Python,
-          Node.js, MongoDB and Express.
+          HTML5, JSON, Git/GitHub, Atlassian (Bitbucket, Jira, Confluence), SVG,
+          Adobe Creative Cloud (XD, Illustrator and Photoshop). I also have some
+          experience with Node.js, Express, MongoDB, MySQL, Python and InVision.
         </p>
       </section>
       <div id="projects" className="banner-03" style={{backgroundImage: `url(${constants.sunnyTile})`}}></div>
       <section>
         <div className="paragraph-title">projects</div>
         <p>
-          My personal projects include a trivia game that uses localStorage to
-          save high scores, an art portfolio site (both of these made with React
-          and TypeScript) and a web shop made with vanilla JavaScript&hellip;
+          My personal projects include a React/TypeScript trivia challenge that uses CRUD operations for managing data with localStorage, a React/TypeScript art portfolio site that builds components from JSON data and a web shop made with vanilla JavaScript&hellip;
         </p>
         <div className="projects">
           {constants.projectItems.slice(0, 3).map(renderProjectItem)}
