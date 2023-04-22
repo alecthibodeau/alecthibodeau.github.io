@@ -51,7 +51,7 @@ function Main() {
         <div className="paragraph-title">languages &&nbsp;technologies</div>
         <p>
           I've worked regularly with React, React Native, TypeScript, JavaScript,
-          Angular, Emotion, Expo Go, React Native Debugger, Angular testing
+          Emotion, Expo Go, React Native Debugger, Angular, Angular testing
           (Jasmine), Angular Material, Google Material Design, Bootstrap, CSS3/Sass,
           HTML5, JSON, Git/GitHub, Atlassian (Bitbucket, Jira, Confluence), SVG,
           Adobe Creative Cloud (XD, Illustrator and Photoshop). I also have some
@@ -62,7 +62,7 @@ function Main() {
       <section>
         <div className="paragraph-title">projects</div>
         <p>
-          My personal projects include a React/TypeScript trivia challenge that uses CRUD operations for managing data with localStorage, a React/TypeScript art portfolio site that builds components from JSON data and a web shop made with vanilla JavaScript&hellip;
+          Recent personal projects include three websites I built with React and TypeScript: a trivia challenge interface that uses CRUD operations for managing data with localStorage, an art portfolio site that renders components from JSON data and a web shop that consumes PayPal and Mailchimp APIs to, respectively, process orders and accept email list subscribers.&hellip;
         </p>
         <div className="projects">
           {constants.projectItems.slice(0, 3).map(renderProjectItem)}

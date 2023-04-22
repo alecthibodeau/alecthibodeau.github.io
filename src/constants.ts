@@ -39,7 +39,7 @@ const projectItems = [
     id: 'artPortfolio',
     name: 'Art Portfolio',
     infoText: 'An art portfolio website for displaying my earlier work in drawing and printmaking',
-    frontEndTechnology: 'React, TypeScript, React Router, Bootstrap 5, CSS3/Sass, SVG',
+    frontEndTechnology: 'React, TypeScript, React Router, CSS3/Sass, SVG',
     altText: 'Mobile screenshot of an art portfolio website for displaying my earlier work in drawing and printmaking',
     website: 'https://alecthibodeau.com',
     clientRepo: 'https://github.com/alecthibodeau/alecthibodeau.com',
@@ -49,11 +49,11 @@ const projectItems = [
     id: 'huetown',
     name: 'Huetown',
     infoText: 'The web shop for Huetown, my personal project for art sales',
-    frontEndTechnology: 'JavaScript, CSS3/Sass, HTML5, SVG',
+    frontEndTechnology: 'React, TypeScript, React Router, Bootstrap 5, CSS3/Sass, SVG',
     backEndTechnology: 'PayPal API, Mailchimp API',
     altText: 'Mobile screenshot of the web shop for Huetown, my personal project for art sales',
     website: 'https://huetown.com',
-    clientRepo: 'https://github.com/alecthibodeau/huetown-client',
+    clientRepo: 'https://github.com/alecthibodeau/huetown',
     image: huetown
   },
   {
