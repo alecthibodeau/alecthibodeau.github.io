@@ -117,7 +117,7 @@ const contactItems = [
   }
 ]
 
-export default {
+const constants = {
   headshot,
   tree,
   coolTile,
@@ -127,3 +127,5 @@ export default {
   projectItems,
   contactItems
 };
+
+export default constants;

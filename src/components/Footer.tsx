@@ -5,12 +5,15 @@ import constants from '../constants';
 import ContactItem from '../interfaces/ContactItem';
 
 function renderContactItem(item: ContactItem, index: number) {
+  const isResume: boolean = item.name.toLowerCase() === 'resume';
   return (
     <a
       key={`${item.name}${index}`}
       className="text-link"
       href={item.href}
-      target={item.name.toLowerCase() === 'resume' ? '_blank' : '_top'}>
+      target={isResume ? '_blank' : '_top'}
+      rel={`noopener ${isResume ? 'noreferrer' : ''}`}
+      download={isResume}>
       <img
         src={item.image}
         alt={`${item.name} SVG icon`} />
