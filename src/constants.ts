@@ -29,6 +29,17 @@ const pdfResumeView: string = 'https://github.com/alecthibodeau/alecthibodeau.gi
 
 const projectItems: ProjectItem[] = [
   {
+    id: 'huetown',
+    name: 'Huetown',
+    infoText: 'The web shop for Huetown, my personal project for art sales',
+    frontEndTechnology: 'React, TypeScript, React Router, Bootstrap 5, CSS3/Sass, SVG',
+    backEndTechnology: 'PayPal API, Mailchimp API',
+    altText: 'Mobile screenshot of the Huetown web shop',
+    website: 'https://huetown.com',
+    clientRepo: 'https://github.com/alecthibodeau/huetown',
+    image: huetown
+  },
+  {
     id: 'cookieTimeTrivia',
     name: 'Cookie Time Trivia',
     infoText: 'A game with multiple categories and user-selectable visual themes',
@@ -47,17 +58,6 @@ const projectItems: ProjectItem[] = [
     website: 'https://alecthibodeau.com',
     clientRepo: 'https://github.com/alecthibodeau/alecthibodeau.com',
     image: artPortfolio
-  },
-  {
-    id: 'huetown',
-    name: 'Huetown',
-    infoText: 'The web shop for Huetown, my personal project for art sales',
-    frontEndTechnology: 'React, TypeScript, React Router, Bootstrap 5, CSS3/Sass, SVG',
-    backEndTechnology: 'PayPal API, Mailchimp API',
-    altText: 'Mobile screenshot of the Huetown web shop',
-    website: 'https://huetown.com',
-    clientRepo: 'https://github.com/alecthibodeau/huetown',
-    image: huetown
   },
   {
     id: 'patturns',

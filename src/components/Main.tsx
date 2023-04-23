@@ -50,19 +50,23 @@ function Main() {
         <div className="paragraph-title">languages &&nbsp;technologies</div>
         <p>
           I've worked regularly with React, React Native, TypeScript, JavaScript,
-          Emotion, Expo Go, React Native Debugger, Angular, Angular testing
-          (Jasmine), Angular Material, Google Material Design, Bootstrap, CSS3/Sass,
-          HTML5, JSON, Git/GitHub, Atlassian (Bitbucket, Jira, Confluence), SVG,
-          Adobe Creative Cloud (XD, Illustrator and Photoshop). I also have some
-          experience with Node.js, Express, MongoDB, MySQL, Python and InVision.
+          Emotion, CSS3/Sass, Expo Go, React Native Debugger, Angular, Angular testing
+          (Jasmine), Angular Material, Google Material Design, Bootstrap,
+          HTML5, JSON, Git/GitHub and npm.
         </p>
       </section>
       <div id="projects" className="banner-03" style={{backgroundImage: `url(${sunnyTile})`}}></div>
       <section>
         <div className="paragraph-title">projects</div>
         <p>
-          Recent personal projects include three websites I've built with React and TypeScript: a trivia challenge interface that uses CRUD operations for managing data with localStorage, an art portfolio site that renders components from JSON data and a web shop that consumes PayPal and Mailchimp APIs to, respectively, process orders and accept email list subscribers.&hellip;
+          My recent personal projects include four websites I've built with React, TypeScript and Sass:
         </p>
+        <ul>
+          <li>Huetown &mdash; a web shop that consumes PayPal and Mailchimp APIs to, respectively, process orders and record email list subscribers</li>
+          <li>Cookie Time Trivia &mdash; a game interface that uses CRUD operations to manage gameplay data with localStorage</li>
+          <li>My art portfolio site &mdash; image galleries comprised of components rendered from JSON data</li>
+          <li>This code portfolio site you're now viewing</li>
+        </ul>
         <div className="projects">
           {projectItems.slice(0, 3).map(renderProjectItem)}
         </div>
