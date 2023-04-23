@@ -29,12 +29,12 @@ function Main() {
         <img className="tree" src={tree} alt="AT tree logo" />
       </div>
       <div id="about" className="name-and-occupations">
-        <div className="name">Alec Thibodeau</div>
-        <div className="occupations">
+        <h1 className="name">Alec Thibodeau</h1>
+        <h2 className="occupations">
           <span>Software Developer</span>
           <span className="pipe">&nbsp;|&nbsp;</span>
           <span>Artist</span>
-        </div>
+        </h2>
       </div>
       <div>
         <img src={headshot} className="headshot-img" alt="Alec Thibodeau headshot" />

@@ -4,7 +4,7 @@ import ProjectItem from '../interfaces/ProjectItem';
 function Project(props: ProjectItem) {
   return (
     <>
-      <a href={props.website}>
+      <div>
         <div className="project-info-outer">
           <div className="project-info-inner">
             <div className="project-info-title">{props.name}</div>
@@ -25,7 +25,7 @@ function Project(props: ProjectItem) {
           className="project-img"
           src={props.image}
           alt={props.altText} />
-      </a>
+      </div>
       <div className="project-routing-links">
         <div className="project-title">{props.name}</div>
         <a href={props.website}>Website</a>

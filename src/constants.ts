@@ -33,7 +33,7 @@ const projectItems: ProjectItem[] = [
     name: 'Cookie Time Trivia',
     infoText: 'A game with multiple categories and user-selectable visual themes',
     frontEndTechnology: 'React, TypeScript, React Router, Emotion, CSS3/Sass, SVG, localStorage',
-    altText: 'Mobile screenshot of Cookie Time Trivia game',
+    altText: 'Mobile screenshot of the Cookie Time Trivia game',
     website: 'https://alect.me/cookie-time-trivia',
     clientRepo: 'https://github.com/alecthibodeau/cookie-time-trivia',
     image: cookieTimeTrivia
@@ -43,7 +43,7 @@ const projectItems: ProjectItem[] = [
     name: 'Art Portfolio',
     infoText: 'An art portfolio website for displaying my earlier work in drawing and printmaking',
     frontEndTechnology: 'React, TypeScript, React Router, CSS3/Sass, SVG',
-    altText: 'Mobile screenshot of an art portfolio website for displaying my earlier work in drawing and printmaking',
+    altText: 'Mobile screenshot of an art portfolio website',
     website: 'https://alecthibodeau.com',
     clientRepo: 'https://github.com/alecthibodeau/alecthibodeau.com',
     image: artPortfolio
@@ -54,7 +54,7 @@ const projectItems: ProjectItem[] = [
     infoText: 'The web shop for Huetown, my personal project for art sales',
     frontEndTechnology: 'React, TypeScript, React Router, Bootstrap 5, CSS3/Sass, SVG',
     backEndTechnology: 'PayPal API, Mailchimp API',
-    altText: 'Mobile screenshot of the web shop for Huetown, my personal project for art sales',
+    altText: 'Mobile screenshot of the Huetown web shop',
     website: 'https://huetown.com',
     clientRepo: 'https://github.com/alecthibodeau/huetown',
     image: huetown
