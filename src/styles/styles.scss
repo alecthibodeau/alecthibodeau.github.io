@@ -92,6 +92,8 @@ footer {
 
 main section ul {
   max-width: 600px;
+  padding-bottom: .5rem;
+  border-bottom: 1px dashed $application-font-color;
   margin: 1rem;
 
   li {
