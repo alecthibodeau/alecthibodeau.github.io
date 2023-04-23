@@ -37,10 +37,10 @@ function Footer() {
         </div>
         <div>
           <p>
-            I design and maintain this code portfolio website with React, TypeScript
+            I design and maintain this code portfolio site with React, TypeScript
             and Sass (<a className="text-link" href="https://github.com/alecthibodeau/alecthibodeau.github.io">
               see the code
-            </a>). Scroll up to see <a className="text-link" href="#projects">projects</a>.
+            </a>). Scroll up for more <a className="text-link" href="#projects">projects</a>.
           </p>
           <div className="credit">{`Alec Thibodeau, ${new Date().getFullYear()}`}</div>
         </div>

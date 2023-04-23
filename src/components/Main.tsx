@@ -59,7 +59,7 @@ function Main() {
       <section>
         <div className="paragraph-title">projects</div>
         <p>
-          My recent personal projects include four websites I've built with React, TypeScript and Sass:
+          Personal projects include four websites I've built recently with React, TypeScript and Sass:
         </p>
         <ul>
           <li>Huetown &mdash; a web shop that consumes PayPal and Mailchimp APIs to, respectively, process orders and record email list subscribers</li>
