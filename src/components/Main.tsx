@@ -7,11 +7,8 @@ import ProjectItem from '../interfaces/ProjectItem';
 /* Components */
 import Project from './Project';
 
-/* Documents */
-import pdfResume from '../assets/documents/alec_thibodeau_resume_web.pdf';
-
 function Main() {
-  const { headshot, tree, coolTile, greenTile, sunnyTile, projectItems  } = constants;
+  const { headshot, tree, pdfResumeDownload, pdfResumeView, coolTile, greenTile, sunnyTile, projectItems  } = constants;
 
   /**
    * Spread attributes can be useful but they also make it easy to pass unnecessary props
@@ -43,9 +40,9 @@ function Main() {
         <img src={headshot} className="headshot-img" alt="Alec Thibodeau headshot" />
         <div className="paragraph-title">about</div>
         <p>
-          Hello. I'm a software developer and an artist. My specialty is front-end
+          Hello. I'm a software developer and a visual artist. My specialty is front-end
           web development with a focus on UI/UX, accessibility and responsive web
-          design. <a href={pdfResume} target="_blank" rel="noreferrer" className="text-link">See my resume</a>.
+          design. <a href={pdfResumeView} target="_blank" rel="noreferrer" className="text-link">View my resume</a> at GitHub. <a href={pdfResumeDownload} rel="noreferrer" className="text-link">Download my resume</a> as a PDF.
         </p>
       </div>
       <div className="banner-02" style={{backgroundImage: `url(${coolTile})`}}></div>

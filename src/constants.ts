@@ -19,12 +19,15 @@ import linkedIn from './assets/images/icon_solid_linkedin.svg';
 import gitHub from './assets/images/icon_solid_github.svg';
 import resume from './assets/images/icon_solid_resume.svg';
 
-/* Documents */
-import pdfResume from './assets/documents/alec_thibodeau_resume_web.pdf';
+/* Interfaces */
+import ContactItem from './interfaces/ContactItem';
+import ProjectItem from './interfaces/ProjectItem';
 
-const navItems = ['about', 'projects', 'contact'];
+const navItems: string[] = ['about', 'projects', 'contact'];
+const pdfResumeDownload: string = 'https://github.com/alecthibodeau/alecthibodeau.github.io/raw/main/src/assets/documents/alec_thibodeau_resume_web.pdf';
+const pdfResumeView: string = 'https://github.com/alecthibodeau/alecthibodeau.github.io/blob/main/src/assets/documents/alec_thibodeau_resume_web.pdf';
 
-const projectItems = [
+const projectItems: ProjectItem[] = [
   {
     id: 'cookieTimeTrivia',
     name: 'Cookie Time Trivia',
@@ -93,7 +96,7 @@ const projectItems = [
   }
 ]
 
-const contactItems = [
+const contactItems: ContactItem[] = [
   {
     name: 'email',
     href: 'mailto:alec@alect.me',
@@ -112,7 +115,7 @@ const contactItems = [
   },
   {
     name: 'Resume',
-    href: pdfResume,
+    href: pdfResumeView,
     image: resume
   }
 ]
@@ -120,6 +123,8 @@ const contactItems = [
 const constants = {
   headshot,
   tree,
+  pdfResumeDownload,
+  pdfResumeView,
   coolTile,
   greenTile,
   sunnyTile,

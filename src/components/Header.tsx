@@ -2,6 +2,7 @@
 import constants from '../constants';
 
 function Header() {
+
   function renderNavItem(item: string, index: number) {
     return (
       <a key={`${item}${index}`} href={`#${item}`}>

@@ -5,7 +5,9 @@ import constants from '../constants';
 import ContactItem from '../interfaces/ContactItem';
 
 function renderContactItem(item: ContactItem, index: number) {
+
   const isResume: boolean = item.name.toLowerCase() === 'resume';
+
   return (
     <a
       key={`${item.name}${index}`}
