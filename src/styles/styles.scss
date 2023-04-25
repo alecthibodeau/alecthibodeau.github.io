@@ -24,7 +24,7 @@ nav {
     letter-spacing: $letter-spacing-standard;
     text-transform: uppercase;
     text-decoration: none;
-    color: $black;
+    color: $application-background-color;
 
     &:hover {
       text-decoration: underline;
@@ -34,7 +34,7 @@ nav {
 
 main,
 footer {
-  background-color: $black;
+  background-color: $application-background-color;
 }
 
 .tree {
@@ -93,7 +93,7 @@ footer {
 main section ul {
   max-width: 600px;
   padding-bottom: .5rem;
-  border-bottom: 1px dashed $application-font-color;
+  border-bottom: 4px dotted $application-font-color;
   margin: 1rem;
 
   li {
@@ -242,7 +242,7 @@ p {
 
     &:hover {
       background-color: $application-font-color;
-      color: $black;
+      color: $application-background-color;
     }
   }
 }
@@ -304,7 +304,7 @@ p {
 }
 
 .not-found-text {
-  background-color: $black;
+  background-color: $application-background-color;
   padding: 2rem 2rem 3rem;
 
   a {

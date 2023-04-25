@@ -63,8 +63,8 @@ function Main() {
         </p>
         <ul>
           <li>Huetown &mdash; a web shop that consumes PayPal and Mailchimp APIs to, respectively, process orders and record email list subscribers</li>
-          <li>Cookie Time Trivia &mdash; a game interface that uses CRUD operations to manage gameplay data with localStorage</li>
-          <li>My art portfolio site &mdash; image galleries comprised of components rendered from JSON data</li>
+          <li>Cookie Time Trivia &mdash; a game interface that uses CRUD operations on localStorage to save scores and visual theme preferences</li>
+          <li>My art portfolio site &mdash; components rendered from JSON data to display galleries of my earlier work in drawing and printmaking</li>
           <li>This code portfolio site you're now viewing</li>
         </ul>
         <div className="projects">
