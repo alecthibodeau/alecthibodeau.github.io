@@ -49,7 +49,7 @@ function Main() {
       <section>
         <div className="paragraph-title">languages &&nbsp;technologies</div>
         <p>
-          I've worked regularly with React, React Native, TypeScript, JavaScript,
+          I've worked professionally with React, React Native, TypeScript, JavaScript,
           Emotion, CSS3/Sass, Expo Go, React Native Debugger, Angular, Angular testing
           (Jasmine), Angular Material, Google Material Design, Bootstrap,
           HTML5, JSON, Git/GitHub and npm.
@@ -59,11 +59,11 @@ function Main() {
       <section>
         <div className="paragraph-title">projects</div>
         <p>
-          My personal projects include four websites I've built recently with React, TypeScript and Sass:
+          My recent personal projects include four web applications built with React, TypeScript and Sass:
         </p>
         <ul>
           <li>Huetown &mdash; a web shop that consumes PayPal and Mailchimp APIs to, respectively, process orders and record email list subscribers</li>
-          <li>Cookie Time Trivia &mdash; a game interface that uses CRUD operations on localStorage to save scores and visual theme preferences</li>
+          <li>Cookie Time Trivia &mdash; a quiz interface with CRUD operations on localStorage for the user's high score and visual theme preference</li>
           <li>My art portfolio site &mdash; components rendered from JSON data to display galleries of my earlier work in drawing and printmaking</li>
           <li>This code portfolio site you're now viewing</li>
         </ul>
