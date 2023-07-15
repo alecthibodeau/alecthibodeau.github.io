@@ -1,11 +1,11 @@
 /* Constants */
 import constants from '../constants';
 
-function Header() {
+function Header(): JSX.Element {
 
-  function renderNavItem(item: string, index: number) {
+  function renderNavItem(item: string, index: number): JSX.Element {
     return (
-      <a key={`${item}${index}`} href={`#${item}`}>
+      <a key={`${item}-${index}`} href={`#${item}`}>
         {item}
       </a>
     );

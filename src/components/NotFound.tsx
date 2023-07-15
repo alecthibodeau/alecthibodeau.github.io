@@ -1,4 +1,4 @@
-function NotFound() {
+function NotFound(): JSX.Element {
   return (
     <div className="not-found-container">
       <div className="not-found-text">

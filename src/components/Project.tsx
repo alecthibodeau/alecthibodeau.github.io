@@ -1,7 +1,7 @@
 /* Interfaces */
 import ProjectItem from '../interfaces/ProjectItem';
 
-function Project(props: ProjectItem) {
+function Project(props: ProjectItem): JSX.Element {
   return (
     <>
       <div>

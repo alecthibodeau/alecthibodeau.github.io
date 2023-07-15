@@ -4,13 +4,13 @@ import constants from '../constants';
 /* Interfaces */
 import ContactItem from '../interfaces/ContactItem';
 
-function renderContactItem(item: ContactItem, index: number) {
+function renderContactItem(item: ContactItem, index: number): JSX.Element {
 
   const isResume: boolean = item.name.toLowerCase() === 'resume';
 
   return (
     <a
-      key={`${item.name}${index}`}
+      key={`${item.name}-${index}`}
       className="text-link"
       href={item.href}
       target={isResume ? '_blank' : '_top'}
@@ -26,10 +26,10 @@ function renderContactItem(item: ContactItem, index: number) {
   );
 }
 
-function Footer() {
+function Footer(): JSX.Element {
   return (
     <footer>
-      <div className="banner-04" style={{backgroundImage: `url(${constants.greenTile})`}}></div>
+      <div className="banner-04"></div>
       <section id="contact">
         <div className="paragraph-title">contact</div>
         <div className="contact-box">

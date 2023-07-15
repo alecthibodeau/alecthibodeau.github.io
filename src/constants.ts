@@ -1,9 +1,6 @@
 /* Site Images */
 import headshot from './assets/images/alec_headshot_150px.jpg';
 import tree from './assets/images/thibodeau_tree_circle.svg';
-import coolTile from './assets/images/thibodeau_cool_tile.jpg';
-import greenTile from './assets/images/thibodeau_green_tile.jpg';
-import sunnyTile from './assets/images/thibodeau_sunny_tile.jpg';
 
 /* Project Images */
 import cookieTimeTrivia from './assets/images/mobile_screenshot_cookie_time_trivia.jpg';
@@ -27,6 +24,13 @@ const navItems: string[] = ['about', 'projects', 'contact'];
 const pdfResumeDownload: string = 'https://github.com/alecthibodeau/alecthibodeau.github.io/raw/main/src/assets/documents/alec_thibodeau_resume_web.pdf';
 const pdfResumeView: string = 'https://github.com/alecthibodeau/alecthibodeau.github.io/blob/main/src/assets/documents/alec_thibodeau_resume_web.pdf';
 
+const links = {
+  gitHubLink: 'https://github.com/alecthibodeau',
+  huetownLink: 'https://huetown.com',
+  cookieTimeTriviaLink: 'https://alect.me/cookie-time-trivia',
+  artPortfolioLink: 'https://alecthibodeau.com'
+}
+
 const projectItems: ProjectItem[] = [
   {
     id: 'huetown',
@@ -35,7 +39,7 @@ const projectItems: ProjectItem[] = [
     frontEndTechnology: 'React, TypeScript, React Router, CSS3/Sass, SVG',
     backEndTechnology: 'PayPal API, Mailchimp API',
     altText: 'Mobile screenshot of the Huetown web shop',
-    website: 'https://huetown.com',
+    website: links.huetownLink,
     clientRepo: 'https://github.com/alecthibodeau/huetown',
     image: huetown
   },
@@ -45,7 +49,7 @@ const projectItems: ProjectItem[] = [
     infoText: 'A game with multiple categories and user-selectable visual themes',
     frontEndTechnology: 'React, TypeScript, React Router, Emotion, CSS3/Sass, SVG, localStorage',
     altText: 'Mobile screenshot of the Cookie Time Trivia game',
-    website: 'https://alect.me/cookie-time-trivia',
+    website: links.cookieTimeTriviaLink,
     clientRepo: 'https://github.com/alecthibodeau/cookie-time-trivia',
     image: cookieTimeTrivia
   },
@@ -55,7 +59,7 @@ const projectItems: ProjectItem[] = [
     infoText: 'An art portfolio website for displaying my earlier work in drawing and printmaking',
     frontEndTechnology: 'React, TypeScript, React Router, Bootstrap 5, CSS3/Sass, SVG',
     altText: 'Mobile screenshot of Alec\'s art portfolio website',
-    website: 'https://alecthibodeau.com',
+    website: links.artPortfolioLink,
     clientRepo: 'https://github.com/alecthibodeau/alecthibodeau.com',
     image: artPortfolio
   },
@@ -110,7 +114,7 @@ const contactItems: ContactItem[] = [
   },
   {
     name: 'GitHub',
-    href: 'https://github.com/alecthibodeau',
+    href: links.gitHubLink,
     image: gitHub
   },
   {
@@ -125,12 +129,10 @@ const constants = {
   tree,
   pdfResumeDownload,
   pdfResumeView,
-  coolTile,
-  greenTile,
-  sunnyTile,
   navItems,
   projectItems,
-  contactItems
+  contactItems,
+  links
 };
 
 export default constants;
