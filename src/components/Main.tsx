@@ -8,7 +8,17 @@ import ProjectItem from '../interfaces/ProjectItem';
 import Project from './Project';
 
 function Main() {
-  const { headshot, tree, pdfResumeDownload, pdfResumeView, coolTile, greenTile, sunnyTile, projectItems  } = constants;
+  const {
+    headshot,
+    tree,
+    pdfResumeDownload,
+    pdfResumeView,
+    coolTile,
+    greenTile,
+    sunnyTile,
+    projectItems,
+    contactItems
+  } = constants;
 
   /**
    * Spread attributes can be useful but they also make it easy to pass unnecessary props
@@ -52,19 +62,21 @@ function Main() {
           I've worked professionally with React, React Native, TypeScript, JavaScript,
           Emotion, CSS3/Sass, Expo Go, React Native Debugger, Angular, Angular testing
           (Jasmine), Angular Material, Google Material Design, Bootstrap,
-          HTML5, JSON, Git/GitHub and npm.
+          HTML5, JSON, Postman, Storybook, Lucidchart, Git/GitHub and npm.
         </p>
       </section>
       <div id="projects" className="banner-03" style={{backgroundImage: `url(${sunnyTile})`}}></div>
       <section>
         <div className="paragraph-title">projects</div>
         <p>
-          My recent personal projects include four web applications built with React, TypeScript and Sass:
+          Recent personal projects of mine include four web applications built with React, TypeScript and Sass.
+          These websites are live and interactive. And their code is viewable at <a href={contactItems[2].href} target="_blank" rel="noreferrer" className="text-link">GitHub</a>.
+          I also design the UI and UX for these sites (and I create their content), with features including semantic HTML, accessible elements, custom color palettes, original SVG images and mobile-first responsiveness.
         </p>
         <ul>
-          <li>Huetown &mdash; a web shop that consumes PayPal and Mailchimp APIs to, respectively, process orders and record email list subscribers</li>
-          <li>Cookie Time Trivia &mdash; a quiz interface with CRUD operations on localStorage for the user's high score and visual theme preference</li>
-          <li>My art portfolio site &mdash; components rendered from JSON data to display galleries of my earlier work in drawing and printmaking</li>
+          <li><a href={projectItems[0].website} target="_blank" rel="noreferrer" className="text-link">Huetown</a> &mdash; a web shop that consumes PayPal and Mailchimp APIs to, respectively, process orders and record email list subscribers</li>
+          <li><a href={projectItems[1].website} target="_blank" rel="noreferrer" className="text-link">Cookie Time Trivia</a> &mdash; a quiz interface with CRUD operations on localStorage for the user's high score and visual theme preference</li>
+          <li><a href={projectItems[2].website} target="_blank" rel="noreferrer" className="text-link">My art portfolio site</a> &mdash; components rendered from JSON data to display galleries of my earlier work in drawing and printmaking</li>
           <li>This code portfolio site you're now viewing</li>
         </ul>
         <div className="projects">
