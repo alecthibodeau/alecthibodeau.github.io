@@ -7,14 +7,16 @@ import ProjectItem from '../interfaces/ProjectItem';
 /* Components */
 import Project from './Project';
 
+/* Helpers */
+import helpers from '../helpers';
+
 function Main(): JSX.Element {
   const {
     headshot,
     tree,
-    pdfResumeDownload,
-    pdfResumeView,
     projectItems,
-    links
+    sections,
+    hypertextReference
   } = constants;
 
   /**
@@ -30,12 +32,22 @@ function Main(): JSX.Element {
     );
   }
 
+  function renderProjectDescription(item: ProjectItem, index: number): JSX.Element {
+    return (
+      <li key={`${item.name}-${index}`}>
+        <a href={item.website} className="text-link">
+          {item.name}
+        </a> &mdash; {item.description}
+      </li>
+    );
+  }
+
   return (
     <main>
       <div className="banner-01">
         <img className="tree" src={tree} alt="AT tree logo" />
       </div>
-      <div id="about" className="name-and-occupations">
+      <div id={sections.about} className="name-and-occupations">
         <h1 className="name">Alec Thibodeau</h1>
         <h2 className="occupations">
           <span>Software Developer</span>
@@ -43,40 +55,38 @@ function Main(): JSX.Element {
           <span>Artist</span>
         </h2>
       </div>
-      <div>
+      <section>
         <img src={headshot} className="headshot-img" alt="Alec Thibodeau headshot" />
-        <div className="paragraph-title">about</div>
+        <div className="section-title">{helpers.formatTitleCase(sections.about)}</div>
         <p>
           Hello. I'm a software developer and a visual artist. My specialty is front-end
           web development with a focus on UI/UX, accessibility and responsive web
-          design. <a href={pdfResumeView} target="_blank" rel="noreferrer" className="text-link">View my resume</a> at GitHub. <a href={pdfResumeDownload} rel="noreferrer" className="text-link">Download my resume</a> as a PDF.
+          design. I'm presently exploring ways to combine coding and visual expression.
         </p>
-      </div>
+      </section>
       <div className="banner-02"></div>
       <section>
-        <div className="paragraph-title">languages &&nbsp;technologies</div>
+        <div className="section-title">{helpers.formatTitleCase(sections.technologies)}</div>
         <p>
-          I've worked professionally with React, React Native, TypeScript, JavaScript,
-          Emotion, CSS3/Sass, Expo Go, React Native Debugger, Angular, Angular testing
+          I've worked with React, React Native, TypeScript, JavaScript, Emotion,
+          CSS3/Sass, Expo Go, React Native Debugger, Angular, Angular testing
           (Jasmine), Angular Material, Google Material Design, Bootstrap, HTML5, JSON,
           Postman, Git/GitHub, npm, Storybook, Lucidchart and Adobe Creative Cloud.
         </p>
       </section>
-      <div id="projects" className="banner-03"></div>
+      <div id={sections.projects} className="banner-03"></div>
       <section>
-        <div className="paragraph-title">projects</div>
+        <div className="section-title">{helpers.formatTitleCase(sections.projects)}</div>
         <p>
-          Recent personal projects of mine include four web applications built with React, TypeScript and Sass.
-          These websites are live and interactive. And their code is viewable at <a href={links.gitHubLink} target="_blank" rel="noreferrer" className="text-link">GitHub</a>.
+          My personal projects include four web applications built with React, TypeScript and Sass.
+          These websites are live and interactive &mdash; and their code is viewable at <a href={hypertextReference.gitHub} className="text-link">GitHub</a>.
           I also design the UI and UX for these sites (and I create their content), with features including semantic HTML, accessible elements, custom color palettes, original SVG images and mobile-first responsiveness.
         </p>
         <ul>
-          <li><a href={links.huetownLink} target="_blank" rel="noreferrer" className="text-link">Huetown</a> &mdash; a web shop that consumes PayPal and Mailchimp APIs to, respectively, process orders and record email list subscribers</li>
-          <li><a href={links.cookieTimeTriviaLink} target="_blank" rel="noreferrer" className="text-link">Cookie Time Trivia</a> &mdash; a quiz interface with CRUD operations on localStorage for the user's high score and visual theme preference</li>
-          <li><a href={links.artPortfolioLink} target="_blank" rel="noreferrer" className="text-link">My art portfolio site</a> &mdash; components rendered from JSON data to display galleries of my earlier work in drawing and printmaking</li>
+          {projectItems.slice(0, 3).map(renderProjectDescription)}
           <li>This code portfolio site you're now viewing</li>
         </ul>
-        <div className="projects">
+        <div className={sections.projects}>
           {projectItems.slice(0, 3).map(renderProjectItem)}
         </div>
       </section>

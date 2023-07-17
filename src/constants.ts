@@ -1,3 +1,7 @@
+/* Interfaces */
+import InformationItem from './interfaces/InformationItem';
+import ProjectItem from './interfaces/ProjectItem';
+
 /* Site Images */
 import headshot from './assets/images/alec_headshot_150px.jpg';
 import tree from './assets/images/thibodeau_tree_circle.svg';
@@ -10,56 +14,63 @@ import patturns from './assets/images/mobile_screenshot_patturns.jpg';
 import radTabs from './assets/images/mobile_screenshot_radtabs.jpg';
 import ticTacToe from './assets/images/mobile_screenshot_tic_tac_toe.jpg';
 
-/* Contact Images */
+/* Information Images */
 import email from './assets/images/icon_solid_email.svg';
 import linkedIn from './assets/images/icon_solid_linkedin.svg';
 import gitHub from './assets/images/icon_solid_github.svg';
 import resume from './assets/images/icon_solid_resume.svg';
 
-/* Interfaces */
-import ContactItem from './interfaces/ContactItem';
-import ProjectItem from './interfaces/ProjectItem';
-
-const navItems: string[] = ['about', 'projects', 'contact'];
-const pdfResumeDownload: string = 'https://github.com/alecthibodeau/alecthibodeau.github.io/raw/main/src/assets/documents/alec_thibodeau_resume_web.pdf';
-const pdfResumeView: string = 'https://github.com/alecthibodeau/alecthibodeau.github.io/blob/main/src/assets/documents/alec_thibodeau_resume_web.pdf';
-
-const links = {
-  gitHubLink: 'https://github.com/alecthibodeau',
-  huetownLink: 'https://huetown.com',
-  cookieTimeTriviaLink: 'https://alect.me/cookie-time-trivia',
-  artPortfolioLink: 'https://alecthibodeau.com'
+const hypertextReference = {
+  artPortfolio: 'https://alecthibodeau.com',
+  cookieTimeTrivia: 'https://alect.me/cookie-time-trivia',
+  gitHub: 'https://github.com/alecthibodeau',
+  huetown: 'https://huetown.com',
+  linkedIn: 'https://www.linkedin.com/in/alecthibodeau',
+  mailTo: 'mailto:alec@alect.me',
+  pdfResumeView: 'https://github.com/alecthibodeau/alecthibodeau.github.io/blob/main/src/assets/documents/alec_thibodeau_resume_web.pdf'
 }
+
+const sections = {
+  about: 'about',
+  technologies: 'technologies',
+  projects: 'projects',
+  information: 'information'
+}
+
+const navItems: string[] = [sections.about, sections.projects, sections.information];
 
 const projectItems: ProjectItem[] = [
   {
     id: 'huetown',
     name: 'Huetown',
+    description: 'a web shop that consumes PayPal and Mailchimp APIs to, respectively, accept orders and record email list subscribers',
     infoText: 'The web shop for Huetown, my personal project for art sales',
     frontEndTechnology: 'React, TypeScript, React Router, CSS3/Sass, SVG',
     backEndTechnology: 'PayPal API, Mailchimp API',
     altText: 'Mobile screenshot of the Huetown web shop',
-    website: links.huetownLink,
+    website: hypertextReference.huetown,
     clientRepo: 'https://github.com/alecthibodeau/huetown',
     image: huetown
   },
   {
     id: 'cookieTimeTrivia',
     name: 'Cookie Time Trivia',
+    description: 'a quiz interface with CRUD operations on localStorage for the user\'s high score and visual theme preference',
     infoText: 'A game with multiple categories and user-selectable visual themes',
     frontEndTechnology: 'React, TypeScript, React Router, Emotion, CSS3/Sass, SVG, localStorage',
     altText: 'Mobile screenshot of the Cookie Time Trivia game',
-    website: links.cookieTimeTriviaLink,
+    website: hypertextReference.cookieTimeTrivia,
     clientRepo: 'https://github.com/alecthibodeau/cookie-time-trivia',
     image: cookieTimeTrivia
   },
   {
     id: 'artPortfolio',
     name: 'Art Portfolio',
+    description: 'components rendered from JSON data to display galleries of my earlier work in drawing and printmaking',
     infoText: 'An art portfolio website for displaying my earlier work in drawing and printmaking',
     frontEndTechnology: 'React, TypeScript, React Router, Bootstrap 5, CSS3/Sass, SVG',
     altText: 'Mobile screenshot of Alec\'s art portfolio website',
-    website: links.artPortfolioLink,
+    website: hypertextReference.artPortfolio,
     clientRepo: 'https://github.com/alecthibodeau/alecthibodeau.com',
     image: artPortfolio
   },
@@ -100,26 +111,25 @@ const projectItems: ProjectItem[] = [
   }
 ]
 
-const contactItems: ContactItem[] = [
-  {
-    name: 'email',
-    href: 'mailto:alec@alect.me',
-    linkText: 'alec@alect.me',
-    image: email
-  },
-  {
-    name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/alecthibodeau',
-    image: linkedIn
-  },
+const informationItems: InformationItem[] = [
   {
     name: 'GitHub',
-    href: links.gitHubLink,
+    href: hypertextReference.gitHub,
     image: gitHub
   },
   {
+    name: 'LinkedIn',
+    href: hypertextReference.linkedIn,
+    image: linkedIn
+  },
+  {
+    name: 'Email',
+    href: hypertextReference.mailTo,
+    image: email
+  },
+  {
     name: 'Resume',
-    href: pdfResumeView,
+    href: hypertextReference.pdfResumeView,
     image: resume
   }
 ]
@@ -127,12 +137,11 @@ const contactItems: ContactItem[] = [
 const constants = {
   headshot,
   tree,
-  pdfResumeDownload,
-  pdfResumeView,
   navItems,
+  sections,
   projectItems,
-  contactItems,
-  links
+  informationItems,
+  hypertextReference
 };
 
 export default constants;

@@ -2,25 +2,23 @@
 import constants from '../constants';
 
 /* Interfaces */
-import ContactItem from '../interfaces/ContactItem';
+import InformationItem from '../interfaces/InformationItem';
 
-function renderContactItem(item: ContactItem, index: number): JSX.Element {
+/* Helpers */
+import helpers from '../helpers';
 
-  const isResume: boolean = item.name.toLowerCase() === 'resume';
+function renderInformationItem(item: InformationItem, index: number): JSX.Element {
 
   return (
     <a
       key={`${item.name}-${index}`}
       className="text-link"
-      href={item.href}
-      target={isResume ? '_blank' : '_top'}
-      rel={`noopener ${isResume ? 'noreferrer' : ''}`}
-      download={isResume}>
+      href={item.href}>
       <img
         src={item.image}
         alt={`${item.name} SVG icon`} />
-      <div className="contact-text">
-        {item.linkText ? item.linkText : item.name}
+      <div className="information-text">
+        {item.name}
       </div>
     </a>
   );
@@ -30,10 +28,10 @@ function Footer(): JSX.Element {
   return (
     <footer>
       <div className="banner-04"></div>
-      <section id="contact">
-        <div className="paragraph-title">contact</div>
-        <div className="contact-box">
-          {constants.contactItems.map(renderContactItem)}
+      <section id={constants.sections.information}>
+        <div className="section-title">{helpers.formatTitleCase(constants.sections.information)}</div>
+        <div className="information-box">
+          {constants.informationItems.map(renderInformationItem)}
         </div>
         <div>
           <p>
@@ -46,7 +44,7 @@ function Footer(): JSX.Element {
         </div>
         <div className="stripes-container">
           {Array(7).fill('stripe').map((item: string, index: number) => {
-            return (<div key={`${item}${index}`}></div>);
+            return (<div key={`${item}-${index}`}></div>);
           })}
         </div>
       </section>

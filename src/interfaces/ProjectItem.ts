@@ -1,6 +1,7 @@
 interface ProjectItem {
   id: string;
   name: string;
+  description?: string,
   infoText: string;
   frontEndTechnology: string;
   backEndTechnology?: string;

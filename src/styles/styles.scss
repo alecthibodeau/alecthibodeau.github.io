@@ -22,7 +22,6 @@ nav {
     margin: auto 12px;
     font-family: 'Varela Round', sans-serif;
     letter-spacing: $letter-spacing-standard;
-    text-transform: uppercase;
     text-decoration: none;
     color: $application-background-color;
 
@@ -132,10 +131,9 @@ main section ul {
   }
 }
 
-.paragraph-title {
+.section-title {
   margin: 16px auto 10px;
   font-size: 1.25rem;
-  text-transform: uppercase;
   letter-spacing: .5vw;
 }
 
@@ -177,10 +175,11 @@ p {
   background-color: $black-screen;
 
   .project-info-title {
+    margin-bottom: 12px;
     font-size: 1.125rem;
     font-weight: 500;
     letter-spacing: $letter-spacing-standard;
-    color: $rainbow-yellow;
+    color: $application-font-color;
   }
 
   .project-info-text {
@@ -193,12 +192,9 @@ p {
       margin-top: 8px;
     }
 
-    .front-end {
-      color: $rainbow-green;
-    }
-
+    .front-end,
     .back-end {
-      color: $rainbow-orange;
+      margin: 12px auto 6px;
     }
   }
 }
@@ -217,7 +213,6 @@ p {
   font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: $letter-spacing-standard;
-  color: $rainbow-yellow;
 }
 
 .project-routing-links {
@@ -260,13 +255,13 @@ p {
   }
 }
 
-.contact-box {
+.information-box {
   max-width: 240px;
   display: flex;
   flex-direction: column;
   border: 1px solid $rainbow-red;
   border-radius: 16px;
-  margin: 24px auto;
+  margin: 12px auto 24px;
   padding: 32px 0;
 
   a {
@@ -275,7 +270,7 @@ p {
   }
 }
 
-.contact-text {
+.information-text {
   margin-top: .5rem;
   font-family: 'Varela Round', sans-serif;
   letter-spacing: .125rem;
@@ -350,12 +345,12 @@ p {
   }
 
   .name {
-    font-size: 3.25rem;
+    font-size: 3rem;
   }
 
   .occupations {
     flex-direction: row;
-    font-size: 1.625rem;
+    font-size: 1.5rem;
     letter-spacing: 1vw;
   }
 
@@ -372,7 +367,7 @@ p {
     }
   }
 
-  .paragraph-title {
+  .section-title {
     margin-top: 32px;
     font-size: 2rem;
   }
@@ -387,7 +382,7 @@ p {
     width: 70%;
   }
 
-  .contact-box {
+  .information-box {
     width: 85%;
     max-width: 1000px;
     flex-direction: row;

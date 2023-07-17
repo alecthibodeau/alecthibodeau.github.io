@@ -1,12 +1,13 @@
 /* Constants */
 import constants from '../constants';
+import helpers from '../helpers';
 
 function Header(): JSX.Element {
 
   function renderNavItem(item: string, index: number): JSX.Element {
     return (
       <a key={`${item}-${index}`} href={`#${item}`}>
-        {item}
+        {helpers.formatTitleCase(item)}
       </a>
     );
   }
