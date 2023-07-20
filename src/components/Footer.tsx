@@ -36,9 +36,8 @@ function Footer(): JSX.Element {
         <div>
           <p>
             I design and maintain this code portfolio site with React, TypeScript
-            and Sass (<a className="text-link" href="https://github.com/alecthibodeau/alecthibodeau.github.io">
-              see the code at GitHub
-            </a>). Scroll up for more <a className="text-link" href="#projects">projects</a>.
+            and Sass (<a className="text-link" href={constants.hypertextReference.gitHub}>see
+            the code at GitHub</a>). Scroll up for more <a className="text-link" href="#projects">projects</a>.
           </p>
           <div className="credit">{`Alec Thibodeau, ${new Date().getFullYear()}`}</div>
         </div>

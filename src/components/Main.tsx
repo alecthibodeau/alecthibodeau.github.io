@@ -60,8 +60,9 @@ function Main(): JSX.Element {
         <div className="section-title">{helpers.formatTitleCase(sections.about)}</div>
         <p>
           Hello. I'm a software developer and a visual artist. My specialty is front-end
-          web development with a focus on UI/UX, accessibility and responsive web
-          design. I'm presently exploring ways to combine coding and visual expression.
+          web development with a focus on the user interface (UI), the user experience (UX),
+          digital accessibility and responsive web design. I'm presently exploring ways to
+          combine coding and visual expression.
         </p>
       </section>
       <div className="banner-02"></div>
@@ -79,8 +80,10 @@ function Main(): JSX.Element {
         <div className="section-title">{helpers.formatTitleCase(sections.projects)}</div>
         <p>
           My personal projects include four web applications built with React, TypeScript and Sass.
-          These websites are live and interactive &mdash; and their code is viewable at <a href={hypertextReference.gitHub} className="text-link">GitHub</a>.
-          I also design the UI and UX for these sites (and I create their content), with features including semantic HTML, accessible elements, custom color palettes, original SVG images and mobile-first responsiveness.
+          These websites contain original content and are live and interactive &mdash; and their code is
+          viewable at <a href={hypertextReference.gitHub} className="text-link">GitHub</a>.
+          I also handle the UI and UX design for these sites, with features including semantic HTML,
+          accessible elements, mobile-first responsiveness, custom color palettes and unique SVG images.
         </p>
         <ul>
           {projectItems.slice(0, 3).map(renderProjectDescription)}
