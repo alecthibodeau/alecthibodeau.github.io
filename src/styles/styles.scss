@@ -175,8 +175,8 @@ p {
 
   .project-info-title {
     margin-bottom: 12px;
-    font-size: 1.125rem;
-    font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: 700;
     letter-spacing: $letter-spacing-standard;
     color: $application-font-color;
   }
@@ -194,6 +194,7 @@ p {
     .front-end,
     .back-end {
       margin: 12px auto 6px;
+      font-weight: 700;
     }
   }
 }
