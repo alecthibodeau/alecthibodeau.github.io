@@ -29,8 +29,8 @@ function Project(props: ProjectItem): JSX.Element {
       <div className="project-routing-links">
         <div className="project-title">{props.name}</div>
         <a href={props.website}>Website</a>
-        <a href={props.clientRepo}>Client Repo</a>
-        {props.apiRepo && <a href={props.apiRepo}>API Repo</a>}
+        <a href={props.clientRepo}>GitHub</a>
+        {props.apiRepo && <a href={props.apiRepo}>GitHub (API)</a>}
       </div>
     </>
   );

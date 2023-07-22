@@ -19,6 +19,8 @@ function Main(): JSX.Element {
     hypertextReference
   } = constants;
 
+  const selectProjects = projectItems.slice(0, 3);
+
   /**
    * Spread attributes can be useful but they also make it easy to pass unnecessary props
    * to components that don’t care about them or to pass invalid HTML attributes to the DOM.
@@ -59,17 +61,17 @@ function Main(): JSX.Element {
         <img src={headshot} className="headshot-img" alt="Alec Thibodeau headshot" />
         <div className="section-title">{helpers.formatTitleCase(sections.about)}</div>
         <p>
-          Hello. I'm a software developer and a visual artist. My work in front-end
-          web development focuses on the user interface (UI), the user experience (UX),
-          digital accessibility and responsive web design. I enjoy looking for new ways to
-          combine coding and visual expression.
+          Hello. I'm a software developer and a visual artist. My focus in
+          web development is on the front end, specifically the user interface (UI),
+          the user experience (UX), digital accessibility and responsive web design.
+          I enjoy looking for new ways to combine coding and visual expression.
         </p>
       </section>
       <div className="banner-02"></div>
       <section>
         <div className="section-title">{helpers.formatTitleCase(sections.technologies)}</div>
         <p>
-          I've worked with React, React Native, TypeScript, JavaScript, Emotion,
+          I've used React, React Native, TypeScript, JavaScript, Emotion,
           CSS3/Sass, Expo Go, React Native Debugger, Angular, Angular testing
           (Jasmine), Angular Material, Google Material Design, Bootstrap, HTML5, JSON,
           Postman, Git/GitHub, npm, Storybook, Lucidchart and Adobe Creative Cloud.
@@ -79,18 +81,18 @@ function Main(): JSX.Element {
       <section>
         <div className="section-title">{helpers.formatTitleCase(sections.projects)}</div>
         <p>
-          My personal projects include four web applications built with React, TypeScript and Sass.
+          My personal coding projects include four web applications built with React, TypeScript and Sass.
           These are live and interactive &mdash; and their code is
           viewable at <a href={hypertextReference.gitHub} className="text-link">GitHub</a>.
           I also handle their UI and UX design: with features like semantic HTML,
           accessible elements, mobile-first responsiveness and custom color palettes.
         </p>
         <ul>
-          {projectItems.slice(0, 3).map(renderProjectDescription)}
+          {selectProjects.map(renderProjectDescription)}
           <li>This code portfolio site you're now viewing</li>
         </ul>
         <div className={sections.projects}>
-          {projectItems.slice(0, 3).map(renderProjectItem)}
+          {selectProjects.map(renderProjectItem)}
         </div>
       </section>
     </main>
