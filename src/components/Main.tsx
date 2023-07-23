@@ -60,7 +60,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         <div className="section-title">{formatTitleCase(sections.about)}</div>
         <p>
           Hello. I'm a software developer and a visual artist. My focus in
-          software is on the front end of web development, specifically the user interface (UI),
+          software is on the front end of web development, especially the user interface (UI),
           the user experience (UX), digital accessibility and responsive web design.
           I enjoy looking for new ways to combine coding and visual expression.
         </p>
