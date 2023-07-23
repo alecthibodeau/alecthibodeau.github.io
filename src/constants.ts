@@ -28,14 +28,14 @@ const hypertextReference = {
   linkedIn: 'https://www.linkedin.com/in/alecthibodeau',
   mailTo: 'mailto:alec@alect.me',
   pdfResumeView: 'https://github.com/alecthibodeau/alecthibodeau.github.io/blob/main/src/assets/documents/alec_thibodeau_resume_web.pdf'
-}
+};
 
 const sections = {
   about: 'about',
   technologies: 'technologies',
   projects: 'projects',
   information: 'information'
-}
+};
 
 const navItems: string[] = [sections.about, sections.projects, sections.information];
 
@@ -109,7 +109,7 @@ const projectItems: ProjectItem[] = [
     clientRepo: 'https://github.com/alecthibodeau/tic-tac-toe-client',
     image: ticTacToe
   }
-]
+];
 
 const informationItems: InformationItem[] = [
   {
@@ -132,7 +132,14 @@ const informationItems: InformationItem[] = [
     href: hypertextReference.pdfResumeView,
     image: resume
   }
-]
+];
+
+const wedgeDirection: { [key: number]: string } = {
+  0: 'top-left',
+  1: 'top-right',
+  2: 'bottom-left',
+  3: 'bottom-right'
+};
 
 const constants = {
   headshot,
@@ -141,7 +148,8 @@ const constants = {
   sections,
   projectItems,
   informationItems,
-  hypertextReference
+  hypertextReference,
+  wedgeDirection
 };
 
 export default constants;

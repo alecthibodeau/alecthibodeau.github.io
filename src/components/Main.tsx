@@ -1,5 +1,6 @@
 /* Constants */
 import constants from '../constants';
+import WedgeBanner from './WedgeBanner';
 
 /* Interfaces */
 import ProjectItem from '../interfaces/ProjectItem';
@@ -10,15 +11,15 @@ import Project from './Project';
 /* Helpers */
 import helpers from '../helpers';
 
-function Main(): JSX.Element {
+function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.Element {
   const {
     headshot,
-    tree,
     projectItems,
     sections,
     hypertextReference
   } = constants;
 
+  const { formatTitleCase } = helpers;
   const selectProjects = projectItems.slice(0, 3);
 
   /**
@@ -46,10 +47,7 @@ function Main(): JSX.Element {
 
   return (
     <main>
-      <div className="banner-01">
-        <img className="tree" src={tree} alt="AT tree logo" />
-      </div>
-      <div id={sections.about} className="name-and-occupations">
+      <div className="name-and-occupations">
         <h1 className="name">Alec Thibodeau</h1>
         <h2 className="occupations">
           <span>Software Developer</span>
@@ -57,19 +55,23 @@ function Main(): JSX.Element {
           <span>Artist</span>
         </h2>
       </div>
-      <section>
+      <section id={sections.about}>
         <img src={headshot} className="headshot-img" alt="Alec Thibodeau headshot" />
-        <div className="section-title">{helpers.formatTitleCase(sections.about)}</div>
+        <div className="section-title">{formatTitleCase(sections.about)}</div>
         <p>
           Hello. I'm a software developer and a visual artist. My focus in
-          web development is on the front end, specifically the user interface (UI),
+          software is on front-end web development, specifically the user interface (UI),
           the user experience (UX), digital accessibility and responsive web design.
           I enjoy looking for new ways to combine coding and visual expression.
         </p>
       </section>
-      <div className="banner-02"></div>
+      <WedgeBanner
+        isBreakpointXs={props.isBreakpointXs}
+        viewportWidth={props.viewportWidth}
+        index={1}
+      />
       <section>
-        <div className="section-title">{helpers.formatTitleCase(sections.technologies)}</div>
+        <div className="section-title">{formatTitleCase(sections.technologies)}</div>
         <p>
           I've used React, React Native, TypeScript, JavaScript, Emotion,
           CSS3/Sass, Expo Go, React Native Debugger, Angular, Angular testing
@@ -77,12 +79,17 @@ function Main(): JSX.Element {
           Postman, Git/GitHub, npm, Storybook, Lucidchart and Adobe Creative Cloud.
         </p>
       </section>
-      <div id={sections.projects} className="banner-03"></div>
+      <WedgeBanner
+        id={sections.projects}
+        isBreakpointXs={props.isBreakpointXs}
+        viewportWidth={props.viewportWidth}
+        index={2}
+      />
       <section>
-        <div className="section-title">{helpers.formatTitleCase(sections.projects)}</div>
+        <div className="section-title">{formatTitleCase(sections.projects)}</div>
         <p>
-          My personal coding projects include four web applications built with React, TypeScript and Sass.
-          These are live and interactive &mdash; and their code is
+          My personal coding projects include four web applications built with React,
+          TypeScript and Sass. These are live and interactive &mdash; and their code is
           viewable at <a href={hypertextReference.gitHub} className="text-link">GitHub</a>.
           I also handle their UI and UX design: with features like semantic HTML,
           accessible elements, mobile-first responsiveness and custom color palettes.

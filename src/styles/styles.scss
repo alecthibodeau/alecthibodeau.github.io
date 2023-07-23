@@ -36,39 +36,60 @@ footer {
   background-color: $application-background-color;
 }
 
-.tree {
-  width: 57%;
-  height: 57%;
-  margin-top: 65px;
+main {
+  padding-bottom: 16px;
 }
 
-.banner-01 {
-  position: relative;
-  bottom: 14px;
-  height: 200px;
-  background-image: url($greenTile);
+.wedge-row {
+  display: flex;
+  opacity: .5;
 }
 
-.banner-02,
-.banner-03,
-.banner-04 {
+.wedge {
+  width: $wedge-standard;
+  height: $wedge-standard;
+  min-width: $wedge-standard;
+  background-color: $application-background-color;
+
+  &.top-left {
+    border-top-left-radius: $one-hundred-percent;
+  }
+
+  &.top-right {
+    border-top-right-radius: $one-hundred-percent;
+  }
+
+  &.bottom-left {
+    border-bottom-left-radius: $one-hundred-percent;
+  }
+
+  &.bottom-right {
+    border-bottom-right-radius: $one-hundred-percent;
+  }
+}
+
+[class^='banner'] {
   height: 100px;
 }
 
+.banner-01 {
+  margin: 64px auto;
+  background-color: $rainbow-blue;
+}
+
 .banner-02 {
-  background-image: url($coolTile);
+  margin: 64px auto;
+  background-color: $rainbow-red;
 }
 
 .banner-03 {
-  background-image: url($sunnyTile);
-}
-
-.banner-04 {
-  background-image: url($greenTile);
+  margin-bottom: 64px;
+  background-color: $rainbow-green;
 }
 
 .name-and-occupations {
-  margin: 16px auto;
+  padding-top: 4rem;
+  margin: auto auto 16px;
   text-transform: uppercase;
 
   h1,
@@ -231,11 +252,11 @@ p {
     text-decoration: none;
 
     &:nth-child(2) {
-      border-color: $rainbow-blue;
+      border-color: $rainbow-green;
     }
 
     &:nth-child(3) {
-      border-color: $rainbow-green;
+      border-color: $rainbow-blue;
     }
 
     &:nth-child(4) {
@@ -329,18 +350,7 @@ p {
     justify-content: flex-end;
   }
 
-  .tree {
-    width: initial;
-    height: initial;
-  }
-
-  .banner-01 {
-    height: 250px;
-  }
-
-  .banner-02,
-  .banner-03,
-  .banner-04 {
+  [class^='banner'] {
     height: 200px;
   }
 
