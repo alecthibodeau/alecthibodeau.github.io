@@ -96,7 +96,13 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         </p>
         <ul>
           {selectProjects.map(renderProjectDescription)}
-          <li>This code portfolio site you're now viewing</li>
+          <li>
+            <span>This portfolio site you're now viewing (</span>
+            <a className="text-link" href={hypertextReference.codePortfolio}>
+              see the code
+            </a>
+            <span>)</span>
+          </li>
         </ul>
         <div className={sections.projects}>
           {selectProjects.map(renderProjectItem)}

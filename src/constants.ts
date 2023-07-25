@@ -22,6 +22,7 @@ import resume from './assets/images/icon_solid_resume.svg';
 
 const hypertextReference = {
   artPortfolio: 'https://alecthibodeau.com',
+  codePortfolio: 'https://github.com/alecthibodeau/alecthibodeau.github.io',
   cookieTimeTrivia: 'https://alect.me/cookie-time-trivia',
   gitHub: 'https://github.com/alecthibodeau',
   huetown: 'https://huetown.com',
