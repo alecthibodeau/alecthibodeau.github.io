@@ -52,6 +52,13 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
             return (<div key={`${item}-${index}`}></div>);
           })}
         </div>
+        <div className="discs-container">
+          {Array(Math.floor(props.viewportWidth/7)).fill('disc').map((item: string, index: number) => {
+            return (
+              <div key={`${item}-${index}`} className={`${item}-${index % 2 === 0 ? 'odd' : 'even'}`}></div>
+            );
+          })}
+        </div>
       </section>
     </footer>
   );

@@ -46,9 +46,8 @@ main {
 }
 
 .wedge {
-  width: $wedge-standard;
-  height: $wedge-standard;
   min-width: $wedge-standard;
+  height: $wedge-standard;
   background-color: $application-background-color;
 
   &.top-left {
@@ -322,6 +321,24 @@ p {
 
     &:nth-child(4) {
       background-color: $rainbow-yellow;
+    }
+  }
+}
+
+.discs-container {
+  display: flex;
+
+  [class^='disc'] {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+
+    &.disc-odd {
+      background-color: $application-background-color;
+    }
+
+    &.disc-even {
+      background-color: $application-background-color;
     }
   }
 }
