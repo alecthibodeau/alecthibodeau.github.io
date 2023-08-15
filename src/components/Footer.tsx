@@ -35,7 +35,7 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
         id={sections.information}
         isBreakpointXs={props.isBreakpointXs}
         viewportWidth={props.viewportWidth}
-        index={3}
+        color="green"
       />
       <section id={sections.information}>
         <div className="section-title">

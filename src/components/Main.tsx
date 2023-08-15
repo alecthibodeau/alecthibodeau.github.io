@@ -59,16 +59,18 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         <img src={headshot} className="headshot-img" alt="Alec Thibodeau headshot" />
         <div className="section-title">{formatTitleCase(sections.about)}</div>
         <p>
-          Hello. I'm a software developer and a visual artist. My software specialization
-          is front-end web development, specifically the user interface (UI),
-          the user experience (UX), digital accessibility and responsive web design.
-          I seek new ways to combine coding and visual expression.
+          Hello. I'm a software developer and a visual artist. My software
+          specialization is front-end web development, specifically working in
+          the realms of the user experience (UX), the user interface (UI),
+          digital accessibility and responsive web design. I seek new ways to
+          combine coding and visual expression.
         </p>
       </section>
       <WedgeBanner
+        id={sections.about}
         isBreakpointXs={props.isBreakpointXs}
         viewportWidth={props.viewportWidth}
-        index={1}
+        color="blue"
       />
       <section>
         <div className="section-title">{formatTitleCase(sections.technologies)}</div>
@@ -83,7 +85,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         id={sections.projects}
         isBreakpointXs={props.isBreakpointXs}
         viewportWidth={props.viewportWidth}
-        index={2}
+        color="red"
       />
       <section>
         <div className="section-title">{formatTitleCase(sections.projects)}</div>

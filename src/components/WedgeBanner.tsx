@@ -1,12 +1,15 @@
 /* Constants */
 import constants from '../constants';
 
+/* Interfaces */
+import WedgeBannerProps from '../interfaces/WedgeBannerProps';
+
 /* Helpers */
 import helpers from '../helpers';
 
-function WedgeBanner(props: { id?: string, isBreakpointXs: boolean, viewportWidth: number, index: number }): JSX.Element {
+function WedgeBanner(props: WedgeBannerProps): JSX.Element {
   const { wedgeDirection } = constants;
-  const { setRandomNumber } = helpers;
+  const { formatTitleCase, setRandomNumber } = helpers;
 
   const maxNumber: number = 4;
   const fourRows: number = 4;
@@ -30,7 +33,7 @@ function WedgeBanner(props: { id?: string, isBreakpointXs: boolean, viewportWidt
   }
 
   return (
-    <div id={props.id ? props.id : `banner${props.index}`} className={`banner-0${props.index}`}>
+    <div id={`banner${formatTitleCase(props.id)}`} className={`banner-${props.color}`}>
       {Array(props.isBreakpointXs ? fourRows : eightRows).fill('wedge-row').map(renderWedgeRow)}
     </div>
   );
