@@ -1,0 +1,124 @@
+@use './variables' as *;
+
+.projects {
+  max-width: 75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.project-container {
+  margin: .625rem 1.25rem 1.25rem;
+}
+
+.project-info-outer {
+  position: absolute;
+  width: $project-width;
+  height: $project-height;
+  display: hidden;
+  border: $border-width-small solid transparent;
+  border-radius: $border-radius-project;
+  color: transparent;
+  user-select: none;
+}
+
+.project-info-outer:hover {
+  display: block;
+  border-color: $rainbow-red;
+  background-color: $black-screen;
+
+  .project-info-title {
+    margin-bottom: .75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: $letter-spacing-standard;
+    color: $application-font-color;
+  }
+
+  .project-info-text {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
+    text-align: left;
+    color: $application-font-color;
+
+    >div {
+      margin-top: .5rem;
+    }
+
+    .front-end,
+    .back-end {
+      margin: .75rem auto .375rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.project-info-inner {
+  padding: 3rem;
+}
+
+.project-img {
+  width: $project-width;
+  height: $project-height;
+  border-radius: $border-radius-project;
+}
+
+.project-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: $letter-spacing-standard;
+}
+
+.project-routing-links {
+  margin-top: .5rem;
+
+  a {
+    display: block;
+    padding: .25rem .75rem;
+    border: $border-width-small solid $fifty-percent-gray;
+    border-radius: .5rem;
+    margin: .75rem auto;
+    font-family: 'Varela Round', sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: $letter-spacing-standard;
+    text-decoration: none;
+
+    &:nth-child(2) {
+      border-color: $rainbow-green;
+    }
+
+    &:nth-child(3) {
+      border-color: $rainbow-blue;
+    }
+
+    &:nth-child(4) {
+      border-color: $rainbow-orange;
+    }
+
+    &:link,
+    &:visited,
+    &:active {
+      color: $application-font-color;
+    }
+
+    &:hover {
+      background-color: $application-font-color;
+      color: $application-background-color;
+    }
+  }
+}
+
+/* Breakpoint Small */
+
+@media (min-width: $breakpoint-sm) {
+
+  .projects {
+    padding-bottom: 1rem;
+  }
+
+  .project-routing-links a {
+    width: 70%;
+  }
+}

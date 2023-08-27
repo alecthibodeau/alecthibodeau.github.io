@@ -1,0 +1,53 @@
+@use './variables' as *;
+
+[class^='banner'] {
+  height: 100px;
+}
+
+.banner-blue {
+  background-color: $rainbow-blue;
+}
+
+.banner-red {
+  background-color: $rainbow-red;
+}
+
+.banner-green {
+  background-color: $rainbow-green;
+}
+
+.wedge-row {
+  display: flex;
+  opacity: .5;
+}
+
+.wedge {
+  min-width: $wedge-dimension-standard;
+  height: $wedge-dimension-standard;
+  background-color: $application-background-color;
+
+  &.top-left {
+    border-top-left-radius: $border-radius-one-hundred-percent;
+  }
+
+  &.top-right {
+    border-top-right-radius: $border-radius-one-hundred-percent;
+  }
+
+  &.bottom-left {
+    border-bottom-left-radius: $border-radius-one-hundred-percent;
+  }
+
+  &.bottom-right {
+    border-bottom-right-radius: $border-radius-one-hundred-percent;
+  }
+}
+
+/* Breakpoint Small */
+
+@media (min-width: $breakpoint-sm) {
+
+  [class^='banner'] {
+    height: 200px;
+  }
+}

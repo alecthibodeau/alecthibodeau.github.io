@@ -1,92 +1,23 @@
 @use './variables' as *;
+@use './banners' as *;
+@use './footer' as *;
+@use './header' as *;
+@use './not-found' as *;
+@use './projects' as *;
 
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
-  font-size: 16px;
   font-family: 'Alegreya Sans', sans-serif;
   text-align: center;
   background-color: $blue-muted;
   color: $application-font-color;
 }
 
-nav {
-  position: fixed;
-  right: initial;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-  padding: .5rem;
-  background-color: $rainbow-yellow;
-
-  a {
-    margin: auto .75rem;
-    font-family: 'Varela Round', sans-serif;
-    letter-spacing: $letter-spacing-standard;
-    text-decoration: none;
-    color: $application-background-color;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-main,
-footer {
-  background-color: $application-background-color;
-}
-
 main {
   padding-bottom: 1rem;
-}
-
-.wedge-row {
-  display: flex;
-  opacity: .5;
-}
-
-.wedge {
-  min-width: $wedge-dimension-standard;
-  height: $wedge-dimension-standard;
   background-color: $application-background-color;
-
-  &.top-left {
-    border-top-left-radius: $border-radius-one-hundred-percent;
-  }
-
-  &.top-right {
-    border-top-right-radius: $border-radius-one-hundred-percent;
-  }
-
-  &.bottom-left {
-    border-bottom-left-radius: $border-radius-one-hundred-percent;
-  }
-
-  &.bottom-right {
-    border-bottom-right-radius: $border-radius-one-hundred-percent;
-  }
-}
-
-[class^='banner'] {
-  height: 6.25rem;
-}
-
-.banner-blue {
-  margin: 4rem auto;
-  background-color: $rainbow-blue;
-}
-
-.banner-red {
-  margin: 4rem auto;
-  background-color: $rainbow-red;
-}
-
-.banner-green {
-  margin-bottom: 4rem;
-  background-color: $rainbow-green;
 }
 
 .name-and-occupations {
@@ -155,7 +86,7 @@ main section ul {
 }
 
 .section-title {
-  margin: 1rem auto .625rem;
+  margin: 1.75rem auto .625rem;
   font-size: 1.25rem;
   letter-spacing: .5vw;
 }
@@ -168,211 +99,9 @@ p {
   text-align: left;
 }
 
-.projects {
-  max-width: 75rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 auto;
-}
-
-.project-container {
-  margin: .625rem 1.25rem 1.25rem;
-}
-
-.project-info-outer {
-  position: absolute;
-  width: $project-width;
-  height: $project-height;
-  display: hidden;
-  border: $border-width-small solid transparent;
-  border-radius: $border-radius-project;
-  color: transparent;
-  user-select: none;
-}
-
-.project-info-outer:hover {
-  display: block;
-  border-color: $rainbow-red;
-  background-color: $black-screen;
-
-  .project-info-title {
-    margin-bottom: .75rem;
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: $letter-spacing-standard;
-    color: $application-font-color;
-  }
-
-  .project-info-text {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5rem;
-    text-align: left;
-    color: $application-font-color;
-
-    >div {
-      margin-top: .5rem;
-    }
-
-    .front-end,
-    .back-end {
-      margin: .75rem auto .375rem;
-      font-weight: 700;
-    }
-  }
-}
-
-.project-info-inner {
-  padding: 3rem;
-}
-
-.project-img {
-  width: $project-width;
-  height: $project-height;
-  border-radius: $border-radius-project;
-}
-
-.project-title {
-  font-size: 1.125rem;
-  font-weight: 500;
-  letter-spacing: $letter-spacing-standard;
-}
-
-.project-routing-links {
-  margin-top: .5rem;
-
-  a {
-    display: block;
-    padding: .25rem .75rem;
-    border: $border-width-small solid $fifty-percent-gray;
-    border-radius: .5rem;
-    margin: .75rem auto;
-    font-family: 'Varela Round', sans-serif;
-    font-size: .75rem;
-    font-weight: 700;
-    letter-spacing: $letter-spacing-standard;
-    text-decoration: none;
-
-    &:nth-child(2) {
-      border-color: $rainbow-green;
-    }
-
-    &:nth-child(3) {
-      border-color: $rainbow-blue;
-    }
-
-    &:nth-child(4) {
-      border-color: $rainbow-orange;
-    }
-
-    &:link,
-    &:visited,
-    &:active {
-      color: $application-font-color;
-    }
-
-    &:hover {
-      background-color: $application-font-color;
-      color: $application-background-color;
-    }
-  }
-}
-
-.information-box {
-  max-width: $element-width-standard;
-  display: flex;
-  flex-direction: column;
-  border: $border-width-small solid $rainbow-red;
-  border-radius: 1rem;
-  margin: .75rem auto 1.5rem;
-  padding: 2rem 0;
-
-  a {
-    display: inline-block;
-    margin: 1.25rem auto;
-  }
-}
-
-.information-text {
-  margin-top: .5rem;
-  font-family: 'Varela Round', sans-serif;
-  letter-spacing: .125rem;
-}
-
-.credit {
-  margin: 1.25rem auto;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: $letter-spacing-standard;
-}
-
-.stripes-container {
-  height: 3.125rem;
-
-  div {
-    height: .1875rem;
-    background-color: $orange-muted;
-
-    &:nth-child(2),
-    &:nth-child(6) {
-      background-color: $rainbow-blue;
-    }
-
-    &:nth-child(3),
-    &:nth-child(5) {
-      background-color: $rainbow-green;
-    }
-
-    &:nth-child(4) {
-      background-color: $rainbow-yellow;
-    }
-  }
-}
-
-.discs-container {
-  display: flex;
-
-  [class^='disc'] {
-    width: .5rem;
-    height: .5rem;
-    border-radius: $border-radius-one-hundred-percent;
-
-    &.disc-odd {
-      background-color: $application-background-color;
-    }
-
-    &.disc-even {
-      background-color: $application-background-color;
-    }
-  }
-}
-
-.not-found-container {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.not-found-text {
-  background-color: $application-background-color;
-  padding: 2rem 2rem 3rem;
-
-  a {
-    font-size: 1.5rem;
-  }
-}
-
 /* Breakpoint Small */
 
 @media (min-width: $breakpoint-sm) {
-
-  nav {
-    right: 0;
-    justify-content: flex-end;
-  }
-
-  [class^='banner'] {
-    height: 12.5rem;
-  }
 
   .name {
     font-size: 3rem;
@@ -398,7 +127,7 @@ p {
   }
 
   .section-title {
-    margin-top: 2rem;
+    margin-top: 2.25rem;
     font-size: 2rem;
   }
 
@@ -406,22 +135,6 @@ p {
     width: 75%;
     margin-bottom: 3rem;
     font-size: 1.5rem;
-  }
-
-  .projects {
-    padding-bottom: 1rem;
-  }
-
-  .project-routing-links a {
-    width: 70%;
-  }
-
-  .information-box {
-    width: 85%;
-    max-width: $element-width-large;
-    flex-direction: row;
-    padding: 1rem 1.5rem;
-    margin-bottom: 2.5rem;
   }
 }
 
@@ -434,7 +147,7 @@ p {
   }
 
   main section ul {
-    max-width: 39.5;
+    max-width: 39.5rem;
   }
 }
 

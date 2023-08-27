@@ -1,0 +1,16 @@
+@use './variables' as *;
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.not-found-text {
+  background-color: $application-background-color;
+  padding: 2rem 2rem 3rem;
+
+  a {
+    font-size: 1.5rem;
+  }
+}
