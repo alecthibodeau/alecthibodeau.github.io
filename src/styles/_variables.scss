@@ -26,7 +26,8 @@ $application-background-color: $ninety-five-percent-gray;
 
 /* Border Radius */
 
-$border-radius-project: 10px;
+$border-radius-project: .625rem;
+$border-radius-one-hundred-percent: 100%;
 
 /* Letter Spacing */
 
@@ -34,5 +35,9 @@ $letter-spacing-standard: .25vw;
 
 /* Dimensions */
 
-$wedge-standard: 25px;
-$one-hundred-percent: 100%;
+$border-width-small: 1px;
+$element-width-standard: 15rem;
+$element-width-large: 62.5rem;
+$wedge-dimension-standard: 1.5625rem;
+$project-width: $element-width-standard;
+$project-height: 26.8125rem;
