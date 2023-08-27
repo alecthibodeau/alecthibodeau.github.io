@@ -2,6 +2,8 @@
 
 html,
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: 'Alegreya Sans', sans-serif;
   text-align: center;
   background-color: $blue-muted;
