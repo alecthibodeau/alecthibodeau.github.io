@@ -1,12 +1,12 @@
 /* Constants */
 import constants from '../constants';
-import WedgeBanner from './WedgeBanner';
 
 /* Interfaces */
 import ProjectItem from '../interfaces/ProjectItem';
 
 /* Components */
 import Project from './Project';
+import WedgeBanner from './WedgeBanner';
 
 /* Helpers */
 import helpers from '../helpers';
@@ -60,10 +60,10 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         <div className="section-title">{formatTitleCase(sections.about)}</div>
         <p>
           Hello. I'm a software developer and a visual artist. My software
-          specialization is front-end web development, specifically working in
-          the realms of the user experience (UX), the user interface (UI),
-          digital accessibility and responsive web design. I seek new ways to
-          combine coding and visual expression.
+          specialization is front-end web development: mainly within
+          user experiences (UX), user interfaces (UI),
+          digital accessibility and responsive web design.
+          I seek new ways to combine coding and visual expression.
         </p>
       </section>
       <WedgeBanner
@@ -93,7 +93,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
           My personal coding projects include four web applications built with React,
           TypeScript and Sass. These are live and interactive &mdash; and their code is
           viewable at <a href={hypertextReference.gitHub} className="text-link">GitHub</a>.
-          I also handle their UI and UX design: with features like semantic HTML,
+          I also handle their UX and UI design: with features like semantic HTML,
           accessible elements, mobile-first responsiveness and custom color palettes.
         </p>
         <ul>
