@@ -37,7 +37,7 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
         viewportWidth={props.viewportWidth}
         color="green"
       />
-      <section id={sections.information}>
+      <section>
         <div className="section-title">
           {helpers.formatTitleCase(sections.information)}
         </div>

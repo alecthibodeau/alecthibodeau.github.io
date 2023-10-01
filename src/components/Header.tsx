@@ -1,5 +1,7 @@
 /* Constants */
 import constants from '../constants';
+
+/* Helpers */
 import helpers from '../helpers';
 
 function Header(): JSX.Element {
