@@ -15,10 +15,10 @@ import radTabs from './assets/images/mobile_screenshot_radtabs.jpg';
 import ticTacToe from './assets/images/mobile_screenshot_tic_tac_toe.jpg';
 
 /* Information Images */
-import email from './assets/images/icon_solid_email.svg';
-import linkedIn from './assets/images/icon_solid_linkedin.svg';
-import gitHub from './assets/images/icon_solid_github.svg';
-import resume from './assets/images/icon_solid_resume.svg';
+import iconEmail from './assets/images/icon_solid_email.svg';
+import iconLinkedIn from './assets/images/icon_solid_linkedin.svg';
+import iconGitHub from './assets/images/icon_solid_github.svg';
+import iconResume from './assets/images/icon_solid_resume.svg';
 
 const hypertextReference = {
   artPortfolio: 'https://alecthibodeau.com',
@@ -116,22 +116,22 @@ const informationItems: InformationItem[] = [
   {
     name: 'GitHub',
     href: hypertextReference.gitHub,
-    image: gitHub
+    image: iconGitHub
   },
   {
     name: 'LinkedIn',
     href: hypertextReference.linkedIn,
-    image: linkedIn
+    image: iconLinkedIn
   },
   {
     name: 'Email',
     href: hypertextReference.mailTo,
-    image: email
+    image: iconEmail
   },
   {
     name: 'Resume',
     href: hypertextReference.pdfResumeView,
-    image: resume
+    image: iconResume
   }
 ];
 

@@ -5,17 +5,15 @@ footer {
 }
 
 .information-box {
-  max-width: $element-width-standard;
+  width: fit-content;
   display: flex;
   flex-direction: column;
-  border: $border-width-small solid $rainbow-red;
-  border-radius: 1rem;
   margin: .75rem auto 1.5rem;
-  padding: 2rem 0;
+  padding: 2rem;
 
   a {
     display: inline-block;
-    margin: 1.25rem auto;
+    margin: 1.5rem;
   }
 }
 
@@ -59,10 +57,15 @@ footer {
 @media (min-width: $breakpoint-sm) {
 
   .information-box {
-    width: 85%;
-    max-width: $element-width-large;
     flex-direction: row;
     padding: 1rem 1.5rem;
     margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+
+.information-box a {
+    margin: 1.5rem 2.5rem;
   }
 }
