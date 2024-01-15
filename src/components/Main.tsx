@@ -60,10 +60,10 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         <div className="section-title">{formatTitleCase(sections.about)}</div>
         <p>
           Hello. I'm a software developer and a visual artist. My software
-          specialization is front-end web development: mainly within
-          user experiences (UX), user interfaces (UI),
+          specialization is front-end web development &mdash; focusing on
+          the user experience (UX), user interfaces (UI),
           digital accessibility and responsive web design.
-          I seek new ways to combine coding and visual expression.
+          I enjoy seeking new ways to combine coding and visual expression.
         </p>
       </section>
       <WedgeBanner
@@ -75,7 +75,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
       <section>
         <div className="section-title">{formatTitleCase(sections.technologies)}</div>
         <p>
-          I've used React, React Native, TypeScript, JavaScript, Emotion,
+          I have experience with React, React Native, TypeScript, JavaScript, Emotion (CSS-in-JS),
           CSS3/Sass, Expo Go, React Native Debugger, Angular, Angular testing
           (Jasmine), Angular Material, Google Material Design, Bootstrap, HTML5, JSON,
           Postman, Git/GitHub, npm, Storybook, Lucidchart and Adobe Creative Cloud.
