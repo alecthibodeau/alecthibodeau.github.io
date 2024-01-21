@@ -5,6 +5,7 @@ import constants from '../constants';
 import ProjectItem from '../interfaces/ProjectItem';
 
 /* Components */
+import Headshot from './Headshot';
 import Project from './Project';
 import WedgeBanner from './WedgeBanner';
 
@@ -12,14 +13,10 @@ import WedgeBanner from './WedgeBanner';
 import helpers from '../helpers';
 
 function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.Element {
-  const {
-    headshot,
-    projectItems,
-    sections,
-    hypertextReference
-  } = constants;
+  const { projectItems, sections, hypertextReference } = constants;
 
   const { formatTitleCase } = helpers;
+
   const selectProjects = projectItems.slice(0, 3);
 
   /**
@@ -56,7 +53,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         </h2>
       </div>
       <section id={sections.about}>
-        <img src={headshot} className="headshot-img" alt="Alec Thibodeau headshot" />
+        <Headshot />
         <div className="section-title">{formatTitleCase(sections.about)}</div>
         <p>
           Hello. I'm a software developer and a visual artist. My software

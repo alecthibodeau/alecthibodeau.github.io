@@ -3,7 +3,8 @@ import InformationItem from './interfaces/InformationItem';
 import ProjectItem from './interfaces/ProjectItem';
 
 /* Site Images */
-import headshot from './assets/images/alec_headshot_150px.jpg';
+import headshotIcon from './assets/images/alec_headshot_icon_150px.jpg'
+import headshotPhoto from './assets/images/alec_headshot_photo_150px.jpg';
 import tree from './assets/images/thibodeau_tree_circle.svg';
 
 /* Project Images */
@@ -143,7 +144,8 @@ const wedgeDirection: { [key: number]: string } = {
 };
 
 const constants = {
-  headshot,
+  headshotPhoto,
+  headshotIcon,
   tree,
   navItems,
   sections,
