@@ -73,7 +73,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         <div className="section-title">{formatTitleCase(sections.technologies)}</div>
         <p>
           I have experience with React, React Native, TypeScript, JavaScript, Emotion (CSS-in-JS),
-          CSS3/Sass, Expo Go, React Native Debugger, Angular, Angular testing
+          CSS3/Sass, Figma, Storybook, Style Dictionary, Expo Go, React Native Debugger, Angular, Angular testing
           (Jasmine), Angular Material, Google Material Design, Bootstrap, HTML5, JSON,
           Postman, Git/GitHub, npm, Storybook, Lucidchart and Adobe Creative Cloud.
         </p>
