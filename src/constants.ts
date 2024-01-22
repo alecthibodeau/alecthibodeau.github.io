@@ -4,7 +4,7 @@ import ProjectItem from './interfaces/ProjectItem';
 
 /* Site Images */
 import headshotIcon from './assets/images/alec_headshot_icon_150px.jpg'
-import headshotPhoto from './assets/images/alec_headshot_photo_150px.jpg';
+import headshotPhoto from './assets/images/alec_headshot_photo_400px.jpg';
 import tree from './assets/images/thibodeau_tree_circle.svg';
 
 /* Project Images */
