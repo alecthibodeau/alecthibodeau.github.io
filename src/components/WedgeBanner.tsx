@@ -28,9 +28,14 @@ function WedgeBanner(props: WedgeBannerProps): JSX.Element {
           `wedge ${
             isRandomDirection
             ? wedgeDirection[setRandomNumber(maxNumber)]
-            : ' top-left'
+            : 'with-inner-disc'
           }`
         }>
+        {
+          !isRandomDirection
+          ? <div className="inner-disc"></div>
+          : null
+        }
       </div>
     );
   }

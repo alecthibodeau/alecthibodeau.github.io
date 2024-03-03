@@ -41,6 +41,17 @@
   &.bottom-right {
     border-bottom-right-radius: $border-radius-one-hundred-percent;
   }
+
+  &.with-inner-disc {
+    background-color: transparent;
+  }
+}
+
+.inner-disc {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $application-background-color;
 }
 
 /* Breakpoint Small */
