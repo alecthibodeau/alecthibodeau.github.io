@@ -14,6 +14,7 @@ function WedgeBanner(props: WedgeBannerProps): JSX.Element {
   const maxNumber: number = 4;
   const fourRows: number = 4;
   const eightRows: number = 8;
+  const isRandomDirection: boolean = false;
 
   function formatID(id: string) {
     return id === sections.about ? `banner${formatTitleCase(id)}` : id;
@@ -23,7 +24,13 @@ function WedgeBanner(props: WedgeBannerProps): JSX.Element {
     return (
       <div
         key={`${item}-${index}`}
-        className={`wedge ${wedgeDirection[setRandomNumber(maxNumber)]}`}>
+        className={
+          `wedge ${
+            isRandomDirection
+            ? wedgeDirection[setRandomNumber(maxNumber)]
+            : ' top-left'
+          }`
+        }>
       </div>
     );
   }
