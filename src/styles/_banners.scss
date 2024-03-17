@@ -16,14 +16,14 @@
   background-color: $rainbow-green;
 }
 
-.wedge-row {
+.pattern-row {
   display: flex;
   opacity: .5;
 }
 
 .wedge {
-  min-width: $wedge-dimension-standard;
-  height: $wedge-dimension-standard;
+  min-width: $pattern-item-dimension-standard;
+  height: $pattern-item-dimension-standard;
   background-color: $application-background-color;
 
   &.top-left {
@@ -41,15 +41,11 @@
   &.bottom-right {
     border-bottom-right-radius: $border-radius-one-hundred-percent;
   }
-
-  &.with-inner-disc {
-    background-color: transparent;
-  }
 }
 
-.inner-disc {
-  width: 25px;
-  height: 25px;
+.pattern-disc-container div {
+  min-width: $pattern-item-dimension-standard;
+  height: $pattern-item-dimension-standard;
   border-radius: 50%;
   background-color: $application-background-color;
 }

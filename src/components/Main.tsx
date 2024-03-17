@@ -7,7 +7,7 @@ import ProjectItem from '../interfaces/ProjectItem';
 /* Components */
 import Headshot from './Headshot';
 import Project from './Project';
-import WedgeBanner from './WedgeBanner';
+import PatternBanner from './PatternBanner';
 
 /* Helpers */
 import helpers from '../helpers';
@@ -63,7 +63,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
           I enjoy seeking new ways to combine coding and visual expression.
         </p>
       </section>
-      <WedgeBanner
+      <PatternBanner
         id={sections.about}
         isBreakpointXs={props.isBreakpointXs}
         viewportWidth={props.viewportWidth}
@@ -78,7 +78,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
           Postman, Git/GitHub, npm, Storybook, Lucidchart and Adobe Creative Cloud.
         </p>
       </section>
-      <WedgeBanner
+      <PatternBanner
         id={sections.projects}
         isBreakpointXs={props.isBreakpointXs}
         viewportWidth={props.viewportWidth}

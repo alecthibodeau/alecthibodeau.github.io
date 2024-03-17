@@ -1,5 +1,5 @@
 /* Components */
-import WedgeBanner from './WedgeBanner';
+import PatternBanner from './PatternBanner';
 
 /* Constants */
 import constants from '../constants';
@@ -31,7 +31,7 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
 
   return (
     <footer>
-      <WedgeBanner
+      <PatternBanner
         id={sections.information}
         isBreakpointXs={props.isBreakpointXs}
         viewportWidth={props.viewportWidth}
