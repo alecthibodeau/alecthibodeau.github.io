@@ -8,13 +8,13 @@ import PatternBannerProps from '../interfaces/PatternBannerProps';
 import helpers from '../helpers';
 
 function PatternBanner(props: PatternBannerProps): JSX.Element {
-  const { sections, wedgeDirection } = constants;
+  const { sections, quarterCircleDirection } = constants;
   const { formatTitleCase, setRandomNumber } = helpers;
 
   const maxNumber: number = 4;
   const fourRows: number = 4;
   const eightRows: number = 8;
-  const isPatternRandomWedges: boolean = false;
+  const isPatternRandomQuarterCircles: boolean = false;
 
   function formatID(id: string) {
     return id === sections.about ? `banner${formatTitleCase(id)}` : id;
@@ -25,11 +25,11 @@ function PatternBanner(props: PatternBannerProps): JSX.Element {
       <div
         key={`${item}-${index}`}
         className={
-            isPatternRandomWedges
-            ? `wedge ${wedgeDirection[setRandomNumber(maxNumber)]}`
+            isPatternRandomQuarterCircles
+            ? `quarter-circle ${quarterCircleDirection[setRandomNumber(maxNumber)]}`
             : 'pattern-disc-container'
         }>
-        { !isPatternRandomWedges ? <div></div> : null }
+        {!isPatternRandomQuarterCircles ? <div></div> : null}
       </div>
     );
   }

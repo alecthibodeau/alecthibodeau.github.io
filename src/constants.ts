@@ -136,7 +136,7 @@ const informationItems: InformationItem[] = [
   }
 ];
 
-const wedgeDirection: { [key: number]: string } = {
+const quarterCircleDirection: { [key: number]: string } = {
   0: 'top-left',
   1: 'top-right',
   2: 'bottom-left',
@@ -152,7 +152,7 @@ const constants = {
   projectItems,
   informationItems,
   hypertextReference,
-  wedgeDirection
+  quarterCircleDirection
 };
 
 export default constants;
