@@ -115,6 +115,11 @@ const projectItems: ProjectItem[] = [
 
 const informationItems: InformationItem[] = [
   {
+    name: 'Resume',
+    href: hypertextReference.pdfResumeView,
+    image: iconResume
+  },
+  {
     name: 'GitHub',
     href: hypertextReference.gitHub,
     image: iconGitHub
@@ -128,11 +133,6 @@ const informationItems: InformationItem[] = [
     name: 'Email',
     href: hypertextReference.mailTo,
     image: iconEmail
-  },
-  {
-    name: 'Resume',
-    href: hypertextReference.pdfResumeView,
-    image: iconResume
   }
 ];
 
