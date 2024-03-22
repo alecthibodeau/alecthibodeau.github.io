@@ -120,14 +120,14 @@ const informationItems: InformationItem[] = [
     image: iconResume
   },
   {
-    name: 'GitHub',
-    href: hypertextReference.gitHub,
-    image: iconGitHub
-  },
-  {
     name: 'LinkedIn',
     href: hypertextReference.linkedIn,
     image: iconLinkedIn
+  },
+  {
+    name: 'GitHub',
+    href: hypertextReference.gitHub,
+    image: iconGitHub
   },
   {
     name: 'Email',
