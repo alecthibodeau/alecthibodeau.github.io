@@ -44,13 +44,9 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
 
   return (
     <main>
-      <div className="name-and-occupations">
+      <div className="name-and-occupation">
         <h1 className="name">Alec Thibodeau</h1>
-        <h2 className="occupations">
-          <span>Software Developer</span>
-          <span className="pipe">&nbsp;|&nbsp;</span>
-          <span>Artist</span>
-        </h2>
+        <h2 className="occupation">Software Developer</h2>
       </div>
       <section id={sections.about}>
         <Headshot />

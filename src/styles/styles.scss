@@ -20,9 +20,10 @@ main {
   background-color: $application-background-color;
 }
 
-.name-and-occupations {
+.name-and-occupation {
   padding-top: 4rem;
   margin: auto auto 1rem;
+  letter-spacing: .25rem;
 
   h1,
   h2 {
@@ -34,20 +35,14 @@ main {
 
 .name {
   font-size: 1.75rem;
-  letter-spacing: .5rem;
 }
 
-.occupations {
+.occupation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 1.25rem;
-  letter-spacing: .3125rem;
   color: $rainbow-green;
-}
-
-.pipe {
-  display: none;
 }
 
 .headshot-img {
@@ -107,13 +102,8 @@ p {
     font-size: 3rem;
   }
 
-  .occupations {
-    flex-direction: row;
-    font-size: 1.5rem;
-  }
-
-  .pipe {
-    display: block;
+  .occupation {
+    font-size: 1.75rem;
   }
 
   main section ul {
