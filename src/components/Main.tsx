@@ -52,10 +52,11 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         <Headshot />
         <div className="section-title">{formatTitleCase(sections.about)}</div>
         <p>
-          Hello. I'm a software developer specializing in the front end, the user experience (UX),
-          user interfaces (UI), digital accessibility and responsive web design.
-          With a background in art and design I enjoy working directly
-          with UX designers and sharing a common visual language with them.
+          Hello. I'm a software developer specializing in the front end, the user
+          experience (UX), user interfaces (UI), digital accessibility and
+          responsive web design. With a background in art and design I enjoy
+          working directly with UX designers and sharing a common visual language
+          with them.
         </p>
       </section>
       <PatternBanner
@@ -67,10 +68,12 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
       <section>
         <div className="section-title">{formatTitleCase(sections.technologies)}</div>
         <p>
-          I have experience with React, React Native, TypeScript, JavaScript, Emotion (CSS-in-JS),
-          CSS3/Sass, Figma, Storybook, Style Dictionary, Expo Go, React Native Debugger, Angular, Angular testing
-          (Jasmine), Angular Material, Google Material Design, Bootstrap, HTML5, JSON,
-          Postman, Git/GitHub, npm, Storybook, Lucidchart and Adobe Creative Cloud.
+          I have on-the-job experience with React, React Native, TypeScript,
+          JavaScript, Emotion (CSS-in-JS), CSS3, Sass, Figma, Storybook, Style
+          Dictionary, Linux, Expo Go, React Native Debugger, Angular, Angular
+          testing (Jasmine), Angular Material, Google Material Design, Bootstrap,
+          HTML5, JSON, Postman, Git/GitHub, npm, Lucidchart and Adobe Creative
+          Cloud (Photoshop, Illustrator, XD).
         </p>
       </section>
       <PatternBanner
