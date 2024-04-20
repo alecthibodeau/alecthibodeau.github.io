@@ -16,7 +16,13 @@ function Header(): JSX.Element {
 
   return (
     <header>
-      <nav>
+      <nav onClick={(event: React.SyntheticEvent) => {
+        event.preventDefault();
+        const target = event.target as HTMLAnchorElement;
+        const id = target.getAttribute('href')?.replace('#', '');
+        const element = document.getElementById(String(id));
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }}>
         {constants.navItems.map(renderNavItem)}
       </nav>
     </header>
