@@ -20,17 +20,21 @@ main {
   background-color: $application-background-color;
 }
 
+h1,
+h2 {
+  margin-block-start: initial;
+  margin-block-end: initial;
+  font-weight: normal;
+}
+
+h3 {
+  font-weight: normal;
+}
+
 .name-and-occupation {
   padding-top: 4rem;
   margin: auto auto 1rem;
   letter-spacing: .25rem;
-
-  h1,
-  h2 {
-    margin-block-start: initial;
-    margin-block-end: initial;
-    font-weight: normal;
-  }
 }
 
 .name {

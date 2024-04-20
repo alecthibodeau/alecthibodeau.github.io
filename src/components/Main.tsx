@@ -14,7 +14,6 @@ import helpers from '../helpers';
 
 function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.Element {
   const { projectItems, sections, hypertextReference } = constants;
-
   const { formatTitleCase } = helpers;
 
   const selectProjects = projectItems.slice(0, 3);
@@ -50,7 +49,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
       </div>
       <section id={sections.about}>
         <Headshot />
-        <div className="section-title">{formatTitleCase(sections.about)}</div>
+        <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
         <p>
           Hello. I'm a software developer specializing in the front end, the user
           experience (UX), user interfaces (UI), digital accessibility and
@@ -60,13 +59,13 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         </p>
       </section>
       <PatternBanner
-        id={sections.about}
+        id={sections.technologies}
         isBreakpointXs={props.isBreakpointXs}
         viewportWidth={props.viewportWidth}
         color="blue"
       />
       <section>
-        <div className="section-title">{formatTitleCase(sections.technologies)}</div>
+        <h3 className="section-title">{formatTitleCase(sections.technologies)}</h3>
         <p>
           I have on-the-job experience with React, React Native, TypeScript,
           JavaScript, Emotion (CSS-in-JS), CSS3, Sass, Figma, Storybook, Style
@@ -83,7 +82,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         color="red"
       />
       <section>
-        <div className="section-title">{formatTitleCase(sections.projects)}</div>
+        <h3 className="section-title">{formatTitleCase(sections.projects)}</h3>
         <p>
           My personal coding projects include four web applications built with React,
           TypeScript and Sass. These are live and interactive &mdash; and their code is

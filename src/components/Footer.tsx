@@ -38,9 +38,9 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
         color="green"
       />
       <section>
-        <div className="section-title">
+        <h3 className="section-title">
           {helpers.formatTitleCase(sections.information)}
-        </div>
+        </h3>
         <div className="information-box">
           {constants.informationItems.map(renderInformationItem)}
         </div>
