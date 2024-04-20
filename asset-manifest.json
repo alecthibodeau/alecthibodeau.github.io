@@ -1,20 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.74257394.css",
-    "main.js": "/static/js/main.4a6aa18f.js",
+    "main.css": "/static/css/main.bdb33816.css",
+    "main.js": "/static/js/main.9b792183.js",
     "static/js/787.321acf79.chunk.js": "/static/js/787.321acf79.chunk.js",
-    "static/media/05-lp-smart-flesh.jpg": "/static/media/05-lp-smart-flesh.323a07d0ffa7e591ae28.jpg",
-    "static/media/07-lp-sp735.jpg": "/static/media/07-lp-sp735.316bf518e14341528511.jpg",
-    "static/media/06-lp-sp866.jpg": "/static/media/06-lp-sp866.07e44087a30d9b456362.jpg",
-    "static/media/04-burnside-music.jpg": "/static/media/04-burnside-music.3e9afd0b2adac188d235.jpg",
-    "static/media/02-van-flowers.jpg": "/static/media/02-van-flowers.3c066458cb06af492b56.jpg",
-    "static/media/09-cd-sp735.jpg": "/static/media/09-cd-sp735.9182ddef5f71b1e142b5.jpg",
     "static/media/mobile_screenshot_huetown.jpg": "/static/media/mobile_screenshot_huetown.3f01a4b3a3a9502f7179.jpg",
     "static/media/mobile_screenshot_alecthibodeau.jpg": "/static/media/mobile_screenshot_alecthibodeau.ef522a67580c144cff3c.jpg",
-    "static/media/08-cd-sp866.jpg": "/static/media/08-cd-sp866.fd651a28d10ed915157b.jpg",
     "static/media/alec_headshot_photo_400px.jpg": "/static/media/alec_headshot_photo_400px.907d3000beb3fda7b63c.jpg",
-    "static/media/01-shaking-hands.jpg": "/static/media/01-shaking-hands.f39bcc9b54eddf09b16a.jpg",
-    "static/media/03-metal-effect.jpg": "/static/media/03-metal-effect.a3fcdfb2eeab915ab88a.jpg",
     "static/media/mobile_screenshot_cookie_time_trivia.jpg": "/static/media/mobile_screenshot_cookie_time_trivia.dbbb7844c0c67a6766dd.jpg",
     "static/media/mobile_screenshot_radtabs.jpg": "/static/media/mobile_screenshot_radtabs.8ad1cf702cbfca006776.jpg",
     "static/media/mobile_screenshot_tic_tac_toe.jpg": "/static/media/mobile_screenshot_tic_tac_toe.696e787b87903f279e20.jpg",
@@ -26,12 +17,12 @@
     "static/media/icon_solid_linkedin.svg": "/static/media/icon_solid_linkedin.f422786d1be6190ff86c357b7f02416f.svg",
     "static/media/icon_solid_email.svg": "/static/media/icon_solid_email.104313801dd8187f22926dfc473f58af.svg",
     "index.html": "/index.html",
-    "main.74257394.css.map": "/static/css/main.74257394.css.map",
-    "main.4a6aa18f.js.map": "/static/js/main.4a6aa18f.js.map",
+    "main.bdb33816.css.map": "/static/css/main.bdb33816.css.map",
+    "main.9b792183.js.map": "/static/js/main.9b792183.js.map",
     "787.321acf79.chunk.js.map": "/static/js/787.321acf79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74257394.css",
-    "static/js/main.4a6aa18f.js"
+    "static/css/main.bdb33816.css",
+    "static/js/main.9b792183.js"
   ]
 }
