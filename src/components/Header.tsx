@@ -1,3 +1,5 @@
+import { Link } from 'react-scroll';
+
 /* Constants */
 import constants from '../constants';
 
@@ -8,23 +10,22 @@ function Header(): JSX.Element {
 
   function renderNavItem(item: string, index: number): JSX.Element {
     return (
-      <a key={`${item}-${index}`} href={`#${item}`}>
+      <Link
+        key={`${item}-${index}`}
+        activeClass="active"
+        to={item}
+        spy={true}
+        smooth={true}
+        duration={500}
+      >
         {helpers.formatTitleCase(item)}
-      </a>
+      </Link>
     );
   }
 
   return (
     <header>
-      <nav
-        onClick={(event: React.SyntheticEvent) => {
-          event.preventDefault();
-          const target = event.target as HTMLAnchorElement;
-          const id = target.getAttribute('href')?.replace('#', '');
-          const element = document.getElementById(String(id));
-          element?.scrollIntoView({ behavior: 'smooth' });
-        }}
-      >
+      <nav>
         {constants.navItems.map(renderNavItem)}
       </nav>
     </header>
