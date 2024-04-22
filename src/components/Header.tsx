@@ -1,5 +1,3 @@
-import { Link } from 'react-scroll';
-
 /* Constants */
 import constants from '../constants';
 
@@ -10,16 +8,9 @@ function Header(): JSX.Element {
 
   function renderNavItem(item: string, index: number): JSX.Element {
     return (
-      <Link
-        key={`${item}-${index}`}
-        activeClass="active"
-        to={item}
-        spy={true}
-        smooth={true}
-        duration={500}
-      >
+      <a key={`${item}-${index}`} href={`#${item}`}>
         {helpers.formatTitleCase(item)}
-      </Link>
+      </a>
     );
   }
 
