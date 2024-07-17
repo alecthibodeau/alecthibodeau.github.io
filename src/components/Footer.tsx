@@ -42,7 +42,7 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
           {helpers.formatTitleCase(sections.information)}
         </h3>
         <div className="information-box">
-          {constants.informationItems.map(renderInformationItem)}
+          {constants.informationItems.slice(1).map(renderInformationItem)}
         </div>
         <div className="credit">
           {`Alec Thibodeau, ${new Date().getFullYear()}`}
