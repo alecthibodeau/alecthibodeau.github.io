@@ -78,7 +78,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         id={sections.projects}
         isBreakpointXs={props.isBreakpointXs}
         viewportWidth={props.viewportWidth}
-        color="red"
+        color="orange"
       />
       <section>
         <h3 className="section-title">{formatTitleCase(sections.projects)}</h3>
