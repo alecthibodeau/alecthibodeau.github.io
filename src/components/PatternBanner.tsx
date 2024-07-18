@@ -8,7 +8,7 @@ import PatternBannerProps from '../interfaces/PatternBannerProps';
 import helpers from '../helpers';
 
 function PatternBanner(props: PatternBannerProps): JSX.Element {
-  const { quarterCircleDirection } = constants;
+  const { quarterDiscDirection } = constants;
   const { setRandomNumber } = helpers;
 
   const maxNumber: number = 4;
@@ -16,18 +16,18 @@ function PatternBanner(props: PatternBannerProps): JSX.Element {
   const eightRows: number = 8;
   const patternRowCount: number = props.isBreakpointXs ? fourRows : eightRows;
   const isPatternVisible: boolean = false;
-  const isPatternRandomQuarterCircles: boolean = false;
+  const isPatternRandomQuarterDiscs: boolean = false;
 
   function renderItem(item: string, index: number): JSX.Element {
     return (
       <div
         key={`${item}-${index}`}
         className={
-            isPatternRandomQuarterCircles
-            ? `quarter-circle ${quarterCircleDirection[setRandomNumber(maxNumber)]}`
+            isPatternRandomQuarterDiscs
+            ? `quarter-disc ${quarterDiscDirection[setRandomNumber(maxNumber)]}`
             : 'pattern-disc-container'
         }>
-        {!isPatternRandomQuarterCircles ? <div></div> : null}
+        {!isPatternRandomQuarterDiscs ? <div></div> : null}
       </div>
     );
   }

@@ -136,7 +136,7 @@ const informationItems: InformationItem[] = [
   }
 ];
 
-const quarterCircleDirection: { [key: number]: string } = {
+const quarterDiscDirection: { [key: number]: string } = {
   0: 'top-left',
   1: 'top-right',
   2: 'bottom-left',
@@ -152,7 +152,7 @@ const constants = {
   projectItems,
   informationItems,
   hypertextReference,
-  quarterCircleDirection
+  quarterDiscDirection
 };
 
 export default constants;
