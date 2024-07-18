@@ -14,6 +14,8 @@ function PatternBanner(props: PatternBannerProps): JSX.Element {
   const maxNumber: number = 4;
   const fourRows: number = 4;
   const eightRows: number = 8;
+  const patternRowCount: number = props.isBreakpointXs ? fourRows : eightRows;
+  const isPatternVisible: boolean = false;
   const isPatternRandomQuarterCircles: boolean = false;
 
   function renderItem(item: string, index: number): JSX.Element {
@@ -39,8 +41,15 @@ function PatternBanner(props: PatternBannerProps): JSX.Element {
   }
 
   return (
-    <div id={props.id} className={`banner-${props.color}`}>
-      {Array(props.isBreakpointXs ? fourRows : eightRows).fill('pattern-row').map(renderPatternRow)}
+    <div
+      id={props.id}
+      className={`banner-${props.color}${!isPatternVisible ? ' solid' : ''}`}
+    >
+      {
+        isPatternVisible
+        ? Array(patternRowCount).fill('pattern-row').map(renderPatternRow)
+        : null
+      }
     </div>
   );
 }
