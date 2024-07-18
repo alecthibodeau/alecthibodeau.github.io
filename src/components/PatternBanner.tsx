@@ -18,23 +18,23 @@ function PatternBanner(props: PatternBannerProps): JSX.Element {
   const isPatternVisible: boolean = false;
   const isPatternRandomQuarterDiscs: boolean = false;
 
-  function renderItem(item: string, index: number): JSX.Element {
+  function renderItem(itemName: string, index: number): JSX.Element {
     return (
       <div
-        key={`${item}-${index}`}
+        key={`${itemName}-${index}`}
         className={
-            isPatternRandomQuarterDiscs
-            ? `quarter-disc ${quarterDiscDirection[setRandomNumber(maxNumber)]}`
-            : 'pattern-disc-container'
+          isPatternRandomQuarterDiscs
+          ? `quarter-disc ${quarterDiscDirection[setRandomNumber(maxNumber)]}`
+          : 'pattern-disc-container'
         }>
         {!isPatternRandomQuarterDiscs ? <div></div> : null}
       </div>
     );
   }
 
-  function renderPatternRow(item: string, index: number): JSX.Element {
+  function renderRow(rowName: string, index: number): JSX.Element {
     return (
-      <div key={`${item}-${index}`} className="pattern-row">
+      <div key={`${rowName}-${index}`} className={rowName}>
         {Array(Math.floor(props.viewportWidth/24)).fill('item').map(renderItem)}
       </div>
     );
@@ -47,7 +47,7 @@ function PatternBanner(props: PatternBannerProps): JSX.Element {
     >
       {
         isPatternVisible
-        ? Array(patternRowCount).fill('pattern-row').map(renderPatternRow)
+        ? Array(patternRowCount).fill('pattern-row').map(renderRow)
         : null
       }
     </div>

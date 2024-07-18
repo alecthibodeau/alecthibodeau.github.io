@@ -1,10 +1,10 @@
 @use './variables' as *;
 
 [class^='banner'] {
-  height: 100px;
+  height: $pattern-item-dimension-standard * 4;
 
   &.solid {
-    height: 50px;
+    height: $pattern-item-dimension-standard * 1.5;
   }
 }
 
@@ -63,10 +63,10 @@
 @media (min-width: $breakpoint-sm) {
 
   [class^='banner'] {
-    height: 200px;
+    height: $pattern-item-dimension-standard * 8;
 
     &.solid {
-      height: 100px;
+      height: $pattern-item-dimension-standard * 3;
     }
   }
 }
