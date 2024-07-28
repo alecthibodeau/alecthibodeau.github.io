@@ -51,11 +51,11 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         <Headshot />
         <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
         <p>
-          Hello. I'm a software developer specializing in the front end, the user
-          experience (UX), user interfaces (UI), digital accessibility and
-          responsive web design. With a background in art and design I enjoy
-          working directly with UX designers and sharing a common visual language
-          with them.
+        I'm a software developer specializing in the front end, the user
+        experience (UX), user interfaces (UI), digital accessibility and
+        responsive web design. I build front-end websites from scratch. With a
+        background in art I can make design elements and website prototypes myself
+        or collaborate directly with UX designers.
         </p>
       </section>
       <PatternBanner
