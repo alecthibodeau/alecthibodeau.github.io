@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b517b159.css",
-    "main.js": "/static/js/main.053dd54e.js",
+    "main.js": "/static/js/main.09ee6e45.js",
     "static/js/453.56e26a7b.chunk.js": "/static/js/453.56e26a7b.chunk.js",
     "static/media/mobile_screenshot_huetown.jpg": "/static/media/mobile_screenshot_huetown.3f01a4b3a3a9502f7179.jpg",
     "static/media/mobile_screenshot_alecthibodeau.jpg": "/static/media/mobile_screenshot_alecthibodeau.ef522a67580c144cff3c.jpg",
@@ -12,17 +12,16 @@
     "static/media/mobile_screenshot_patturns.jpg": "/static/media/mobile_screenshot_patturns.8c17c31746cd9010e9f9.jpg",
     "static/media/alec_headshot_icon_150px.jpg": "/static/media/alec_headshot_icon_150px.c7c395a26a0149499aca.jpg",
     "static/media/icon_solid_github.svg": "/static/media/icon_solid_github.0f84ff5ceb1e2cfd3402196d643c7709.svg",
-    "static/media/icon_solid_resume.svg": "/static/media/icon_solid_resume.5c46313d483ad1f8f2753d50ba6b25df.svg",
     "static/media/thibodeau_tree_circle.svg": "/static/media/thibodeau_tree_circle.d4e0c4165df1aaa87f613fbbf01621fd.svg",
     "static/media/icon_solid_linkedin.svg": "/static/media/icon_solid_linkedin.f422786d1be6190ff86c357b7f02416f.svg",
     "static/media/icon_solid_email.svg": "/static/media/icon_solid_email.104313801dd8187f22926dfc473f58af.svg",
     "index.html": "/index.html",
     "main.b517b159.css.map": "/static/css/main.b517b159.css.map",
-    "main.053dd54e.js.map": "/static/js/main.053dd54e.js.map",
+    "main.09ee6e45.js.map": "/static/js/main.09ee6e45.js.map",
     "453.56e26a7b.chunk.js.map": "/static/js/453.56e26a7b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b517b159.css",
-    "static/js/main.053dd54e.js"
+    "static/js/main.09ee6e45.js"
   ]
 }
