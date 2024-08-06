@@ -83,8 +83,8 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
       <section>
         <h3 className="section-title">{formatTitleCase(sections.projects)}</h3>
         <p>
-          My personal coding projects include four web applications built with React,
-          TypeScript and Sass. These are live and interactive &mdash; and their code is
+          My personal coding projects include four websites built with React and
+          TypeScript. These are live and interactive &mdash; and their code is
           viewable at <a href={hypertextReference.gitHub} className="text-link">GitHub</a>.
           I also handle their UX and UI design: with features like semantic HTML,
           accessible elements, mobile-first responsiveness and custom color palettes.
