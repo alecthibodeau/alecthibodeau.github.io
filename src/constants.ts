@@ -8,9 +8,10 @@ import headshotPhoto from './assets/images/alec_headshot_photo_400px.jpg';
 import tree from './assets/images/thibodeau_tree_circle.svg';
 
 /* Project Images */
-import cookieTimeTrivia from './assets/images/mobile_screenshot_cookie_time_trivia.jpg';
 import artPortfolio from './assets/images/mobile_screenshot_alecthibodeau.jpg';
+import cookieTimeTrivia from './assets/images/mobile_screenshot_cookie_time_trivia.jpg';
 import huetown from './assets/images/mobile_screenshot_huetown.jpg';
+import nonaAi from './assets/images/mobile_screenshot_nona_ai.jpg';
 import patturns from './assets/images/mobile_screenshot_patturns.jpg';
 import radTabs from './assets/images/mobile_screenshot_radtabs.jpg';
 import ticTacToe from './assets/images/mobile_screenshot_tic_tac_toe.jpg';
@@ -27,6 +28,7 @@ const hypertextReference = {
   gitHub: 'https://github.com/alecthibodeau',
   huetown: 'https://huetown.com',
   linkedIn: 'https://www.linkedin.com/in/alecthibodeau',
+  nonaAi: 'https://alect.me/nona-ai',
   mailTo: 'mailto:alec@alect.me'
 };
 
@@ -40,6 +42,18 @@ const sections = {
 const navItems: string[] = [sections.about, sections.projects, sections.information];
 
 const projectItems: ProjectItem[] = [
+  {
+    id: 'nonaAi',
+    name: 'Nona AI',
+    description: 'a custom user interface to submit prompts and then get results back from Google\'s Gemini Nano LLM',
+    infoText: 'A custom user interface for Google\'s Gemini Nano LLM',
+    frontEndTechnology: 'React, TypeScript, CSS, SVG',
+    backEndTechnology: 'Google Gemini Nano API',
+    altText: 'Mobile screenshot of the Nona AI interface',
+    website: hypertextReference.nonaAi,
+    clientRepo: 'https://github.com/alecthibodeau/nona-ai',
+    image: nonaAi
+  },
   {
     id: 'huetown',
     name: 'Huetown',
