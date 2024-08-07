@@ -59,39 +59,41 @@
   margin-top: .5rem;
 }
 
-.stack {
+.stack-container {
   margin-top: 1.25rem;
-  font-weight: 700;
+}
 
-  .front-end {
+.stack-title {
+  font-weight: 600;
+
+  &.front-end {
     color: $orange-light;
   }
 
-  .back-end {
+  &.back-end {
     color: $rainbow-red;
   }
 }
 
 .project-footer {
-  display: flex;
-  flex-direction: column;
-  padding: 0 .125rem;
+  padding-bottom: .75rem;
   margin-top: .5rem;
 }
 
 .project-footer-title {
-  margin: .375rem auto;
+  padding-top: .25rem;
   font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: $letter-spacing-standard;
 }
 
 .project-footer-link {
+  display: block;
   width: 100%;
   padding: .25rem 0;
   border: $border-width-small solid $fifty-percent-gray;
   border-radius: .5rem;
-  margin: .375rem auto;
+  margin-top: .75rem;
   font-family: 'Varela Round', sans-serif;
   font-size: .75rem;
   font-weight: 700;
@@ -114,8 +116,7 @@
     color: $application-font-color;
   }
 
-  &:hover,
-  &.clicked {
+  &:hover {
     background-color: $application-font-color;
     color: $application-background-color;
   }
