@@ -9,110 +9,115 @@
 }
 
 .project-container {
-  margin: .625rem 1.25rem 1.25rem;
+  margin: .625rem 1.25rem 1.5rem;
 }
 
-.project-link {
-  display: block;
-  width: $project-width;
-  height: 26.8125rem;
+.project-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 26.5rem;
   border: $border-width-medium solid $fifty-percent-gray;
   border-radius: .625rem;
-  text-decoration: none;
+  background-color: transparent;
 
   &:hover {
-    border-color: $rainbow-yellow;
+    border-color: $rainbow-green;
   }
 }
 
 .project-image {
-  width: $project-width;
-  border-radius: .4375rem;
+  width: 14.375rem;
+  border-radius: .375rem;
 }
 
 .project-info-container {
-  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
 
-  .project-info-title {
-    margin-bottom: .75rem;
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: $letter-spacing-standard;
-    color: $rainbow-yellow;
+.project-info-title {
+  margin-bottom: .75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: $letter-spacing-standard;
+  color: $rainbow-green;
+}
+
+.project-info-text-container {
+  line-height: 1.5rem;
+  text-align: left;
+  color: $application-font-color;
+  font-size: 1rem;
+}
+
+.project-info-text {
+  margin-top: .5rem;
+}
+
+.stack {
+  margin-top: 1.25rem;
+  font-weight: 700;
+
+  .front-end {
+    color: $orange-light;
   }
 
-  .project-info-text-container {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5rem;
-    text-align: left;
-    color: $application-font-color;
-
-    .project-info-text {
-      margin-top: .5rem;
-    }
-
-    .stack {
-      margin: .75rem auto .375rem;
-      font-weight: 700;
-    }
-
-    .front-end {
-      color: $orange-light;
-    }
-
-    .back-end {
-      color: $rainbow-red;
-    }
+  .back-end {
+    color: $rainbow-red;
   }
 }
 
-.project-title {
+.project-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 .125rem;
+  margin-top: .5rem;
+}
+
+.project-footer-title {
   margin: .375rem auto;
   font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: $letter-spacing-standard;
 }
 
-.project-actions {
-  display: flex;
-  flex-direction: column;
-  padding: 0 .125rem;
-  margin-top: .5rem;
+.project-footer-link {
+  width: 100%;
+  padding: .25rem 0;
+  border: $border-width-small solid $fifty-percent-gray;
+  border-radius: .5rem;
+  margin: .375rem auto;
+  font-family: 'Varela Round', sans-serif;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: $letter-spacing-standard;
+  text-decoration: none;
+  background-color: transparent;
+  color: $application-font-color;
 
-  a,
-  button {
-    width: 100%;
-    padding: .25rem 0;
-    border: $border-width-small solid $fifty-percent-gray;
-    border-radius: .5rem;
-    margin: .375rem auto;
-    font-family: 'Varela Round', sans-serif;
-    font-size: .75rem;
-    font-weight: 700;
-    letter-spacing: $letter-spacing-standard;
-    text-decoration: none;
-    background-color: transparent;
+  &:nth-child(2) {
+    border-color: $rainbow-yellow;
+  }
+
+  &:nth-child(3) {
+    border-color: $rainbow-blue;
+  }
+
+  &:link,
+  &:visited,
+  &:active {
     color: $application-font-color;
+  }
 
-    &:nth-child(2) {
-      border-color: $rainbow-green;
-    }
-
-    &:nth-child(3) {
-      border-color: $rainbow-blue;
-    }
-
-    &:link,
-    &:visited,
-    &:active {
-      color: $application-font-color;
-    }
-
-    &:hover,
-    &.clicked {
-      background-color: $application-font-color;
-      color: $application-background-color;
-    }
+  &:hover,
+  &.clicked {
+    background-color: $application-font-color;
+    color: $application-background-color;
   }
 }
 
@@ -124,7 +129,7 @@
     padding-bottom: 1rem;
   }
 
-  .project-actions {
+  .project-footer {
     padding: 0 1.25rem;
   }
 }

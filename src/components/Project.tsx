@@ -12,21 +12,25 @@ function Project(props: ProjectItem): JSX.Element {
 
   return (
     <>
-      <a className="text-link project-link" href={props.website}>
+      <button className="project-details" onClick={handleInfoClick}>
         {
           isInfoClicked ?
           <div className="project-info-container">
             <div className="project-info-title">{props.name}</div>
             <div className="project-info-text-container">
               <div className="project-info-text">{props.infoText}</div>
-              <div>
-                <div className="stack front-end">Front End:</div>
+              <div className="stack">
+                <div className="front-end">Front End</div>
                 <div>{props.frontEndTechnology}</div>
               </div>
-              {props.backEndTechnology && <div>
-                <div className="stack back-end">Back End:</div>
-                <div>{props.backEndTechnology}</div>
-              </div>}
+              {
+                props.backEndTechnology ?
+                <div className="stack">
+                  <div className="stack back-end">Back End</div>
+                  <div>{props.backEndTechnology}</div>
+                </div> :
+                null
+              }
             </div>
           </div> :
           <img
@@ -35,15 +39,11 @@ function Project(props: ProjectItem): JSX.Element {
             alt={props.altText}
           />
         }
-      </a>
-      <div className="project-actions">
-        <div className="project-title">{props.name}</div>
-        <button
-          className={isInfoClicked ? 'clicked' : 'not-clicked'}
-          onClick={handleInfoClick}>
-          Info
-        </button>
-        <a href={props.clientRepo}>GitHub</a>
+      </button>
+      <div className="project-footer">
+        <div className="project-footer-title">{props.name}</div>
+        <a className="project-footer-link" href={props.website}>Website</a>
+        <a className="project-footer-link" href={props.clientRepo}>GitHub</a>
         {
           props.apiRepo ?
           <a href={props.apiRepo}>GitHub (API)</a> :
