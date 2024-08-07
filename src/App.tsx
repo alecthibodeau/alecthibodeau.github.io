@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CodePortfolio from './components/CodePortfolio';
 import NotFound from './components/NotFound';
 
-function App() {
+function App(): JSX.Element {
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>

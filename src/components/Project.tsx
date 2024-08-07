@@ -1,36 +1,54 @@
+import { useState } from 'react';
+
 /* Interfaces */
 import ProjectItem from '../interfaces/ProjectItem';
 
 function Project(props: ProjectItem): JSX.Element {
+  const [isInfoClicked, setIsInfoClicked] = useState(false);
+
+  function handleInfoClick(): void {
+    setIsInfoClicked(!isInfoClicked);
+  }
+
   return (
     <>
-      <div>
-        <div className="project-info-outer">
-          <div className="project-info-inner">
+      <a className="text-link project-link" href={props.website}>
+        {
+          isInfoClicked ?
+          <div className="project-info-container">
             <div className="project-info-title">{props.name}</div>
-            <div className="project-info-text">
-              <div>{props.infoText}</div>
+            <div className="project-info-text-container">
+              <div className="project-info-text">{props.infoText}</div>
               <div>
-                <div className="front-end">Front End:</div>
+                <div className="stack front-end">Front End:</div>
                 <div>{props.frontEndTechnology}</div>
               </div>
               {props.backEndTechnology && <div>
-                <div className="back-end">Back End:</div>
+                <div className="stack back-end">Back End:</div>
                 <div>{props.backEndTechnology}</div>
               </div>}
             </div>
-          </div>
-        </div>
-        <img
-          className="project-img"
-          src={props.image}
-          alt={props.altText} />
-      </div>
-      <div className="project-routing-links">
+          </div> :
+          <img
+            className="project-image"
+            src={props.image}
+            alt={props.altText}
+          />
+        }
+      </a>
+      <div className="project-actions">
         <div className="project-title">{props.name}</div>
-        <a href={props.website}>Website</a>
+        <button
+          className={isInfoClicked ? 'clicked' : 'not-clicked'}
+          onClick={handleInfoClick}>
+          Info
+        </button>
         <a href={props.clientRepo}>GitHub</a>
-        {props.apiRepo && <a href={props.apiRepo}>GitHub (API)</a>}
+        {
+          props.apiRepo ?
+          <a href={props.apiRepo}>GitHub (API)</a> :
+          null
+        }
       </div>
     </>
   );

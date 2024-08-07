@@ -27,7 +27,6 @@ $application-background-color: $ninety-five-percent-gray;
 
 /* Border Radius */
 
-$border-radius-project: .625rem;
 $border-radius-one-hundred-percent: 100%;
 
 /* Letter Spacing */
@@ -37,8 +36,8 @@ $letter-spacing-standard: .25vw;
 /* Dimensions */
 
 $border-width-small: 1px;
+$border-width-medium: 2px;
 $element-width-standard: 15rem;
 $element-width-large: 62.5rem;
 $pattern-item-dimension-standard: 25px;
 $project-width: $element-width-standard;
-$project-height: 26.8125rem;
