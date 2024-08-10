@@ -6,9 +6,9 @@ I'm a software developer specializing in the front end, the user experience (UX)
 
 My personal coding projects include websites built with React and TypeScript. These are live and interactive — and their code is viewable here at GitHub under my pinned repositories. I also handle the UX and UI design for these sites: with features like semantic HTML, accessible elements, mobile-first responsiveness and custom color palettes.
 
-## Technology features of my code portfolio
+## Technology Features
 
-This site is built with [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/). Other noteworthy elements&hellip;
+This site is built with [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/). Other features include:
 - Accessibility
   - [Level AAA](https://www.w3.org/WAI/WCAG2AAA-Conformance) color contrast values
   - Semantic HTML tags
