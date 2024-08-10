@@ -23,7 +23,7 @@ import iconGitHub from './assets/images/icon_solid_github.svg';
 
 const hypertextReference = {
   artPortfolio: 'https://alecthibodeau.com',
-  codePortfolio: 'https://github.com/alecthibodeau/alecthibodeau.github.io',
+  codePortfolio: 'https://github.com/alecthibodeau/alecthibodeau.github.io?tab=readme-ov-file#alectme',
   cookieTimeTrivia: 'https://alect.me/cookie-time-trivia',
   gitHub: 'https://github.com/alecthibodeau',
   huetown: 'https://huetown.com',
@@ -51,7 +51,7 @@ const projectItems: ProjectItem[] = [
     backEndTechnology: 'Google Gemini Nano API',
     altText: 'Mobile screenshot of the Nona AI interface',
     website: hypertextReference.nonaAi,
-    clientRepo: 'https://github.com/alecthibodeau/nona-ai',
+    clientRepo: 'https://github.com/alecthibodeau/nona-ai/blob/main/README.md#nona-ai',
     image: nonaAi
   },
   {
@@ -63,7 +63,7 @@ const projectItems: ProjectItem[] = [
     backEndTechnology: 'PayPal API, Mailchimp API',
     altText: 'Mobile screenshot of the Huetown web shop',
     website: hypertextReference.huetown,
-    clientRepo: 'https://github.com/alecthibodeau/huetown',
+    clientRepo: 'https://github.com/alecthibodeau/huetown/blob/main/README.md#huetown',
     image: huetown
   },
   {
@@ -74,7 +74,7 @@ const projectItems: ProjectItem[] = [
     frontEndTechnology: 'React, TypeScript, React Router, Emotion, CSS3/Sass, SVG, localStorage',
     altText: 'Mobile screenshot of the Cookie Time Trivia game',
     website: hypertextReference.cookieTimeTrivia,
-    clientRepo: 'https://github.com/alecthibodeau/cookie-time-trivia',
+    clientRepo: 'https://github.com/alecthibodeau/cookie-time-trivia/blob/main/README.md#cookie-time-trivia',
     image: cookieTimeTrivia
   },
   {
