@@ -1,13 +1,13 @@
-/* Constants */
-import constants from '../constants';
-
-/* Interfaces */
-import ProjectItem from '../interfaces/ProjectItem';
-
 /* Components */
 import Headshot from './Headshot';
 import Project from './Project';
 import PatternBanner from './PatternBanner';
+
+/* Interfaces */
+import ProjectItem from '../interfaces/ProjectItem';
+
+/* Constants */
+import constants from '../constants';
 
 /* Helpers */
 import helpers from '../helpers';
@@ -67,7 +67,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
       <section>
         <h3 className="section-title">{formatTitleCase(sections.technologies)}</h3>
         <p>
-          I have on-the-job experience with React, React Native, TypeScript,
+          I have professional experience with React, React Native, TypeScript,
           JavaScript, Git, GitHub, Bitbucket, npm, Emotion (CSS-in-JS), CSS3, Sass, Figma,
           Storybook, Style Dictionary, Linux, Expo Go, React Native Debugger, Angular,
           Angular testing (Jasmine), Angular Material, Google Material Design, Bootstrap,
