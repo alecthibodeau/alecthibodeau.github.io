@@ -32,7 +32,7 @@ h3 {
   font-weight: normal;
 }
 
-.name-and-occupation {
+.name-and-occupations {
   padding-top: 4rem;
   margin: auto auto 1rem;
   letter-spacing: .25rem;
@@ -42,12 +42,17 @@ h3 {
   font-size: 1.75rem;
 }
 
-.occupation {
+.occupations {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 1.25rem;
   color: $rainbow-green;
+}
+
+.pipe {
+  display: none;
+  color: $fifty-percent-gray;
 }
 
 .headshot-img {
@@ -107,8 +112,13 @@ p {
     font-size: 3rem;
   }
 
-  .occupation {
+  .occupations {
+    flex-direction: row;
     font-size: 1.75rem;
+  }
+
+  .pipe {
+    display: block;
   }
 
   main section ul {

@@ -43,19 +43,23 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
 
   return (
     <main>
-      <div className="name-and-occupation">
+      <div className="name-and-occupations">
         <h1 className="name">Alec Thibodeau</h1>
-        <h2 className="occupation">Software Developer</h2>
+        <h2 className="occupations">
+          <span>Software Developer</span>
+          <span className="pipe">&nbsp;|&nbsp;</span>
+          <span>Artist</span>
+        </h2>
       </div>
       <section id={sections.about}>
         <Headshot />
         <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
         <p>
-        I'm a software developer specializing in the front end, the user
-        experience (UX), user interfaces (UI), digital accessibility and
-        responsive web design. I build front-end websites from scratch. With a
-        background in art I can make design elements and website prototypes myself
-        or collaborate directly with UX designers.
+          I'm a software developer and a visual artist. My specialty is front-end web
+          development, focusing on the user experience (UX), user interfaces (UI),
+          digital accessibility and responsive web design. I can craft design
+          elements and website prototypes myself or collaborate directly with UX
+          designers.
         </p>
       </section>
       <PatternBanner
