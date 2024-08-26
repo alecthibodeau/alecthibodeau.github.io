@@ -57,7 +57,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         <p>
           I'm a software developer and a visual artist. My specialty is front-end web
           development, focusing on the user experience (UX), user interfaces (UI),
-          digital accessibility and responsive web design. I can craft design
+          digital accessibility and responsive web design. I'm happy to craft design
           elements and website prototypes myself or collaborate directly with UX
           designers.
         </p>
