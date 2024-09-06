@@ -22,7 +22,7 @@
   border-radius: .625rem;
   background-color: transparent;
 
-  &:is(:hover, :focus) {
+  &:hover {
     border-color: $rainbow-green;
     box-shadow: 0 0 1rem $rainbow-green;
   }
