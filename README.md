@@ -2,7 +2,7 @@
 
 ## Code Portfolio site
 
-I'm a software developer specializing in the front end, the user experience (UX), user interfaces (UI), digital accessibility and responsive web design. I build front-end websites from scratch. With a background in art I can make design elements and website prototypes myself or collaborate directly with UX designers.
+I'm a software developer and a visual artist, focusing on front-end web development, the user experience (UX), user interfaces (UI), digital accessibility and responsive web design. I'm happy to craft design elements and website prototypes myself or collaborate directly with UX designers.
 
 My personal coding projects include websites built with React and TypeScript. These are live and interactive — and their code is viewable here at GitHub under my pinned repositories. I also handle the UX and UI design for these sites: with features like semantic HTML, accessible elements, mobile-first responsiveness and custom color palettes.
 
