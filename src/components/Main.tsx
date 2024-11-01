@@ -16,7 +16,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
   const { projectItems, sections, hypertextReference } = constants;
   const { formatTitleCase } = helpers;
 
-  const selectProjects = projectItems.slice(1, 4);
+  const selectProjects = projectItems.slice(0, 4);
 
   /**
    * Spread attributes can be useful but they also make it easy to pass unnecessary props
@@ -87,7 +87,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
       <section>
         <h3 className="section-title">{formatTitleCase(sections.projects)}</h3>
         <p>
-          My personal coding projects include four websites built with React and
+          My personal coding projects include multiple websites built with React and
           TypeScript. These are live and interactive &mdash; and their code is
           viewable at <a href={hypertextReference.gitHub} className="text-link">GitHub</a>.
           I also handle their UX and UI design: with features like semantic HTML,
