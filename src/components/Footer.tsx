@@ -45,7 +45,7 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
           {constants.informationItems.map(renderInformationItem)}
         </div>
         <div className="credit">
-          {`Alec Thibodeau, ${new Date().getFullYear()}`}
+          Alec Thibodeau, {new Date().getFullYear()}
         </div>
         <div className="stripes-container">
           {Array(7).fill('stripe').map((item: string, index: number) => {
