@@ -1,5 +1,4 @@
 /* Components */
-import Headshot from './Headshot';
 import Project from './Project';
 import PatternBanner from './PatternBanner';
 
@@ -52,7 +51,11 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         </h2>
       </div>
       <section id={sections.about}>
-        <Headshot />
+        <img
+          src={constants.headshotPhoto}
+          className="headshot-img"
+          alt="Alec Thibodeau headshot"
+        />
         <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
         <p>
           I'm a software developer and a visual artist, focusing on front-end web
