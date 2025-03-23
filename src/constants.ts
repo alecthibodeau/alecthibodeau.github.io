@@ -19,7 +19,6 @@ import ticTacToe from './assets/images/mobile_screenshot_tic_tac_toe.jpg';
 import iconEmail from './assets/images/icon_solid_email.svg';
 import iconLinkedIn from './assets/images/icon_solid_linkedin.svg';
 import iconGitHub from './assets/images/icon_solid_github.svg';
-import iconResume from './assets/images/icon_solid_resume.svg';
 
 const hypertextReference = {
   artPortfolio: 'https://alecthibodeau.com',
@@ -127,11 +126,6 @@ const projectItems: ProjectItem[] = [
 ];
 
 const informationItems: InformationItem[] = [
-  {
-    name: 'Resume',
-    href: hypertextReference.pdfResumeView,
-    image: iconResume
-  },
   {
     name: 'LinkedIn',
     href: hypertextReference.linkedIn,
