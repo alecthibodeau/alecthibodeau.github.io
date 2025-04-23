@@ -28,8 +28,7 @@ const hypertextReference = {
   huetown: 'https://huetown.com',
   linkedIn: 'https://www.linkedin.com/in/alecthibodeau',
   nonaAi: 'https://alect.me/nona-ai',
-  mailTo: 'mailto:alec@alect.me',
-  pdfResumeView: 'https://github.com/alecthibodeau/resource-library/blob/main/assets/resume/alec_thibodeau_resume_web.pdf'
+  mailTo: 'mailto:alec@alect.me'
 };
 
 const sections = {
