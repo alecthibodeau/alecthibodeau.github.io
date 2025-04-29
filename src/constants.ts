@@ -3,7 +3,7 @@ import InformationItem from './interfaces/InformationItem';
 import ProjectItem from './interfaces/ProjectItem';
 
 /* Site Images */
-import headshotPhoto from './assets/images/alec_headshot_photo_400px.jpg';
+import headshotIcon from './assets/images/alec_headshot_icon_150px.jpg';
 import tree from './assets/images/thibodeau_tree_circle.svg';
 
 /* Project Images */
@@ -150,7 +150,7 @@ const quarterDiscDirection: { [key: number]: string } = {
 };
 
 const constants = {
-  headshotPhoto,
+  headshotIcon,
   tree,
   navItems,
   sections,
