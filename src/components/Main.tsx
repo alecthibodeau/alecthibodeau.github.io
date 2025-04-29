@@ -35,9 +35,9 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
       <div className="name-and-occupations">
         <h1 className="name">Alec Thibodeau</h1>
         <h2 className="occupations">
-          <span>Software Developer</span>
-          <span className="pipe">&nbsp;|&nbsp;</span>
           <span>Artist</span>
+          <span className="pipe">&nbsp;|&nbsp;</span>
+          <span>Software Developer</span>
         </h2>
       </div>
       <section id={sections.about}>
@@ -64,9 +64,9 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
       <section>
         <h3 className="section-title">{formatTitleCase(sections.projects)}</h3>
         <p>
-          I've built these coding projects with React and TypeScript. I also handle
-          their UX and UI design, with features like semantic HTML, accessible
-          elements, mobile-first responsiveness and custom color palettes.
+          I've built these coding projects with React and TypeScript. I've also designed
+          them with features like semantic HTML, accessible elements, mobile-first
+          responsiveness and custom color palettes.
         </p>
         <div className={sections.projects}>
           {selectProjects.map(renderProjectItem)}
