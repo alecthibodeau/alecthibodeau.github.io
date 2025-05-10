@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 /* Components */
 import PatternBanner from './PatternBanner';
 
@@ -6,12 +8,27 @@ import constants from '../constants';
 
 /* Interfaces */
 import InformationItem from '../interfaces/InformationItem';
+import Shape from '../interfaces/Shape';
 
 /* Helpers */
 import helpers from '../helpers';
 
 function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.Element {
   const { sections } = constants;
+  const [shapes] = useState<Shape[]>(() =>
+    Array(300).fill(null).map(() => ({
+      position: getRandomNumber(4),
+      size: getRandomNumber(4),
+      flip: getRandomNumber(2),
+      form: getRandomNumber(4),
+      rotation: getRandomNumber(6),
+      color: getRandomNumber(4)
+    }))
+  );
+
+  function getRandomNumber(range: number): number {
+    return Math.floor(Math.random() * range)
+  }
 
   function renderInformationItem(item: InformationItem, index: number): JSX.Element {
     return (
@@ -26,6 +43,17 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
           {item.name}
         </div>
       </a>
+    );
+  }
+
+  function renderShape(item: Shape, index: number): JSX.Element {
+    return (
+      <div
+        key={`shape-${index}`}
+        className={
+          `shape position-${item.position} size-${item.size} flip-${item.flip} form-${item.form} rotation-${item.rotation} color-${item.color}`
+        }
+      />
     );
   }
 
@@ -53,6 +81,9 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
           })}
         </div>
       </section>
+      <div className="shapes-field">
+        {shapes.map(renderShape)}
+      </div>
     </footer>
   );
 }
