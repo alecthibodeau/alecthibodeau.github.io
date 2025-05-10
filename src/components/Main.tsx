@@ -48,11 +48,9 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         />
         <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
         <p>
-          When I'm not writing software for interactive projects I'm crafting
-          original designs with various digital methods or making drawings with
-          traditional pen-and-ink techniques. My software focus is front-end web
-          development, the user experience, user interfaces, digital accessibility
-          and responsive web design.
+          When I'm not writing software I'm drawing with traditional pen-and-ink. My
+          software focus is front-end web development, user experiences, user
+          interfaces, digital accessibility and responsive web design.
         </p>
       </section>
       <PatternBanner
@@ -64,7 +62,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
       <section>
         <h3 className="section-title">{formatTitleCase(sections.projects)}</h3>
         <p>
-          I've built these coding projects with React and TypeScript. I've also designed
+          I built these coding projects with React and TypeScript. I also designed
           them with features like semantic HTML, accessible elements, mobile-first
           responsiveness and custom color palettes.
         </p>
