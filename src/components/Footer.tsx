@@ -15,7 +15,7 @@ import helpers from '../helpers';
 
 function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.Element {
   const { sections } = constants;
-  const [shapes] = useState<Shape[]>(() =>
+  const [shapes] = useState<Shape[]>(
     Array(300).fill(null).map(() => ({
       position: getRandomNumber(4),
       size: getRandomNumber(4),
@@ -27,7 +27,7 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
   );
 
   function getRandomNumber(range: number): number {
-    return Math.floor(Math.random() * range)
+    return Math.floor(Math.random() * range);
   }
 
   function renderInformationItem(item: InformationItem, index: number): JSX.Element {
