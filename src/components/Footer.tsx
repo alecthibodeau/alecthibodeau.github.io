@@ -19,6 +19,7 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
     Array(300).fill(null).map(() => ({
       position: getRandomNumber(4),
       size: getRandomNumber(4),
+      zIndex: getRandomNumber(4),
       flip: getRandomNumber(2),
       form: getRandomNumber(4),
       rotation: getRandomNumber(6),
@@ -51,7 +52,7 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
       <div
         key={`shape-${index}`}
         className={
-          `shape position-${item.position} size-${item.size} flip-${item.flip} form-${item.form} rotation-${item.rotation} color-${item.color}`
+          `shape position-${item.position} size-${item.size} z-index-${item.zIndex} flip-${item.flip} form-${item.form} rotation-${item.rotation} color-${item.color}`
         }
       />
     );
