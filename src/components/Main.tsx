@@ -15,7 +15,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
   const { projectItems, sections } = constants;
   const { formatTitleCase } = helpers;
 
-  const selectProjects = projectItems.slice(0, 4);
+  const selectProjects = projectItems.slice(1, 4);
 
   /**
    * Spread attributes can be useful but they also make it easy to pass unnecessary props
