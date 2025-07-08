@@ -63,7 +63,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
       <section>
         <h3 className="section-title">{formatTitleCase(sections.projects)}</h3>
         <p>
-          I built these coding projects with React and TypeScript. I also designed
+          I've built these coding projects with React and TypeScript. I've also designed
           them with features like semantic HTML, accessible elements, mobile-first
           responsiveness and custom color palettes.
         </p>
