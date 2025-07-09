@@ -45,7 +45,6 @@
   margin-bottom: .75rem;
   font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: $letter-spacing-standard;
   color: $rainbow-green;
 }
 
@@ -85,7 +84,8 @@
   padding-top: .25rem;
   font-size: 1.125rem;
   font-weight: 500;
-  letter-spacing: $letter-spacing-standard;
+  letter-spacing: .0625rem;
+  color: $rainbow-green;
 }
 
 .project-footer-link {
@@ -98,7 +98,7 @@
   font-family: 'Varela Round', sans-serif;
   font-size: .75rem;
   font-weight: 700;
-  letter-spacing: $letter-spacing-standard;
+  letter-spacing: .0625rem;
   text-decoration: none;
   background-color: transparent;
   color: $application-font-color;
