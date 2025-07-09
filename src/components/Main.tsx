@@ -15,7 +15,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
   const { projectItems, sections } = constants;
   const { formatTitleCase } = helpers;
 
-  const selectProjects = projectItems.slice(1, 4);
+  const selectProjects = projectItems.slice(0, 4);
 
   /**
    * Spread attributes can be useful but they also make it easy to pass unnecessary props
@@ -35,9 +35,9 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
       <div className="name-and-occupations">
         <h1 className="name">Alec Thibodeau</h1>
         <h2 className="occupations">
-          <span>Artist</span>
-          <span className="pipe">&nbsp;|&nbsp;</span>
           <span>Software Developer</span>
+          <span className="pipe">&nbsp;|&nbsp;</span>
+          <span>Artist</span>
         </h2>
       </div>
       <section id={sections.about}>

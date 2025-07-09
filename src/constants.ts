@@ -12,6 +12,7 @@ import cookieTimeTrivia from './assets/images/mobile_screenshot_cookie_time_triv
 import huetown from './assets/images/mobile_screenshot_huetown.jpg';
 import nonaAi from './assets/images/mobile_screenshot_nona_ai.jpg';
 import patturns from './assets/images/mobile_screenshot_patturns.jpg';
+import pupperland from './assets/images/mobile_screenshot_pupperland.jpg';
 import radTabs from './assets/images/mobile_screenshot_radtabs.jpg';
 import ticTacToe from './assets/images/mobile_screenshot_tic_tac_toe.jpg';
 
@@ -28,6 +29,7 @@ const hypertextReference = {
   huetown: 'https://huetown.com',
   linkedIn: 'https://www.linkedin.com/in/alecthibodeau',
   nonaAi: 'https://alect.me/nona-ai',
+  pupperland: 'https://alect.me/pupperland',
   mailTo: 'mailto:alec@alect.me'
 };
 
@@ -42,22 +44,20 @@ const navItems: string[] = [sections.about, sections.projects, sections.informat
 
 const projectItems: ProjectItem[] = [
   {
-    id: 'nonaAi',
-    name: 'Nona AI',
-    description: 'a custom user interface to submit prompts and then get results back from Google\'s Gemini Nano LLM',
-    infoText: 'A custom user interface for Google\'s Gemini Nano LLM',
-    frontEndTechnology: 'React, TypeScript, CSS3, SVG',
-    backEndTechnology: 'Google Gemini Nano API',
-    altText: 'Mobile screenshot of the Nona AI interface',
-    website: hypertextReference.nonaAi,
-    clientRepo: 'https://github.com/alecthibodeau/nona-ai/blob/main/README.md#nona-ai',
-    image: nonaAi
+    id: 'pupperland',
+    name: 'Pupperland',
+    infoText: 'A user interface which simulates browsing a directory of shelter dogs.',
+    frontEndTechnology: 'React, TypeScript, React Router, CSS3, SVG',
+    backEndTechnology: 'Proprietary API from Fetch',
+    altText: 'Mobile screenshot of Pupperland',
+    website: hypertextReference.pupperland,
+    clientRepo: 'https://github.com/alecthibodeau/pupperland/blob/main/README.md#pupperland',
+    image: pupperland
   },
   {
     id: 'huetown',
     name: 'Huetown',
-    description: 'a web shop that consumes PayPal and Mailchimp APIs to, respectively, accept orders and record email list subscribers',
-    infoText: 'The web shop for Huetown, my personal project for art sales',
+    infoText: 'The web shop for my art sales, which includes an animated digital lunar calendar',
     frontEndTechnology: 'React, TypeScript, React Router, CSS3/Sass, SVG',
     backEndTechnology: 'PayPal API, Mailchimp API',
     altText: 'Mobile screenshot of the Huetown web shop',
@@ -68,7 +68,6 @@ const projectItems: ProjectItem[] = [
   {
     id: 'cookieTimeTrivia',
     name: 'Cookie Time Trivia',
-    description: 'a quiz interface with CRUD operations on localStorage for the user\'s high score and visual theme preference',
     infoText: 'A game with multiple categories and user-selectable themes',
     frontEndTechnology: 'React, TypeScript, React Router, Emotion, CSS3/Sass, SVG, localStorage',
     altText: 'Mobile screenshot of the Cookie Time Trivia game',
@@ -79,13 +78,23 @@ const projectItems: ProjectItem[] = [
   {
     id: 'artPortfolio',
     name: 'Art Portfolio',
-    description: 'components rendered from JSON data to display galleries of my earlier work in drawing and printmaking',
     infoText: 'An art portfolio website for displaying my earlier work in drawing and printmaking',
     frontEndTechnology: 'React, TypeScript, React Router, Bootstrap 5, CSS3/Sass, SVG',
     altText: 'Mobile screenshot of Alec\'s art portfolio website',
     website: hypertextReference.artPortfolio,
     clientRepo: 'https://github.com/alecthibodeau/alecthibodeau.com',
     image: artPortfolio
+  },
+  {
+    id: 'nonaAi',
+    name: 'Nona AI',
+    infoText: 'A custom user interface for Google\'s Gemini Nano LLM',
+    frontEndTechnology: 'React, TypeScript, CSS3, SVG',
+    backEndTechnology: 'Google Gemini Nano API',
+    altText: 'Mobile screenshot of the Nona AI interface',
+    website: hypertextReference.nonaAi,
+    clientRepo: 'https://github.com/alecthibodeau/nona-ai/blob/main/README.md#nona-ai',
+    image: nonaAi
   },
   {
     id: 'patturns',
