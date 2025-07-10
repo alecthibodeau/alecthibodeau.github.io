@@ -11,7 +11,7 @@ function Project(props: ProjectItem): JSX.Element {
   }
 
   return (
-    <>
+    <div>
       <button className="project-details" onClick={handleInfoClick}>
         {
           isInfoClicked ?
@@ -50,7 +50,7 @@ function Project(props: ProjectItem): JSX.Element {
           null
         }
       </div>
-    </>
+    </div>
   );
 }
 

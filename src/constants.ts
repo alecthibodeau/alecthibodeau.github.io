@@ -48,7 +48,7 @@ const projectItems: ProjectItem[] = [
     name: 'Pupperland',
     infoText: 'A simulated portal for browsing shelter dogs that are available to bring home',
     frontEndTechnology: 'React, TypeScript, React Router, CSS3, SVG',
-    backEndTechnology: 'Proprietary API from Fetch',
+    backEndTechnology: 'Fetch API',
     altText: 'Mobile screenshot of Pupperland',
     website: hypertextReference.pupperland,
     clientRepo: 'https://github.com/alecthibodeau/pupperland/blob/main/README.md#pupperland',

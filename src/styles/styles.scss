@@ -10,14 +10,14 @@ body {
   scroll-behavior: smooth;
   max-width: 100%;
   overflow-x: hidden;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   background-color: $blue-muted;
   color: $application-font-color;
 }
 
 main {
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   background-color: $application-background-color;
 }
 
@@ -35,7 +35,6 @@ h3 {
 .name-and-occupations {
   padding-top: 4rem;
   margin: auto auto 1rem;
-  letter-spacing: .25rem;
 }
 
 .name {
@@ -93,14 +92,12 @@ main section ul {
 .section-title {
   margin: 1.75rem auto .625rem;
   font-size: 1.25rem;
-  letter-spacing: .5vw;
 }
 
 p {
   width: 85%;
   max-width: $element-width-large;
   margin: auto auto 2rem;
-  font-family: 'Roboto', sans-serif;
   text-align: left;
 }
 
@@ -133,7 +130,6 @@ p {
   .section-title {
     margin-top: 2.25rem;
     font-size: 2rem;
-    letter-spacing: .25rem;
   }
 
   p {

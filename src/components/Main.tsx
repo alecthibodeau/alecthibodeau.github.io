@@ -22,12 +22,8 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
    * to components that don’t care about them or to pass invalid HTML attributes to the DOM.
    * We recommend using this syntax sparingly. - React Docs
    */
-  function renderProjectItem(item: ProjectItem, index: number): JSX.Element {
-    return (
-      <div key={`${item.name}-${index}`} className="project-container">
-        <Project {...item} />
-      </div>
-    );
+  function renderProject(item: ProjectItem, index: number): JSX.Element {
+    return <Project key={`${item.name}-${index}`} {...item} />;
   }
 
   return (
@@ -68,7 +64,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
           responsiveness and custom color palettes.
         </p>
         <div className={sections.projects}>
-          {selectProjects.map(renderProjectItem)}
+          {selectProjects.map(renderProject)}
         </div>
       </section>
     </main>

@@ -5,11 +5,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 4rem 1.75rem;
+  padding: 0 2rem;
   margin: 0 auto;
-}
-
-.project-container {
-  margin: .625rem 1.25rem 1.5rem;
 }
 
 .project-details {
@@ -19,6 +17,7 @@
   width: 15rem;
   height: 26.5rem;
   border: $border-width-medium solid $fifty-percent-gray;
+  font-family: 'Open Sans', sans-serif;
   border-radius: .625rem;
   background-color: transparent;
 
@@ -38,7 +37,6 @@
   flex-direction: column;
   align-self: flex-start;
   padding: 2rem;
-  font-family: 'Roboto', sans-serif;
 }
 
 .project-info-title {
@@ -76,7 +74,7 @@
 }
 
 .project-footer {
-  padding-bottom: .75rem;
+  padding: 0 1.25rem;
   margin-top: .5rem;
 }
 
@@ -84,7 +82,6 @@
   padding-top: .25rem;
   font-size: 1.125rem;
   font-weight: 500;
-  letter-spacing: .0625rem;
   color: $rainbow-green;
 }
 
@@ -95,10 +92,8 @@
   border: $border-width-small solid $fifty-percent-gray;
   border-radius: .5rem;
   margin-top: .75rem;
-  font-family: 'Varela Round', sans-serif;
   font-size: .75rem;
   font-weight: 700;
-  letter-spacing: .0625rem;
   text-decoration: none;
   background-color: transparent;
   color: $application-font-color;
@@ -120,18 +115,5 @@
   &:hover {
     background-color: $application-font-color;
     color: $application-background-color;
-  }
-}
-
-/* Breakpoint Small */
-
-@media (min-width: $breakpoint-sm) {
-
-  .projects {
-    padding-bottom: 1rem;
-  }
-
-  .project-footer {
-    padding: 0 1.25rem;
   }
 }
