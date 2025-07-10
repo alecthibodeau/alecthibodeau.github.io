@@ -46,7 +46,7 @@ const projectItems: ProjectItem[] = [
   {
     id: 'pupperland',
     name: 'Pupperland',
-    infoText: 'A user interface which simulates browsing a directory of shelter dogs.',
+    infoText: 'A simulated portal for browsing shelter dogs that are available to bring home',
     frontEndTechnology: 'React, TypeScript, React Router, CSS3, SVG',
     backEndTechnology: 'Proprietary API from Fetch',
     altText: 'Mobile screenshot of Pupperland',

@@ -48,8 +48,8 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         />
         <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
         <p>
-          When I'm not writing software for interactive projects I'm crafting
-          designs with digital methods or drawing with pen and ink. My software
+          When I'm not writing software for interactive products and projects I'm
+          crafting designs with digital methods or traditional techniques. My software
           focus is front-end web development, the user experience, user interfaces,
           digital accessibility and responsive web design.
         </p>
