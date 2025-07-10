@@ -38,7 +38,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
       </div>
       <section id={sections.about}>
         <img
-          src={constants.headshotIcon}
+          src={constants.headshot}
           className="headshot-img"
           alt="Alec Thibodeau headshot"
         />
