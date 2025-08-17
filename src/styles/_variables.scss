@@ -10,6 +10,7 @@ $breakpoint-xl: 1200px;
 $white: #fff;
 $black: #000;
 $four-percent-gray: #f5f5f5;
+$four-percent-gray-transparent: rgb(245 245 245 / 33%);
 $fifty-percent-gray: #7f7f7f;
 $ninety-five-percent-gray: #0d0d0d;
 $black-screen: rgb(0 0 0 / 93%);
@@ -23,6 +24,7 @@ $rainbow-green: #9ac479;
 $rainbow-blue: #74a6cf;
 
 $application-font-color: $four-percent-gray;
+$application-font-color-transparent: $four-percent-gray-transparent;
 $application-background-color: $ninety-five-percent-gray;
 
 /* Border Radius */

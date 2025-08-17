@@ -2,6 +2,7 @@
 @use './banners' as *;
 @use './footer' as *;
 @use './header' as *;
+@use './loader' as *;
 @use './not-found' as *;
 @use './projects' as *;
 
@@ -19,6 +20,30 @@ body {
 main {
   padding-bottom: 3rem;
   background-color: $application-background-color;
+
+  &.redirect-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+.redirect-message-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redirect-message {
+  width: 100%;
+  padding-inline: 1rem;
+  margin: 1rem;
+  text-align: center;
 }
 
 h1,
