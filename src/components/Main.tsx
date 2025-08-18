@@ -12,6 +12,7 @@ import constants from '../constants';
 import helpers from '../helpers';
 
 function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.Element {
+  const isAboutInfoDisplayed: boolean = false;
   const { projectItems, sections } = constants;
   const { formatTitleCase } = helpers;
 
@@ -28,38 +29,49 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
 
   return (
     <main>
+
       <div className="name-and-occupations">
         <h1 className="name">Alec Thibodeau</h1>
-        <h2 className="occupations">
-          <span>Software Developer</span>
-          <span className="pipe">&nbsp;|&nbsp;</span>
-          <span>Artist</span>
-        </h2>
+        {
+          isAboutInfoDisplayed ?
+          <h2 className="occupations">
+            <span>Artist</span>
+            <span className="pipe">&nbsp;|&nbsp;</span>
+            <span>Coder</span>
+          </h2> :
+          <h2>&bull;&bull;&bull;</h2>
+        }
       </div>
-      <section id={sections.about}>
-        <img
-          src={constants.headshot}
-          className="headshot-img"
-          alt="Alec Thibodeau headshot"
-        />
-        <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
-        <p>
-          When I'm not writing software for interactive products and projects I'm
-          crafting designs with digital methods or traditional techniques. My software
-          focus is front-end web development, the user experience, user interfaces,
-          digital accessibility and responsive web design.
-        </p>
-      </section>
-      <PatternBanner
-        id={sections.projects}
-        isBreakpointXs={props.isBreakpointXs}
-        viewportWidth={props.viewportWidth}
-        color="blue"
-      />
+      {
+        isAboutInfoDisplayed ?
+        <>
+          <section id={sections.about}>
+            <img
+              src={constants.headshot}
+              className="headshot-img"
+              alt="Alec Thibodeau headshot"
+            />
+            <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
+            <p>
+              When I'm not writing software for interactive products and projects I'm
+              crafting designs with digital methods or traditional techniques. My software
+              focus is front-end web development, the user experience, user interfaces,
+              digital accessibility and responsive web design.
+            </p>
+          </section>
+          <PatternBanner
+            id={sections.projects}
+            isBreakpointXs={props.isBreakpointXs}
+            viewportWidth={props.viewportWidth}
+            color="blue"
+          />
+        </> :
+        null
+      }
       <section>
-        <h3 className="section-title">{formatTitleCase(sections.projects)}</h3>
+        <h3 className="section-title">{`${isAboutInfoDisplayed ? '' : 'Coding '}${formatTitleCase(sections.projects)}`}</h3>
         <p>
-          I've built these coding projects with React and TypeScript. I've also designed
+          I've built these projects with React and TypeScript. I've also designed
           them with features like semantic HTML, accessible elements, mobile-first
           responsiveness and custom color palettes.
         </p>

@@ -68,14 +68,12 @@ h3 {
 
 .occupations {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   font-size: 1.25rem;
   color: $rainbow-green;
 }
 
 .pipe {
-  display: none;
   color: $fifty-percent-gray;
 }
 
@@ -135,12 +133,7 @@ p {
   }
 
   .occupations {
-    flex-direction: row;
     font-size: 1.75rem;
-  }
-
-  .pipe {
-    display: block;
   }
 
   main section ul {

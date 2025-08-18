@@ -6,7 +6,7 @@ import NotFound from './components/NotFound';
 import Loader from './components/Loader';
 
 function App(): JSX.Element {
-  const isRedirectActive: boolean = true;
+  const isRedirectActive: boolean = false;
 
   if (isRedirectActive) {
     window.setTimeout(function() {

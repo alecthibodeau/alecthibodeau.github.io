@@ -14,6 +14,7 @@ import Shape from '../interfaces/Shape';
 import helpers from '../helpers';
 
 function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.Element {
+  const isFooterInfoDisplayed: boolean = false;
   const { sections } = constants;
   const [shapes] = useState<Shape[]>(
     Array(300).fill(null).map(() => ({
@@ -60,28 +61,34 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
 
   return (
     <footer>
-      <PatternBanner
-        id={sections.information}
-        isBreakpointXs={props.isBreakpointXs}
-        viewportWidth={props.viewportWidth}
-        color="green"
-      />
-      <section>
-        <h3 className="section-title">
-          {helpers.formatTitleCase(sections.information)}
-        </h3>
-        <div className="information-box">
-          {constants.informationItems.map(renderInformationItem)}
-        </div>
-        <div className="credit">
-          Alec Thibodeau, {new Date().getFullYear()}
-        </div>
-        <div className="stripes-container">
-          {Array(7).fill('stripe').map((item: string, index: number) => {
-            return (<div key={`${item}-${index}`}></div>);
-          })}
-        </div>
-      </section>
+      {
+        isFooterInfoDisplayed ?
+        <>
+          <PatternBanner
+            id={sections.information}
+            isBreakpointXs={props.isBreakpointXs}
+            viewportWidth={props.viewportWidth}
+            color="green"
+          />
+          <section>
+            <h3 className="section-title">
+              {helpers.formatTitleCase(sections.information)}
+            </h3>
+            <div className="information-box">
+              {constants.informationItems.map(renderInformationItem)}
+            </div>
+            <div className="credit">
+              Alec Thibodeau, {new Date().getFullYear()}
+            </div>
+            <div className="stripes-container">
+              {Array(7).fill('stripe').map((item: string, index: number) => {
+                return (<div key={`${item}-${index}`}></div>);
+              })}
+            </div>
+          </section>
+        </> :
+        null
+      }
       <div className="shapes-field">
         {shapes.map(renderShape)}
       </div>

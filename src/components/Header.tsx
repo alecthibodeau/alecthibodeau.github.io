@@ -5,6 +5,7 @@ import constants from '../constants';
 import helpers from '../helpers';
 
 function Header(): JSX.Element {
+  const isHeaderInfoDisplayed: boolean = false;
 
   function renderNavItem(item: string, index: number): JSX.Element {
     return (
@@ -16,9 +17,13 @@ function Header(): JSX.Element {
 
   return (
     <header>
-      <nav>
-        {constants.navItems.map(renderNavItem)}
-      </nav>
+      {
+        isHeaderInfoDisplayed ?
+        <nav>
+          {constants.navItems.map(renderNavItem)}
+        </nav> :
+        null
+      }
     </header>
   );
 }
