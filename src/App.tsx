@@ -6,12 +6,10 @@ import NotFound from './components/NotFound';
 import Loader from './components/Loader';
 
 function App(): JSX.Element {
-  const isRedirectActive: boolean = false;
+  const isRedirectActive: boolean = true;
 
   if (isRedirectActive) {
-    window.setTimeout(function() {
-      window.location.href = "http://www.alec.art";
-    }, 5000);
+    window.location.replace("https://github.com/alecthibodeau");
   }
 
   return (
@@ -20,10 +18,6 @@ function App(): JSX.Element {
         isRedirectActive ?
         <main className="redirect-main">
           <div className="redirect-message-wrapper">
-            <p className="redirect-message">
-              Hi. You're being redirected
-              to <a href="https://www.huetown.com" className="text-link">huetown.com</a>.
-            </p>
             <Loader />
           </div>
         </main> :
