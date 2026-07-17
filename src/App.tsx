@@ -7,10 +7,9 @@ import Loader from './components/Loader';
 
 function App(): JSX.Element {
   const isRedirectActive: boolean = true;
+  const urlRedirect: string = "https://www.linkedin.com/in/alecthibodeau";
 
-  if (isRedirectActive) {
-    window.location.replace("https://github.com/alecthibodeau");
-  }
+  if (isRedirectActive) window.location.replace(urlRedirect);
 
   return (
     <>
