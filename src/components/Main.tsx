@@ -12,7 +12,9 @@ import constants from '../constants';
 import helpers from '../helpers';
 
 function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.Element {
-  const isAboutInfoDisplayed: boolean = false;
+  const isAboutInfoDisplayed: boolean = true;
+  const isHeadshotDisplayed: boolean = true;
+  const isPatternBannerDisplayed: boolean = false;
   const { projectItems, sections } = constants;
   const { formatTitleCase } = helpers;
 
@@ -46,11 +48,13 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         isAboutInfoDisplayed ?
         <>
           <section id={sections.about}>
-            <img
-              src={constants.headshot}
-              className="headshot-img"
-              alt="Alec Thibodeau headshot"
-            />
+            { isHeadshotDisplayed ?
+              <img
+                src={constants.headshot}
+                className="headshot-img"
+                alt="Alec Thibodeau headshot"
+              /> : null
+            }
             <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
             <p>
               When I'm not writing software for interactive products and projects I'm
@@ -59,12 +63,14 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
               digital accessibility and responsive web design.
             </p>
           </section>
-          <PatternBanner
-            id={sections.projects}
-            isBreakpointXs={props.isBreakpointXs}
-            viewportWidth={props.viewportWidth}
-            color="blue"
-          />
+          { isPatternBannerDisplayed ?
+            <PatternBanner
+              id={sections.projects}
+              isBreakpointXs={props.isBreakpointXs}
+              viewportWidth={props.viewportWidth}
+              color="blue"
+            /> : null
+          }
         </> :
         null
       }
