@@ -14,10 +14,12 @@ import Shape from '../interfaces/Shape';
 import helpers from '../helpers';
 
 function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.Element {
-  const isFooterInfoDisplayed: boolean = false;
   const { sections } = constants;
+
+  const isFooterInfoDisplayed: boolean = true;
+
   const [shapes] = useState<Shape[]>(
-    Array(300).fill(null).map(() => ({
+    Array(20).fill(null).map(() => ({
       position: getRandomNumber(4),
       size: getRandomNumber(4),
       zIndex: getRandomNumber(4),
@@ -37,7 +39,9 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
       <a
         key={`${item.name}-${index}`}
         className="text-link"
-        href={item.href}>
+        href={item.href}
+        target='_blank'
+      >
         <img
           src={item.image}
           alt={`${item.name} SVG icon`} />
@@ -64,18 +68,16 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
       {
         isFooterInfoDisplayed ?
         <>
-          <PatternBanner
-            id={sections.information}
-            isBreakpointXs={props.isBreakpointXs}
-            viewportWidth={props.viewportWidth}
-            color="green"
-          />
-          <section>
+          <div className="stripe green"></div>
+          <section id={sections.information} className={`section-${sections.information}`}>
             <h3 className="section-title">
               {helpers.formatTitleCase(sections.information)}
             </h3>
             <div className="information-box">
               {constants.informationItems.map(renderInformationItem)}
+            </div>
+            <div className="shapes-field">
+              {shapes.map(renderShape)}
             </div>
             <div className="credit">
               Alec Thibodeau, {new Date().getFullYear()}
@@ -89,9 +91,6 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
         </> :
         null
       }
-      <div className="shapes-field">
-        {shapes.map(renderShape)}
-      </div>
     </footer>
   );
 }

@@ -1,6 +1,5 @@
 /* Components */
 import Project from './Project';
-import PatternBanner from './PatternBanner';
 
 /* Interfaces */
 import ProjectItem from '../interfaces/ProjectItem';
@@ -12,11 +11,11 @@ import constants from '../constants';
 import helpers from '../helpers';
 
 function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.Element {
-  const isAboutInfoDisplayed: boolean = true;
-  const isHeadshotDisplayed: boolean = true;
-  const isPatternBannerDisplayed: boolean = false;
   const { projectItems, sections } = constants;
   const { formatTitleCase } = helpers;
+
+  const isAboutInfoDisplayed: boolean = true;
+  const isHeadshotDisplayed: boolean = true;
 
   const selectProjects = projectItems.slice(0, 4);
 
@@ -63,14 +62,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
               digital accessibility and responsive web design.
             </p>
           </section>
-          { isPatternBannerDisplayed ?
-            <PatternBanner
-              id={sections.projects}
-              isBreakpointXs={props.isBreakpointXs}
-              viewportWidth={props.viewportWidth}
-              color="blue"
-            /> : null
-          }
+          <div className="stripe blue"></div>
         </> :
         null
       }

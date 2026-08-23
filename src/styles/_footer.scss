@@ -8,7 +8,7 @@ footer {
   width: fit-content;
   display: flex;
   flex-direction: column;
-  margin: .75rem auto 1.5rem;
+  margin: 0 auto;
 
   a {
     display: inline-block;
@@ -21,14 +21,14 @@ footer {
 }
 
 .credit {
-  margin: 1.25rem auto;
+  margin: 3rem auto 1rem;
 }
 
 .stripes-container {
   height: 3.125rem;
 
   div {
-    height: .1875rem;
+    height: $stripe-height;
     background-color: $orange-muted;
 
     &:nth-child(2),
@@ -48,7 +48,7 @@ footer {
 }
 
 .shapes-field {
-  padding: 4rem 1rem;
+  padding: 0 1rem;
 }
 
 .shape {
@@ -197,7 +197,6 @@ footer {
   .information-box {
     flex-direction: row;
     padding: 1rem 1.5rem;
-    margin-bottom: 2.5rem;
   }
 }
 

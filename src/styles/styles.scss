@@ -117,7 +117,8 @@ main section ul {
   font-size: 1.25rem;
 }
 
-.section-projects {
+.section-projects,
+.section-information {
   scroll-margin-top: 3.75rem;
 }
 
@@ -126,6 +127,18 @@ p {
   max-width: $element-width-large;
   margin: auto auto 2rem;
   text-align: left;
+}
+
+.stripe {
+  height: $stripe-height;
+
+  &.blue {
+    background-color: $rainbow-blue;
+  }
+
+  &.green {
+    background-color: $rainbow-green;
+  }
 }
 
 /* Breakpoint Small */
