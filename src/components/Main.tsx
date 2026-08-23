@@ -57,8 +57,8 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
             }
             <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
             <p>
-              When I'm not writing software for interactive products and projects I'm
-              crafting designs with digital methods or traditional techniques. My software
+              When I'm not writing software for interactive projects I'm
+              crafting designs with various techniques. My software
               focus is front-end web development, the user experience, user interfaces,
               digital accessibility and responsive web design.
             </p>
@@ -74,8 +74,10 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         </> :
         null
       }
-      <section>
-        <h3 className="section-title">{`${isAboutInfoDisplayed ? '' : 'Coding '}${formatTitleCase(sections.projects)}`}</h3>
+      <section id={sections.projects} className={`section-${sections.projects}`}>
+        <h3 className="section-title">
+          {`${isAboutInfoDisplayed ? '' : 'Coding '}${formatTitleCase(sections.projects)}`}
+        </h3>
         <p>
           These are front-end web development projects I've built with React,
           TypeScript, CSS and Vite. I've also designed them with accessible features

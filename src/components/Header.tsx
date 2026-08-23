@@ -5,7 +5,7 @@ import constants from '../constants';
 import helpers from '../helpers';
 
 function Header(): JSX.Element {
-  const isHeaderInfoDisplayed: boolean = false;
+  const isHeaderInfoDisplayed: boolean = true;
 
   function renderNavItem(item: string, index: number): JSX.Element {
     return (
