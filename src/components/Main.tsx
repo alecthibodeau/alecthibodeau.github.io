@@ -72,9 +72,11 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         <h3 className="section-title">{`${isAboutInfoDisplayed ? '' : 'Coding '}${formatTitleCase(sections.projects)}`}</h3>
         <p>
           These are front-end web development projects I've built with React,
-          TypeScript, CSS and Vite. I've also designed them with features like
-          semantic HTML tags, accessible elements, mobile-first responsiveness
-          and custom color palettes.
+          TypeScript, CSS and Vite. I've also designed them with accessible features
+          like semantic HTML tags, mobile-first responsiveness and custom color
+          palettes with contrast values
+          at <a className="text-link" href="https://www.w3.org/WAI/WCAG2AA-Conformance" target="_blank">WCAG Level AA</a> or
+          greater.
         </p>
         <div className={sections.projects}>
           {selectProjects.map(renderProject)}

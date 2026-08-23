@@ -6,7 +6,7 @@ import NotFound from './components/NotFound';
 import Loader from './components/Loader';
 
 function App(): JSX.Element {
-  const isRedirectActive: boolean = true;
+  const isRedirectActive: boolean = false;
   const urlRedirect: string = "https://www.linkedin.com/in/alecthibodeau";
 
   if (isRedirectActive) window.location.replace(urlRedirect);
