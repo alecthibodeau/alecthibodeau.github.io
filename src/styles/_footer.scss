@@ -4,46 +4,50 @@ footer {
   background-color: $application-background-color;
 }
 
-.information-box {
+.information-links-wrapper {
   width: fit-content;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  gap: 3rem 4rem;
+  padding-top: 1rem;
+}
 
-  a {
-    display: inline-block;
-    margin: 1.5rem;
+.information-link {
+  z-index: 5;
+  border: 3px solid $application-font-color;
+  border-radius: .5rem;
+  background-color: $application-background-color;
+  padding: 1.5rem 1.5rem 1rem;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  &:link,
+  &:visited,
+  &:active {
+    color: $application-font-color;
+  }
+
+  .information-link-path {
+    fill: $application-font-color;
+  }
+
+  .information-link-text {
+    margin-top: .5rem;
   }
 }
 
-.information-text {
-  margin-top: .5rem;
-}
+.information-link:hover,
+.information-link:focus {
+  text-decoration: underline;
+  text-decoration-thickness: 15%;
+  background-color: $application-font-color;
+  color: $application-background-color;
 
-.credit {
-  margin: 3rem auto 1rem;
-}
-
-.stripes-container {
-  height: 3.125rem;
-
-  div {
-    height: $stripe-height;
-    background-color: $orange-muted;
-
-    &:nth-child(2),
-    &:nth-child(6) {
-      background-color: $rainbow-blue;
-    }
-
-    &:nth-child(3),
-    &:nth-child(5) {
-      background-color: $rainbow-green;
-    }
-
-    &:nth-child(4) {
-      background-color: $rainbow-yellow;
-    }
+  .information-link-path {
+    fill: $application-background-color;
   }
 }
 
@@ -190,21 +194,38 @@ footer {
   }
 }
 
+.credit {
+  padding: 3rem 1rem 2rem;
+}
+
+.stripes-container {
+  height: 3.125rem;
+
+  div {
+    height: $stripe-height;
+    background-color: $orange-muted;
+
+    &:nth-child(2),
+    &:nth-child(6) {
+      background-color: $rainbow-blue;
+    }
+
+    &:nth-child(3),
+    &:nth-child(5) {
+      background-color: $rainbow-green;
+    }
+
+    &:nth-child(4) {
+      background-color: $rainbow-yellow;
+    }
+  }
+}
+
 /* Breakpoint Small */
 
 @media (min-width: $breakpoint-sm) {
 
-  .information-box {
+  .information-links-wrapper {
     flex-direction: row;
-    padding: 1rem 1.5rem;
-  }
-}
-
-/* Breakpoint Large */
-
-@media (min-width: $breakpoint-lg) {
-
-.information-box a {
-    margin: 1.5rem 2.5rem;
   }
 }

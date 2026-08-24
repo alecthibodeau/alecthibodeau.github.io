@@ -35,7 +35,7 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
     return (
       <a
         key={`${item.name}-${index}`}
-        className="text-link"
+        className="information-link"
         href={item.href}
         target='_blank'
       >
@@ -51,20 +51,14 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
         >
           <title id="svg-title">{`${item.name} icon`}</title>
           <g>
-            <path
-              fill={constants.colors.fourPercentGray}
-              d={item.pathDrawnOne}
-            />
+            <path className="information-link-path" d={item.pathDrawnOne} />
             {
               item.pathDrawnTwo ?
-              <path
-                fill={constants.colors.fourPercentGray}
-                d={item.pathDrawnTwo}
-              /> : null
+              <path className="information-link-path" d={item.pathDrawnTwo} /> : null
             }
           </g>
         </svg>
-        <div className="information-text">
+        <div className="information-link-text">
           {item.name}
         </div>
       </a>
@@ -101,7 +95,7 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
             <h3 className="section-title">
               {helpers.formatTitleCase(sections.information)}
             </h3>
-            <div className="information-box">
+            <div className="information-links-wrapper">
               {constants.informationItems.map(renderInformationItem)}
             </div>
             <div className="shapes-field">
