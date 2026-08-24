@@ -8,9 +8,8 @@ footer {
   width: fit-content;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   margin: 0 auto;
-  gap: 3rem 4rem;
-  padding-top: 1rem;
 }
 
 .information-link {
@@ -49,8 +48,8 @@ footer {
   }
 }
 
-.shapes-field {
-  padding: 0 1rem;
+.shapes-wrapper {
+  padding: 3rem 1rem 1rem;
 }
 
 .shape {
@@ -205,7 +204,7 @@ footer {
   padding: 3rem 1rem 2rem;
 }
 
-.stripes-container {
+.stripes-wrapper {
   height: 3.125rem;
 
   div {
@@ -243,5 +242,6 @@ footer {
 
   .information-links-wrapper {
     flex-direction: row;
+    gap: 4rem;
   }
 }

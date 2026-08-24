@@ -5,12 +5,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 4rem 1.75rem;
-  padding: 0 2rem;
+  gap: 3rem 1.75rem;
+  padding: 3rem 2rem 0;
   margin: 0 auto;
 }
 
-.project-details {
+.project .project-details {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +32,7 @@
   border-radius: 4px;
 }
 
-.project-info-container {
+.project-info-wrapper {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
@@ -46,7 +46,7 @@
   color: $rainbow-green;
 }
 
-.project-info-text-container {
+.project-info-text-wrapper {
   line-height: 1.5rem;
   text-align: left;
   color: $application-font-color;
@@ -57,7 +57,7 @@
   margin-top: .5rem;
 }
 
-.stack-container {
+.stack-wrapper {
   margin-top: 1.25rem;
 }
 
@@ -77,4 +77,13 @@
   padding-block: .75rem .25rem;
   font-size: 1.125rem;
   font-weight: 500;
+}
+
+/* Breakpoint Small */
+
+@media (min-width: $breakpoint-sm) {
+
+  .projects {
+    padding-top: 4rem;
+  }
 }

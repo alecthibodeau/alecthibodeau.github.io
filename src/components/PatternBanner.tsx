@@ -25,7 +25,7 @@ function PatternBanner(props: PatternBannerProps): JSX.Element {
         className={
           isPatternRandomQuarterDiscs
           ? `quarter-disc ${quarterDiscDirection[setRandomNumber(maxNumber)]}`
-          : 'pattern-disc-container'
+          : 'pattern-disc-wrapper'
         }>
         {!isPatternRandomQuarterDiscs ? <div></div> : null}
       </div>

@@ -11,21 +11,21 @@ function Project(props: ProjectItem): JSX.Element {
   }
 
   return (
-    <div>
+    <div className="project">
       <button className="project-details" onClick={handleInfoClick}>
         {
           isInfoClicked ?
-          <div className="project-info-container">
+          <div className="project-info-wrapper">
             <div className="project-info-title">{props.name}</div>
-            <div className="project-info-text-container">
+            <div className="project-info-text-wrapper">
               <div className="project-info-text">{props.infoText}</div>
-              <div className="stack-container">
+              <div className="stack-wrapper">
                 <div className="stack-title front-end">Front End</div>
                 <div>{props.frontEndTechnology}</div>
               </div>
               {
                 props.backEndTechnology ?
-                <div className="stack-container">
+                <div className="stack-wrapper">
                   <div className="stack-title back-end">Back End</div>
                   <div>{props.backEndTechnology}</div>
                 </div> :

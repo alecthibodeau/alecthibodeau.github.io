@@ -98,13 +98,13 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
             <div className="information-links-wrapper">
               {constants.informationItems.map(renderInformationItem)}
             </div>
-            <div className="shapes-field">
+            <div className="shapes-wrapper">
               {shapes.map(renderShape)}
             </div>
             <div className="credit">
               Alec Thibodeau, {new Date().getFullYear()}
             </div>
-            <div className="stripes-container">
+            <div className="stripes-wrapper">
               {Array(7).fill('stripe').map((item: string, index: number) => {
                 return (<div key={`${item}-${index}`}></div>);
               })}
