@@ -55,11 +55,10 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
           <section id={sections.about} className={`section-${sections.about}`}>
             <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
             <div className="section-text">
-              Hello! When I'm not writing software for interactive projects I'm
-              crafting <a className="text-link" href="https://alect.me/design">design</a> work
-              with various techniques. My software
-              focus is front-end web development, the user experience, user interfaces,
-              digital accessibility and responsive web design.
+              Hello! I work in art, <a className="text-link" href="https://alect.me/design">design</a> and
+              interactive software. JavaScript, CSS and HTML are my go-to coding
+              tools, as I craft the user experience, user interfaces, digital
+              accessibility and responsive web design.
             </div>
           </section>
           <div className="stripe green"></div>
@@ -74,7 +73,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
           These are front-end web development projects I've built with React,
           TypeScript, CSS and Vite. I've also designed them with accessible features
           like semantic HTML tags, mobile-first responsiveness and custom color
-          palettes with contrast values
+          palettes: with contrast values
           at <a className="text-link" href="https://www.w3.org/WAI/WCAG2AA-Conformance" target="_blank">WCAG Level AA</a> or
           greater.
         </div>
