@@ -42,14 +42,14 @@ function Project(props: ProjectItem): JSX.Element {
       </button>
       <div className="project-info-footer-title">{props.name}</div>
       <div className="project-info-footer-links">
-        <a className="text-link" href={props.website} target="_blank">Website</a>
+        <a className="text-link" href={props.website} target="_blank">website</a>
         <span>&nbsp;|&nbsp;</span>
-        <a className="text-link" href={props.clientRepo}>GitHub</a>
+        <a className="text-link" href={props.clientRepo}>code</a>
         {
           props.apiRepo ?
           <>
             <span>&nbsp;|&nbsp;</span>
-            <a href={props.apiRepo}>GitHub (API)</a>
+            <a href={props.apiRepo}>api</a>
           </> :
           null
         }

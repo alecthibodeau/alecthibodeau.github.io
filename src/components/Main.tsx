@@ -57,7 +57,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
             <div className="section-text">
               Hello! I work in art, <a className="text-link" href="https://alect.me/design">design</a> and
               interactive software. JavaScript, CSS and HTML are my go-to coding
-              tools, as I craft the user experience, user interfaces, digital
+              tools as I craft the user experience, user interfaces, digital
               accessibility and responsive web design.
             </div>
           </section>
