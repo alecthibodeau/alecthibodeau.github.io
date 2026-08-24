@@ -36,9 +36,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         {
           isAboutInfoDisplayed ?
           <h2 className="occupations">
-            <span>Artist</span>
-            <span className="pipe">&nbsp;|&nbsp;</span>
-            <span>Coder</span>
+            <span>Artist | Coder</span>
           </h2> :
           <h2>&bull;&bull;&bull;</h2>
         }
@@ -63,7 +61,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
               digital accessibility and responsive web design.
             </p>
           </section>
-          <div className="stripe blue"></div>
+          <div className="stripe green"></div>
         </> :
         null
       }

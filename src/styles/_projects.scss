@@ -14,11 +14,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15rem;
-  height: 26.5rem;
-  border: $border-width-medium solid $fifty-percent-gray;
+  width: 240px;
+  height: 419px;
+  border: 3px solid $fifty-percent-gray;
   font-family: 'Open Sans', sans-serif;
-  border-radius: .625rem;
+  border-radius: 10px;
   background-color: transparent;
 
   &:hover {
@@ -28,15 +28,15 @@
 }
 
 .project-image {
-  width: 14.375rem;
-  border-radius: .375rem;
+  width: 225px;
+  border-radius: 4px;
 }
 
 .project-info-container {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .project-info-title {
@@ -73,47 +73,8 @@
   }
 }
 
-.project-footer {
-  padding: 0 1.25rem;
-  margin-top: .5rem;
-}
-
 .project-footer-title {
-  padding-top: .25rem;
+  padding-block: .75rem .25rem;
   font-size: 1.125rem;
   font-weight: 500;
-  color: $rainbow-green;
-}
-
-.project-footer-link {
-  display: block;
-  width: 100%;
-  padding: .25rem 0;
-  border: $border-width-small solid $fifty-percent-gray;
-  border-radius: .5rem;
-  margin-top: .75rem;
-  font-size: .75rem;
-  font-weight: 600;
-  text-decoration: none;
-  background-color: transparent;
-  color: $application-font-color;
-
-  &:nth-child(2) {
-    border-color: $rainbow-yellow;
-  }
-
-  &:nth-child(3) {
-    border-color: $rainbow-blue;
-  }
-
-  &:link,
-  &:visited,
-  &:active {
-    color: $application-font-color;
-  }
-
-  &:hover {
-    background-color: $application-font-color;
-    color: $application-background-color;
-  }
 }

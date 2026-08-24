@@ -87,7 +87,7 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
       {
         isFooterInfoDisplayed ?
         <>
-          <div className="stripe green"></div>
+          <div className="stripe blue"></div>
           <section
             id={sections.information}
             className={`section-${sections.information}`}
