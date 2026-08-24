@@ -22,8 +22,8 @@
   background-color: transparent;
 
   &:hover {
-    border-color: $rainbow-green;
-    box-shadow: 0 0 1rem $rainbow-green;
+    border-color: $twenty-five-percent-gray;
+    box-shadow: 0 0 1rem $twenty-five-percent-gray;
   }
 }
 
@@ -37,19 +37,18 @@
   flex-direction: column;
   align-self: flex-start;
   padding: 1.5rem;
+  color: $application-font-color;
 }
 
-.project-info-title {
+.project-info-inner-title {
   margin-bottom: .75rem;
   font-size: 1.25rem;
   font-weight: 700;
-  color: $rainbow-green;
 }
 
 .project-info-text-wrapper {
   line-height: 1.5rem;
   text-align: left;
-  color: $application-font-color;
   font-size: 1rem;
 }
 
@@ -57,26 +56,22 @@
   margin-top: .5rem;
 }
 
-.stack-wrapper {
+.project-info-stack-wrapper {
   margin-top: 1.25rem;
 }
 
-.stack-title {
-  font-weight: 600;
-
-  &.front-end {
-    color: $orange-light;
-  }
-
-  &.back-end {
-    color: $rainbow-red;
-  }
+.project-info-stack-title {
+  font-weight: 700;
 }
 
-.project-footer-title {
+.project-info-footer-title {
   padding-block: .75rem .25rem;
   font-size: 1.125rem;
   font-weight: 500;
+}
+
+.project-info-footer-links {
+  font-weight: 600;
 }
 
 /* Breakpoint Small */

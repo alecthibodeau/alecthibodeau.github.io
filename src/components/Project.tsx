@@ -16,17 +16,17 @@ function Project(props: ProjectItem): JSX.Element {
         {
           isInfoClicked ?
           <div className="project-info-wrapper">
-            <div className="project-info-title">{props.name}</div>
+            <div className="project-info-inner-title">{props.name}</div>
             <div className="project-info-text-wrapper">
               <div className="project-info-text">{props.infoText}</div>
-              <div className="stack-wrapper">
-                <div className="stack-title front-end">Front End</div>
+              <div className="project-info-stack-wrapper">
+                <div className="project-info-stack-title front-end">Front End:</div>
                 <div>{props.frontEndTechnology}</div>
               </div>
               {
                 props.backEndTechnology ?
-                <div className="stack-wrapper">
-                  <div className="stack-title back-end">Back End</div>
+                <div className="project-info-stack-wrapper">
+                  <div className="project-info-stack-title back-end">Back End:</div>
                   <div>{props.backEndTechnology}</div>
                 </div> :
                 null
@@ -40,8 +40,8 @@ function Project(props: ProjectItem): JSX.Element {
           />
         }
       </button>
-      <div className="project-footer-title">{props.name}</div>
-      <div>
+      <div className="project-info-footer-title">{props.name}</div>
+      <div className="project-info-footer-links">
         <a className="text-link" href={props.website} target="_blank">Website</a>
         <span>&nbsp;|&nbsp;</span>
         <a className="text-link" href={props.clientRepo}>GitHub</a>

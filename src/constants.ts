@@ -41,7 +41,7 @@ const projectItems: ProjectItem[] = [
   {
     id: 'pupperland',
     name: 'Pupperland',
-    infoText: 'A simulated portal for browsing shelter dogs that are available to bring home',
+    infoText: 'A simulated portal for browsing shelter dogs that are available to bring home.',
     frontEndTechnology: 'React, TypeScript, React Router, CSS3, SVG',
     backEndTechnology: 'Fetch API',
     altText: 'Mobile screenshot of Pupperland',
@@ -52,7 +52,7 @@ const projectItems: ProjectItem[] = [
   {
     id: 'huetown',
     name: 'Huetown',
-    infoText: 'The web shop for my art sales, which includes an animated digital lunar calendar',
+    infoText: 'The web shop for my art sales, which includes an animated digital lunar calendar.',
     frontEndTechnology: 'React, TypeScript, React Router, CSS3/Sass, SVG',
     backEndTechnology: 'PayPal API, Mailchimp API',
     altText: 'Mobile screenshot of the Huetown web shop',
@@ -63,7 +63,7 @@ const projectItems: ProjectItem[] = [
   {
     id: 'cookieTimeTrivia',
     name: 'Cookie Time Trivia',
-    infoText: 'A game with multiple categories and user-selectable themes',
+    infoText: 'A game with multiple categories and user-selectable visual themes.',
     frontEndTechnology: 'React, TypeScript, React Router, Emotion, CSS3/Sass, SVG, localStorage',
     altText: 'Mobile screenshot of the Cookie Time Trivia game',
     website: hypertextReference.cookieTimeTrivia,
@@ -73,7 +73,7 @@ const projectItems: ProjectItem[] = [
   {
     id: 'artPortfolio',
     name: 'Art Portfolio',
-    infoText: 'An art portfolio website for displaying my earlier work in drawing and printmaking',
+    infoText: 'An art portfolio website for displaying my early work in drawing and printmaking.',
     frontEndTechnology: 'React, TypeScript, React Router, Bootstrap 5, CSS3/Sass, SVG',
     altText: 'Mobile screenshot of Alec\'s art portfolio website',
     website: hypertextReference.artPortfolio,
