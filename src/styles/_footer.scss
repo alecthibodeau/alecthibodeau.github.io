@@ -15,14 +15,12 @@ footer {
 
 .information-link {
   z-index: 5;
+  padding: 1.5rem 1.5rem 1rem;
   border: 3px solid $application-font-color;
   border-radius: .5rem;
-  background-color: $application-background-color;
-  padding: 1.5rem 1.5rem 1rem;
-
-  text-decoration: none;
-
   font-weight: 600;
+  text-decoration: none;
+  background-color: $application-background-color;
 
   &:link,
   &:visited,
@@ -60,6 +58,9 @@ footer {
   display: inline-block;
   border: 5px solid $application-background-color;
   margin: .5rem;
+  animation-name: spin-clockwise;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
   &.position-0 {
     top: 2rem;
@@ -80,21 +81,27 @@ footer {
   &.size-0 {
     width: 4rem;
     height: 4rem;
+    animation-duration: 15s;
+    animation-direction: reverse;
   }
 
   &.size-1 {
     width: 6rem;
     height: 6rem;
+    animation-duration: 25s;
   }
 
   &.size-2 {
     width: 8rem;
     height: 8rem;
+    animation-duration: 45s;
+    animation-direction: reverse;
   }
 
   &.size-3 {
     width: 10rem;
     height: 10rem;
+    animation-duration: 60s;
   }
 
   &.z-index-0 {
@@ -218,6 +225,15 @@ footer {
     &:nth-child(4) {
       background-color: $rainbow-yellow;
     }
+  }
+}
+
+@keyframes spin-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
