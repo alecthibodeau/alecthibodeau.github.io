@@ -1,8 +1,5 @@
 import { useState } from 'react';
 
-/* Components */
-import PatternBanner from './PatternBanner';
-
 /* Constants */
 import constants from '../constants';
 
@@ -42,9 +39,31 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
         href={item.href}
         target='_blank'
       >
-        <img
-          src={item.image}
-          alt={`${item.name} SVG icon`} />
+        <svg
+          id={`${item.name}Icon`}
+          role="img"
+          aria-labelledby="svg-title"
+          xmlns="http://www.w3.org/2000/svg"
+          width="80"
+          height="80"
+          version="1.1"
+          viewBox="0 0 80 80"
+        >
+          <title id="svg-title">{`${item.name} icon`}</title>
+          <g>
+            <path
+              fill={constants.colors.fourPercentGray}
+              d={item.pathDrawnOne}
+            />
+            {
+              item.pathDrawnTwo ?
+              <path
+                fill={constants.colors.fourPercentGray}
+                d={item.pathDrawnTwo}
+              /> : null
+            }
+          </g>
+        </svg>
         <div className="information-text">
           {item.name}
         </div>
@@ -56,9 +75,15 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
     return (
       <div
         key={`shape-${index}`}
-        className={
-          `shape position-${item.position} size-${item.size} z-index-${item.zIndex} flip-${item.flip} form-${item.form} rotation-${item.rotation} color-${item.color}`
-        }
+        className={`
+          shape position-${item.position}
+          size-${item.size}
+          z-index-${item.zIndex}
+          flip-${item.flip}
+          form-${item.form}
+          rotation-${item.rotation}
+          color-${item.color}
+        `}
       />
     );
   }
@@ -69,7 +94,10 @@ function Footer(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.
         isFooterInfoDisplayed ?
         <>
           <div className="stripe green"></div>
-          <section id={sections.information} className={`section-${sections.information}`}>
+          <section
+            id={sections.information}
+            className={`section-${sections.information}`}
+          >
             <h3 className="section-title">
               {helpers.formatTitleCase(sections.information)}
             </h3>

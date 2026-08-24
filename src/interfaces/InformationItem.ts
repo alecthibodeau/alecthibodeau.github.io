@@ -1,7 +1,8 @@
 interface InformationItem {
   name: string;
   href: string;
-  image: string;
+  pathDrawnOne: string;
+  pathDrawnTwo?: string;
 }
 
 export default InformationItem;
