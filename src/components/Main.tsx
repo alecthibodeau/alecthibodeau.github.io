@@ -54,7 +54,7 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
             }
             <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
             <p>
-              When I'm not writing software for interactive projects I'm
+              Hello! When I'm not writing software for interactive projects I'm
               crafting <a className="text-link" href="https://alect.me/design">design</a> work
               with various techniques. My software
               focus is front-end web development, the user experience, user interfaces,
