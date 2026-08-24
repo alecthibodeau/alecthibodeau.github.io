@@ -42,16 +42,17 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
         }
       </div>
       {
+        isHeadshotDisplayed ?
+        <img
+          src={constants.headshot}
+          className="headshot-img"
+          alt="Alec Thibodeau headshot"
+        /> : null
+      }
+      {
         isAboutInfoDisplayed ?
         <>
-          <section id={sections.about}>
-            { isHeadshotDisplayed ?
-              <img
-                src={constants.headshot}
-                className="headshot-img"
-                alt="Alec Thibodeau headshot"
-              /> : null
-            }
+          <section id={sections.about} className={`section-${sections.about}`}>
             <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
             <p>
               Hello! When I'm not writing software for interactive projects I'm
