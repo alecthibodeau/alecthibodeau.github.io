@@ -1,0 +1,35 @@
+/* Responsive Breakpoints, for reference only:
+   To work within media queries these would require a CSS preprocessor */
+/* --breakpoint-sm: 576px; */
+/* --breakpoint-md: 768px; */
+/* --breakpoint-lg: 992px; */
+/* --breakpoint-xl: 1200px; */
+/* --breakpoint-xxl: 1400px; */
+
+:root {
+
+  /* Colors Grayscale */
+  --color-four-percent-gray-transparent: rgb(245 245 245 / 33%);
+  --color-five-percent-gray: #f2f2f2;
+  --color-twenty-five-percent-gray: #c0c0c0;
+  --color-fifty-percent-gray: #7f7f7f;
+  --color-ninety-two-percent-gray: #141414;
+
+  /* Colors Hued */
+  --color-blue-muted: #7073ff;
+  --color-orange-muted: #ff9600;
+  --color-rainbow-red: #f27089;
+  --color-rainbow-orange: #fca778;
+  --color-rainbow-yellow: #fbde84;
+  --color-rainbow-green: #9ac479;
+  --color-rainbow-blue: #74a6cf;
+
+  /* Colors Assigned */
+  --color-application-font: var(--color-five-percent-gray);
+  --color-application-font-transparent: var(--color-four-percent-gray-transparent);
+  --color-application-background: var(--color-ninety-two-percent-gray);
+
+  /* Dimensions */
+  --color-element-width-large: 62.5rem;
+  --color-stripe-height: .1875rem;
+}
