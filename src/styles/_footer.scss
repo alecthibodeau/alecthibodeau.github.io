@@ -49,7 +49,10 @@ footer {
 }
 
 .shapes-wrapper {
-  padding: 3rem 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3rem 3rem 1rem;
 }
 
 .shape {
