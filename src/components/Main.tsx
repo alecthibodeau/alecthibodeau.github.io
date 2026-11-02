@@ -30,7 +30,6 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
 
   return (
     <main>
-
       <div className="name-and-occupations">
         <h1 className="name">Alec Thibodeau</h1>
         {
@@ -55,8 +54,9 @@ function Main(props: { isBreakpointXs: boolean, viewportWidth: number }): JSX.El
           <section id={sections.about} className={`section-${sections.about}`}>
             <h3 className="section-title">{formatTitleCase(sections.about)}</h3>
             <div className="section-text">
-              Hello! I work in art, <a className="text-link" href="https://alect.me/design">design</a> and
-              interactive software. JavaScript, CSS and HTML are my go-to coding
+              Hello! I work in <a className="text-link" href="https://alecthibodeau.com" target="_blank">art</a>
+              , <a className="text-link" href="https://alect.me/design">design</a> and <a className="text-link" href="#projects">
+              interactive software projects</a>. JavaScript, CSS and HTML are my go-to coding
               tools as I craft the user experience, user interfaces, digital
               accessibility and responsive web design.
             </div>
